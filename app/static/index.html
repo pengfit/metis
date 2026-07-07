@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>米提斯 · 诊断</title>
+<script>window.addEventListener('DOMContentLoaded', loadGrowth);</script>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif; max-width: 760px; margin: 32px auto; padding: 0 20px; background: #faf8f3; color: #2a2723; line-height: 1.55; }
+  h1 { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
+  .meta { font-size: 12px; color: #888; margin: 0 0 20px; }
+
+  /* === Layer 1: 卡片式入口 === */
+  .entry-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 0 0 18px; }
+  .entry-card { background: #fff; border: 1px solid #e8e3d3; border-radius: 10px; padding: 14px 12px 12px; display: flex; flex-direction: column; align-items: center; gap: 6px; cursor: pointer; transition: all .15s; font-family: inherit; color: inherit; }
+  .entry-card:hover { border-color: #c95f3a; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(201,95,58,.08); }
+  .entry-card.active { border-color: #c95f3a; background: #fef4ee; }
+  .card-icon { font-size: 26px; line-height: 1; }
+  .card-title { font-size: 13px; font-weight: 600; color: #2a2723; }
+  .card-hint { font-size: 11px; color: #888; opacity: .85; text-align: center; }
+
+  .mode-label { font-size: 12px; color: #888; margin: 0 0 6px; }
+  .mode-label .mode-name { color: #c95f3a; font-weight: 600; }
+
+  textarea { width: 100%; min-height: 110px; padding: 12px 14px; border: 1px solid #d8d2c2; border-radius: 8px; font-family: inherit; font-size: 15px; line-height: 1.55; resize: vertical; background: #fff; }
+  textarea:focus { outline: none; border-color: #c95f3a; box-shadow: 0 0 0 3px rgba(201,95,58,.12); }
+  .row { margin: 14px 0 22px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  button { padding: 10px 20px; background: #2a2723; color: #faf8f3; border: 0; border-radius: 7px; font-size: 14px; font-family: inherit; cursor: pointer; transition: opacity .12s; }
+  button:hover { opacity: .82; }
+  button[disabled] { opacity: .5; cursor: not-allowed; }
+  .ghost { background: transparent; color: #2a2723; border: 1px solid #d8d2c2; }
+  .diag { background: #fff; padding: 18px 20px 14px; border-radius: 10px; margin: 16px 0; border: 1px solid #e8e3d3; }
+  .diag h3 { font-size: 16px; margin: 0 0 6px; display: flex; gap: 8px; align-items: baseline; }
+  .diag h3 .name { color: #c95f3a; font-weight: 700; }
+  .diag h3 .conf { font-size: 12px; color: #888; font-weight: normal; font-family: monospace; }
+  .diag .evidence { background: #fef9ec; padding: 8px 12px; border-radius: 5px; font-size: 13px; font-style: italic; color: #5a4a30; margin: 6px 0 12px; border-left: 3px solid #e9d773; }
+  .diag ul { list-style: none; padding: 0; margin: 0; }
+  .diag li { padding: 12px 14px; border-radius: 7px; margin-bottom: 8px; font-size: 13px; background: #faf8f3; border: 1px solid #ebe7d7; }
+  .diag li.top { background: #fef4ee; border-color: #e8c5b3; box-shadow: 0 1px 0 #e8c5b3; }
+  .diag li .meta { font-size: 11px; opacity: .65; margin-bottom: 4px; }
+  .diag li .badge { display: inline-block; font-size: 10px; padding: 1px 6px; border-radius: 3px; margin-left: 6px; opacity: .75; }
+  .badge.now { background: #c95f3a; color: #faf8f3; }
+  .badge.today { background: #d9b13f; color: #2a2723; }
+  .badge.week { background: #8a8a8a; color: #faf8f3; }
+  .diag li .do { font-size: 13.5px; }
+  .diag li .mark { font-size: 12px; color: #6f6f6f; margin-top: 4px; font-style: italic; }
+  .empty { background: #fff; padding: 20px; border-radius: 10px; text-align: center; color: #888; }
+  .now-line { font-size: 11px; opacity: .55; margin-top: 16px; font-family: monospace; }
+  .err { background: #fbe9e3; color: #8a2a13; padding: 14px 16px; border-radius: 8px; margin: 16px 0; font-size: 13px; }
+
+  /* === next_layer card (蜕发触发的深一层提示) === */
+  .nl-card { background: linear-gradient(135deg, #1a1d24 0%, #2a2723 100%); color: #faf8f3; padding: 20px 22px 16px; border-radius: 12px; margin: 24px 0 12px; box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+  .nl-card-head { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+  .nl-pill { background: #c95f3a; color: #fff; font-size: 10px; font-weight: 600; padding: 3px 9px; border-radius: 4px; letter-spacing: 1px; }
+  .nl-title { font-size: 14px; font-weight: 600; color: #faf8f3; }
+  .nl-section { margin: 12px 0; padding: 12px 14px; background: rgba(255,255,255,.04); border-radius: 8px; border-left: 3px solid #c95f3a; }
+  .nl-section-label { font-size: 10px; font-weight: 600; color: #d9b13f; letter-spacing: 1.5px; margin-bottom: 8px; text-transform: uppercase; }
+  .nl-list { list-style: none; padding: 0; margin: 0; }
+  .nl-list li { padding: 8px 0; border-top: 1px solid rgba(255,255,255,.08); font-size: 13px; }
+  .nl-list li:first-child { border-top: 0; }
+  .nl-head-row { font-weight: 600; color: #faf8f3; }
+  .nl-head-row b { color: #f0c040; font-family: monospace; }
+  .nl-summary { font-size: 12px; opacity: .65; line-height: 1.5; margin-top: 2px; }
+  .nl-hint { font-size: 11px; opacity: .55; font-style: italic; margin-top: 12px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,.08); }
+
+  /* === time context banner (D 方案) === */
+  .tc-banner { padding: 8px 14px; border-radius: 7px; font-size: 12px; margin: 14px 0; border: 1px solid #e8e3d3; background: #faf8f3; color: #5a4a30; display: flex; gap: 8px; align-items: center; }
+  .tc-banner .icon { font-size: 14px; }
+  .tc-banner .label { font-weight: 600; color: #2a2723; }
+  .tc-banner.morning { background: #fff7e6; border-color: #e8d773; }
+  .tc-banner.forenoon { background: #fef9ec; border-color: #e8d773; }
+  .tc-banner.noon { background: #fef4ee; border-color: #e8c5b3; }
+  .tc-banner.afternoon { background: #faf8f3; }
+  .tc-banner.evening { background: #f4ecdc; border-color: #d8c7a3; }
+  .tc-banner.night { background: #1a1d24; color: #d0ccc0; border-color: #1a1d24; }
+  .tc-banner.night .label { color: #faf8f3; }
+
+  /* === one-thing (Layer 4: 今天只做1件) === */
+  .one-thing { padding: 16px 18px; border-radius: 9px; background: linear-gradient(135deg, #fef9ec 0%, #fff7e6 100%); border: 1px solid #e9d773; box-shadow: 0 1px 0 #e9d773; margin: 0; }
+  .one-thing .meta { font-size: 11px; opacity: .7; margin-bottom: 6px; }
+  .one-thing .badge.now { background: #e9a541; color: #2a2723; }
+  .one-thing .do { font-size: 14px; line-height: 1.5; }
+  .one-thing .mark { font-size: 12px; color: #6f6f6f; margin-top: 8px; font-style: italic; padding-top: 8px; border-top: 1px dashed rgba(0,0,0,.08); }
+
+  /* === Reflection card (Layer 5) === */
+  .reflection-card { background: linear-gradient(135deg, #fff 0%, #faf8f3 100%); padding: 20px 22px 16px; border-radius: 12px; margin: 28px 0 16px; border: 1px solid #e8e3d3; box-shadow: 0 2px 8px rgba(0,0,0,.04); }
+  .reflection-title { font-size: 13px; font-weight: 700; color: #2a2723; margin-bottom: 10px; letter-spacing: 0.5px; text-transform: uppercase; }
+  .reflection-action { font-size: 14px; font-style: italic; color: #c95f3a; margin: 0 0 18px; padding: 10px 14px; background: #fef9ec; border-left: 3px solid #e9d773; border-radius: 0 6px 6px 0; }
+  .reflection-q { font-size: 12px; font-weight: 600; color: #5a4a30; margin: 14px 0 6px; }
+  .reflection-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+  .did-btn { flex: 1; min-width: 80px; background: #fff; color: #2a2723; border: 1px solid #d8d2c2; padding: 9px 12px; border-radius: 7px; font-family: inherit; font-size: 13px; cursor: pointer; transition: all .12s; }
+  .did-btn:hover { background: #fef4ee; border-color: #c95f3a; }
+  .did-btn.selected { background: #c95f3a; color: #faf8f3; border-color: #c95f3a; }
+  .reflection-card textarea { width: 100%; min-height: 50px; padding: 10px 12px; border: 1px solid #d8d2c2; border-radius: 7px; font-family: inherit; font-size: 13px; line-height: 1.55; resize: vertical; background: #fff; }
+  .reflection-card textarea:focus { outline: none; border-color: #c95f3a; box-shadow: 0 0 0 3px rgba(201,95,58,.1); }
+  .reflection-save { width: 100%; margin-top: 14px; padding: 11px; background: #c95f3a; color: #faf8f3; border: 0; border-radius: 8px; font-family: inherit; font-size: 14px; font-weight: 600; cursor: pointer; transition: opacity .12s; }
+  .reflection-save:hover { opacity: .88; }
+  .reflection-save:disabled { background: #d8d2c2; color: #888; cursor: not-allowed; opacity: 1; }
+  .reflection-status { font-size: 12px; color: #888; text-align: center; margin-top: 8px; }
+  .reflection-card.saved { background: linear-gradient(135deg, #f0f7ec 0%, #e8f4e0 100%); text-align: center; padding: 28px 22px; }
+  .reflection-card.saved .saved-mark { font-size: 36px; color: #6ab04c; margin-bottom: 8px; }
+  .reflection-card.saved .saved-line { font-size: 15px; font-weight: 600; color: #2a2723; margin-bottom: 4px; }
+  .reflection-card.saved .saved-hint { font-size: 12px; color: #5a4a30; }
+
+  /* === Growth banner (Layer 6) === */
+  .growth-banner { display: flex; align-items: center; gap: 14px; padding: 10px 14px; background: linear-gradient(135deg, #fef9ec 0%, #fff7e6 100%); border: 1px solid #e9d773; border-radius: 8px; margin: -12px 0 18px; font-size: 13px; flex-wrap: wrap; }
+  .growth-streak { font-size: 13px; color: #c95f3a; font-weight: 600; }
+  .growth-streak b { font-size: 16px; }
+  .growth-meta { color: #5a4a30; opacity: .85; font-size: 12px; }
+
+  /* === kb refs (Layer 3: 知识出处) === */
+  .kb-refs { margin: 16px 0 4px; padding: 14px 16px; background: #fff; border-radius: 9px; border: 1px solid #e8e3d3; }
+  .kb-refs-title { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; opacity: .85; color: #5a4a30; margin-bottom: 10px; }
+  .kb-refs-list { list-style: none; padding: 0; margin: 0; }
+  .kb-refs-list li { padding: 10px 0; border-top: 1px solid #ebe7d7; font-size: 13px; }
+  .kb-refs-list li:first-child { border-top: 0; }
+  .kb-ref-head b { color: #c95f3a; font-family: monospace; font-size: 13px; }
+  .kb-ref-tags { font-size: 11px; opacity: .55; margin: 2px 0; }
+  .kb-ref-summary { font-size: 12.5px; line-height: 1.5; color: #4a4030; }
+
+  /* === action groups (D 方案) === */
+  .group-title { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin: 14px 0 6px; opacity: 0.95; display: flex; align-items: center; gap: 5px; }
+  .group-title .icon { font-size: 13px; }
+  .group-title .count { background: rgba(0,0,0,.06); padding: 1px 6px; border-radius: 8px; font-size: 10px; opacity: 0.7; letter-spacing: 0; text-transform: none; font-weight: normal; }
+</style>
+</head>
+<body>
+<h1>米提斯 · 诊断</h1>
+<p class="meta">不用知道自己要问什么 ↓ 选一张卡作为起点。</p>
+
+<!-- Layer 1: 卡片式入口 -->
+<div class="entry-cards" id="entryCards">
+  <button type="button" class="entry-card" data-mode="state">
+    <span class="card-icon">🌅</span>
+    <span class="card-title">今天的状态</span>
+    <span class="card-hint">现在感觉怎么样</span>
+  </button>
+  <button type="button" class="entry-card" data-mode="trouble">
+    <span class="card-icon">⚡</span>
+    <span class="card-title">最近的困扰</span>
+    <span class="card-hint">卡住了什么</span>
+  </button>
+  <button type="button" class="entry-card" data-mode="domain">
+    <span class="card-icon">📚</span>
+    <span class="card-title">人生领域</span>
+    <span class="card-hint">工作 / 关系 / 意义</span>
+  </button>
+  <button type="button" class="entry-card" data-mode="reflect">
+    <span class="card-icon">📓</span>
+    <span class="card-title">今日反思</span>
+    <span class="card-hint">今天发生了什么</span>
+  </button>
+  <button type="button" class="entry-card" data-mode="cog">
+    <span class="card-icon">💭</span>
+    <span class="card-title">一个认知问题</span>
+    <span class="card-hint">不懂的事</span>
+  </button>
+</div>
+
+<div class="mode-label" id="modeLabel">点击上方卡片选起点，或直接输入</div>
+
+<textarea id="input" placeholder="例：最近一个重要提案拖了两周，写不出第一段..."></textarea>
+
+<div class="row">
+  <button id="go" onclick="diagnose()">诊断</button>
+</div>
+
+<div id="result"></div>
+<div id="reflectionCard" style="display:none"></div>
+<div class="now-line" id="status"></div>
+
+<script>
+function escapeHtml(s) {
+  return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function whenBadgeClass(w) {
+  if (w === 'now') return 'now';
+  if (w === 'today') return 'today';
+  return 'week';
+}
+function whenLabel(w) {
+  if (w === 'now') return '立刻';
+  if (w === 'today') return '今天';
+  return '本周';
+}
+
+async function diagnose() {
+  const ta = document.getElementById('input');
+  const text = ta.value.trim();
+  if (!text) { ta.focus(); return; }
+
+  const go = document.getElementById('go');
+  go.disabled = true;
+  go.textContent = '诊断中…';
+  document.getElementById('result').innerHTML = '';
+  document.getElementById('status').textContent = '';
+  document.getElementById('reflectionCard').style.display = 'none';
+  currentEntryId = null;
+  currentDidIt = null;
+
+  const t0 = Date.now();
+  try {
+    const resp = await fetch('/diagnose', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({ input: text }),
+    });
+    const dt = Date.now() - t0;
+    if (!resp.ok) {
+      const body = await resp.text();
+      throw new Error(`HTTP ${resp.status} · ${body.slice(0, 200)}`);
+    }
+    const data = await resp.json();
+    renderResult(data);
+    // ★ v1.3 Layer 5: 渲染反思卡
+    currentEntryId = data.entry_id;
+    renderReflectionCard(data);
+    document.getElementById('status').textContent = `${dt}ms · ${data.diagnoses.length} 诊断 · 总 ${data.diagnoses.reduce((s,d)=>s+d.actions.length,0)} 个动作`;
+  } catch (e) {
+    document.getElementById('result').innerHTML =
+      `<div class="err"><b>调用失败</b><br>${escapeHtml(String(e))}<br><br>检查：服务是否启动？API key 已配置？</div>`;
+  } finally {
+    go.disabled = false;
+    go.textContent = '诊断';
+  }
+}
+
+function renderActions(actions) {
+  // ★ v1.3: 灵魂层 (Layer 4) — 今天只做 1 件
+  // 不分组, 每个诊断只展示 1 个动作, 邦为“今天唯一”
+  if (!actions || !actions.length) return '';
+  const a = actions[0];
+  return `<li class="one-thing">
+    <div class="meta">
+      <span class="badge now">今天唯一 · ${a.min}m</span>
+    </div>
+    <div class="do"><b>${escapeHtml(a.label)}</b> — ${escapeHtml(a.do)}</div>
+    <div class="mark">完成判据：${escapeHtml(a.mark)}</div>
+  </li>`;
+}
+
+function renderKbReferences(refs) {
+  // ★ v1.3: 灵魂层 (Layer 3) — 让用户看见诊断背后是什么知识
+  if (!refs || !refs.length) return '';
+  let html = `<div class="kb-refs">
+    <div class="kb-refs-title">为什么是它 · 知识库出处</div>
+    <ul class="kb-refs-list">`;
+  for (const r of refs) {
+    const tags = (r.diagnosis_tags || []).slice(0, 3).join(' · ');
+    html += `<li>
+      <div class="kb-ref-head"><b>${escapeHtml(r.kid)}</b> · ${escapeHtml(r.name)}</div>
+      <div class="kb-ref-tags">${escapeHtml(tags)}</div>
+      <div class="kb-ref-summary">${escapeHtml(r.summary || '')}</div>
+    </li>`;
+  }
+  html += `</ul></div>`;
+  return html;
+}
+
+function renderTimeContext(tc) {
+  if (!tc) return '';
+  const hint = {
+    night: '深夜, 选轻动作, 不耗能、不社交',
+    morning: '启动难是常态, 今天就做这一件',
+    forenoon: '认知资源高峰, 不贪多',
+    noon: '饭后反思时段, 避免重决策',
+    afternoon: '执行时段, 现在动手',
+    evening: '收尾时段, 明天准备',
+  }[tc.mode] || '';
+  return `<div class="tc-banner ${tc.mode}">
+    <span class="icon">${escapeHtml(tc.icon)}</span>
+    <span class="label">${escapeHtml(tc.label)}</span>
+    <span style="opacity:.6">·</span>
+    <span>${hint}</span>
+  </div>`;
+}
+
+function renderResult(data) {
+  const root = document.getElementById('result');
+  if (!data.diagnoses || !data.diagnoses.length) {
+    root.innerHTML = `<div class="empty">
+      无匹配标签<br>
+      ${escapeHtml(data.fallback || data.notes || '知识库暂无与此相关的覆盖')}
+    </div>`;
+    return;
+  }
+  let html = '';
+  html += renderTimeContext(data.time_context);
+  for (const d of data.diagnoses) {
+    const items = renderActions(d.actions);
+    html += `<div class="diag">
+      <h3><span class="name">${escapeHtml(d.tag)}</span><span class="conf">置信 ${(d.confidence*100).toFixed(0)}%</span></h3>
+      <div class="evidence">"${escapeHtml(d.evidence || '(无原文引用)')}"</div>
+      <ul>${items}</ul>
+    </div>`;
+  }
+  // ★ v1.3: Layer 3 - 诊断卡后展示 KB 知识出处
+  html += renderKbReferences(data.kb_references);
+  if (data.notes) {
+    html += `<div class="now-line">notes · ${escapeHtml(data.notes)}</div>`;
+  }
+
+  const nl = data.next_layer || {};
+  if (nl.triggered) {
+    const principleItems = (nl.principle_entries || []).map(e => `
+      <li>
+        <div class="nl-head-row"><b>${escapeHtml(e.kid)} · ${escapeHtml(e.name)}</b></div>
+        <div class="nl-summary">${escapeHtml(e.summary)}</div>
+      </li>
+    `).join('');
+    const themeItems = (nl.theme_entries || []).map(e => `
+      <li>
+        <div class="nl-head-row"><b>${escapeHtml(e.kid)} · ${escapeHtml(e.name)}</b></div>
+        <div class="nl-summary">${escapeHtml(e.summary)}</div>
+      </li>
+    `).join('');
+    html += `<div class="nl-card">
+      <div class="nl-card-head">
+        <span class="nl-pill">深一层</span>
+        <span class="nl-title">“${escapeHtml(nl.hot_tag || '')}” 7 天内被点亮 ${nl.count} 次</span>
+      </div>
+      ${principleItems ? `<div class="nl-section">
+        <div class="nl-section-label">原理 (principle)</div>
+        <ul class="nl-list">${principleItems}</ul>
+      </div>` : ''}
+      ${themeItems ? `<div class="nl-section">
+        <div class="nl-section-label">主题 (theme)</div>
+        <ul class="nl-list">${themeItems}</ul>
+      </div>` : ''}
+      ${nl.hint ? `<div class="nl-hint">${escapeHtml(nl.hint)}</div>` : ''}
+    </div>`;
+  }
+
+  root.innerHTML = html;
+}
+
+// 快捷键
+document.getElementById('input').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) diagnose();
+});
+
+// Layer 1: 卡片点击 → 切换 placeholder + 焦点
+const CARD_PLACEHOLDERS = {
+  state:   '现在感觉如何？身体什么感觉？脑子里在想什么？（不用组织, 先倒出来）',
+  trouble: '什么在困扰你？过去几天 / 几周 / 几个月 — 不用挑重要的, 最近浮上来的先说。',
+  domain:  '从哪个领域切入？\n- 工作（节奏 / 关系 / 决策）\n- 关系（伴侣 / 朋友 / 家人）\n- 意义（为什么做 / 我是谁）\n- 身体（睡眠 / 精力 / 健康）',
+  reflect: '今天（今天发生的）:\n- 最难忘的 1 小时\n- 我学到了什么\n- 如果重来, 我会做什么不同',
+  cog:     '你最近在想什么问题？不需要答案, 先说出来。\n例如：\n- 拖延是因为懒吗？\n- 复利在注意力经济还成立吗？\n- 我该不该换赛道？',
+};
+const CARD_LABELS = {
+  state:   '今天的状态',
+  trouble: '最近的困扰',
+  domain:  '人生领域',
+  reflect: '今日反思',
+  cog:     '一个认知问题',
+};
+
+document.querySelectorAll('.entry-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const mode = card.dataset.mode;
+    document.querySelectorAll('.entry-card').forEach(c => c.classList.remove('active'));
+    card.classList.add('active');
+    const ta = document.getElementById('input');
+    ta.placeholder = CARD_PLACEHOLDERS[mode] || ta.placeholder;
+    document.getElementById('modeLabel').innerHTML = `当前起点 · <span class="mode-name">${CARD_LABELS[mode]}</span>`;
+    ta.focus();
+  });
+});
+
+// 用户开始输入时清掉 active 状态（避免误以为还在某个模式）
+document.getElementById('input').addEventListener('input', () => {
+  document.querySelectorAll('.entry-card').forEach(c => c.classList.remove('active'));
+  document.getElementById('modeLabel').textContent = '点击上方卡片选起点，或直接输入';
+});
+
+// ===== Layer 5: Reflection =====
+let currentEntryId = null;
+let currentDidIt = null;
+
+function renderReflectionCard(data) {
+  const card = document.getElementById('reflectionCard');
+  if (!data.entry_id || !data.diagnoses || !data.diagnoses.length) {
+    card.style.display = 'none';
+    return;
+  }
+  let actionLabel = null;
+  for (const d of data.diagnoses) {
+    if (d.actions && d.actions.length) {
+      actionLabel = d.actions[0].label;
+      break;
+    }
+  }
+  if (!actionLabel) {
+    card.style.display = 'none';
+    return;
+  }
+  card.classList.remove('saved');
+  card.innerHTML = `
+    <div class="reflection-title">🔁 今天的 1 件 · 做了之后</div>
+    <div class="reflection-action">"${escapeHtml(actionLabel)}"</div>
+
+    <div class="reflection-q">1. 做了吗？</div>
+    <div class="reflection-buttons">
+      <button type="button" class="did-btn" data-did="true">✓ 做了</button>
+      <button type="button" class="did-btn" data-did="half">⚡ 做了一半</button>
+      <button type="button" class="did-btn" data-did="false">✗ 没做</button>
+    </div>
+
+    <div class="reflection-q">2. 感受如何？<span style="font-weight:400;opacity:.6">（选填）</span></div>
+    <textarea id="reflection-feeling" placeholder="比如: 做了之后松了口气, 但马上又开始想..."></textarea>
+
+    <div class="reflection-q">3. 学到什么 / 下次不同？<span style="font-weight:400;opacity:.6">（选填）</span></div>
+    <textarea id="reflection-learned" placeholder="比如: 想象本身是中性的, 被反刍还是被演练..."></textarea>
+
+    <button type="button" class="reflection-save" id="reflection-save" disabled onclick="saveReflection()">记下来</button>
+    <div class="reflection-status" id="reflectionStatus"></div>
+  `;
+  card.style.display = 'block';
+
+  card.querySelectorAll('.did-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      card.querySelectorAll('.did-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      currentDidIt = btn.dataset.did;
+      document.getElementById('reflection-save').disabled = false;
+    });
+  });
+}
+
+async function saveReflection() {
+  if (!currentEntryId || !currentDidIt) return;
+  // did_it 二值化: "half" 保守记为 false
+  const didIt = currentDidIt === 'true';
+  const feeling = document.getElementById('reflection-feeling').value.trim();
+  const learned = document.getElementById('reflection-learned').value.trim();
+  document.getElementById('reflectionStatus').textContent = '保存中…';
+  try {
+    const resp = await fetch('/reflection', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({entry_id: currentEntryId, did_it: didIt, feeling, learned}),
+    });
+    if (!resp.ok) {
+      const body = await resp.text();
+      throw new Error(`HTTP ${resp.status}`);
+    }
+    const card = document.getElementById('reflectionCard');
+    card.classList.add('saved');
+    card.innerHTML = `
+      <div class="saved-mark">✓</div>
+      <div class="saved-line">已记下来</div>
+      <div class="saved-hint">这一段会进入你的成长记录。</div>
+    `;
+  } catch (e) {
+    document.getElementById('reflectionStatus').textContent = '保存失败: ' + e.message;
+  }
+}
+
+// ===== Layer 6: Growth banner =====
+async function loadGrowth() {
+  try {
+    const resp = await fetch('/growth');
+    if (!resp.ok) return;
+    const g = await resp.json();
+    if (!g.total_entries) return;
+    const topTags = Object.entries(g.tag_frequency).slice(0, 3)
+      .map(([t, n]) => `${t} · ${n}`).join('  ');
+    const banner = document.createElement('div');
+    banner.className = 'growth-banner';
+    banner.innerHTML = `
+      <span class="growth-streak">🔥 连续 <b>${g.streak_days}</b> 天</span>
+      <span class="growth-meta">${g.total_entries} 次诊断${topTags ? ' · ' + topTags : ''}</span>
+    `;
+    const h1 = document.querySelector('h1');
+    if (h1) h1.parentNode.insertBefore(banner, h1.nextSibling);
+  } catch {}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,491 @@
+[
+  {
+    "id": "K001",
+    "name": "问题创造现实",
+    "category": "意义与目的",
+    "summary": "提问方式决定你能看见的世界；问题的形塑力大于答案。",
+    "diagnosis_tags": [
+      "视角固化",
+      "提问",
+      "框架"
+    ],
+    "trigger": [
+      "僵局",
+      "想换角度"
+    ],
+    "symptoms": [
+      "换问法后答案浮现"
+    ],
+    "root_causes": [
+      "把问题当给定"
+    ],
+    "interventions": [
+      {
+        "label": "写下你真正的问题",
+        "do": "5分钟,无编辑",
+        "when": "today",
+        "min": 5,
+        "mark": "问题写下"
+      },
+      {
+        "label": "问'为什么是这个问题'",
+        "do": "3分钟反问",
+        "when": "today",
+        "min": 3,
+        "mark": "反问了"
+      },
+      {
+        "label": "换3种问法写同一处境",
+        "do": "看哪个问法本身改变了答案",
+        "when": "today",
+        "min": 10,
+        "mark": "3问写出"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻的'问题'是真的，还是被塑形的？"
+    ],
+    "related": [
+      "K014",
+      "K031",
+      "K048",
+      "K039"
+    ]
+  },
+  {
+    "id": "K002",
+    "name": "No One Is Coming",
+    "category": "意义与目的",
+    "summary": "没人会来救你；自我负责是所有主体的起点。",
+    "diagnosis_tags": [
+      "被动等待",
+      "Agency",
+      "主体性"
+    ],
+    "trigger": [
+      "等救世主",
+      "等领导出手"
+    ],
+    "symptoms": [
+      "甩锅",
+      "被动"
+    ],
+    "root_causes": [
+      "把希望挂在他者"
+    ],
+    "interventions": [
+      {
+        "label": "列'我等他来的事'",
+        "do": "3分钟",
+        "when": "now",
+        "min": 3,
+        "mark": "等事列出"
+      },
+      {
+        "label": "每项改成'我能怎么动'",
+        "do": "今天1项标'我自己'",
+        "when": "today",
+        "min": 5,
+        "mark": "至少1项改了"
+      },
+      {
+        "label": "列'我的责任清单'",
+        "do": "不依赖他人,认领10件",
+        "when": "this_week",
+        "min": 30,
+        "mark": "10件领下"
+      }
+    ],
+    "reflection_questions": [
+      "如果没人来，我会怎样？"
+    ],
+    "related": [
+      "K050",
+      "K014",
+      "K039",
+      "K013",
+      "K005"
+    ]
+  },
+  {
+    "id": "K005",
+    "name": "接纳（Acceptance）",
+    "category": "意义与目的",
+    "summary": "接纳不是认输，是停止用能量抵抗已发生的事，把省下来的能量用于能做的。",
+    "diagnosis_tags": [
+      "信念冲突",
+      "ACT",
+      "现实主义"
+    ],
+    "trigger": [
+      "抗拒已发生",
+      "为无法改变的事耗神",
+      "反复反刍"
+    ],
+    "symptoms": [
+      "长期愤懑",
+      "对现状消耗过多情绪",
+      "无法起身行动"
+    ],
+    "root_causes": [
+      "把'应该'当成现实",
+      "用精力打已输的仗"
+    ],
+    "interventions": [
+      {
+        "label": "命名抗拒:我在抵抗什么",
+        "do": "1分钟",
+        "when": "now",
+        "min": 1,
+        "mark": "抗拒写下"
+      },
+      {
+        "label": "问'已经发生了吗'",
+        "do": "如果是,放过",
+        "when": "now",
+        "min": 1,
+        "mark": "问完"
+      },
+      {
+        "label": "省下的能量用在哪",
+        "do": "能控的那部分",
+        "when": "today",
+        "min": 3,
+        "mark": "投向明确"
+      }
+    ],
+    "reflection_questions": [
+      "我在抵抗什么？它已经发生了吗？这份能量还能用在哪？"
+    ],
+    "related": [
+      "K002",
+      "K012",
+      "K017",
+      "K061",
+      "K013"
+    ]
+  },
+  {
+    "id": "K012",
+    "name": "追求幸福",
+    "category": "意义与目的",
+    "summary": "幸福不靠追求，靠'过程设计'；瞄着幸福会偏离。",
+    "diagnosis_tags": [
+      "空虚",
+      "Happiness",
+      "过程取向"
+    ],
+    "trigger": [
+      "不满足感",
+      "目标达成又空"
+    ],
+    "symptoms": [
+      "攀比心",
+      "追峰值"
+    ],
+    "root_causes": [
+      "把幸福当目标当进程"
+    ],
+    "interventions": [
+      {
+        "label": "今天设计1件微小好事",
+        "do": "晨间散步/午后茶",
+        "when": "today",
+        "min": 5,
+        "mark": "小事设计好"
+      },
+      {
+        "label": "停止'追峰值'",
+        "do": "峰值会回归,这是hedonic adaptation",
+        "when": "now",
+        "min": 0,
+        "mark": "停止追"
+      },
+      {
+        "label": "日常满足清单",
+        "do": "10件'这就够了'",
+        "when": "this_week",
+        "min": 15,
+        "mark": "10件写好"
+      }
+    ],
+    "reflection_questions": [
+      "今天我'在'幸福还是'追'幸福？"
+    ],
+    "related": [
+      "K010",
+      "K022",
+      "K039",
+      "K005"
+    ]
+  },
+  {
+    "id": "K013",
+    "name": "Be the change you want to see in the world",
+    "category": "意义与目的",
+    "summary": "想要的世界由你先活成；先活后等不是因果，是唯一路径。",
+    "diagnosis_tags": [
+      "信念冲突",
+      "示范效应",
+      "活出"
+    ],
+    "trigger": [
+      "抱怨不行动"
+    ],
+    "symptoms": [
+      "等他人先变"
+    ],
+    "root_causes": [
+      "把自己从方程里踢掉"
+    ],
+    "interventions": [
+      {
+        "label": "选1个'我抱怨他人不X'",
+        "do": "今晚",
+        "when": "now",
+        "min": 3,
+        "mark": "抱怨项选定"
+      },
+      {
+        "label": "问'我先示范什么'",
+        "do": "具体到时地",
+        "when": "today",
+        "min": 5,
+        "mark": "示范动作写出"
+      },
+      {
+        "label": "每日微行动",
+        "do": "3分钟示范",
+        "when": "this_week",
+        "min": 3,
+        "mark": "持续7天"
+      }
+    ],
+    "reflection_questions": [
+      "我想要世界变成什么样？我先做哪一步？"
+    ],
+    "related": [
+      "K018",
+      "K002",
+      "K050",
+      "K017",
+      "K005"
+    ]
+  },
+  {
+    "id": "K031",
+    "name": "Calling",
+    "category": "意义与目的",
+    "summary": "Calling 不是职业而是回响；做对的事会回响到对的人。",
+    "diagnosis_tags": [
+      "意义缺失",
+      "身份迷茫",
+      "Calling",
+      "使命"
+    ],
+    "trigger": [
+      "感到无意义",
+      "事业迷茫"
+    ],
+    "symptoms": [
+      "一切都对，但都不痛"
+    ],
+    "root_causes": [
+      "未听到自己的回响"
+    ],
+    "interventions": [
+      {
+        "label": "问'我最想解决什么问题'",
+        "do": "5分钟,无编辑",
+        "when": "today",
+        "min": 5,
+        "mark": "问题写下"
+      },
+      {
+        "label": "找'让我成我'的1个动作",
+        "do": "今天做1小时",
+        "when": "today",
+        "min": 60,
+        "mark": "1动作完成"
+      },
+      {
+        "label": "30天Calling实验日志",
+        "do": "每天1行",
+        "when": "this_week",
+        "min": 1,
+        "mark": "日志开了"
+      }
+    ],
+    "reflection_questions": [
+      "我在做什么时最像'我自己'？"
+    ],
+    "related": [
+      "K001",
+      "K006",
+      "K039",
+      "K101"
+    ]
+  },
+  {
+    "id": "K039",
+    "name": "自我意识（what else do you want）",
+    "category": "意义与目的",
+    "summary": "问自己'还要什么'，让隐藏需求浮出；不主动问会被无意识填满。",
+    "diagnosis_tags": [
+      "空虚",
+      "自我对话",
+      "需求识别"
+    ],
+    "trigger": [
+      "疲于应付",
+      "总为他活"
+    ],
+    "symptoms": [
+      "反复答'够了'"
+    ],
+    "root_causes": [
+      "压抑自我需求"
+    ],
+    "interventions": [
+      {
+        "label": "问'还要什么'3次",
+        "do": "不接'够了'停下",
+        "when": "today",
+        "min": 5,
+        "mark": "3次问了"
+      },
+      {
+        "label": "留自我空间",
+        "do": "本周1次独占时段",
+        "when": "this_week",
+        "min": 60,
+        "mark": "独占时段设"
+      },
+      {
+        "label": "列10件'非他人要,我自己要'",
+        "do": "细分",
+        "when": "this_week",
+        "min": 30,
+        "mark": "10件写下"
+      }
+    ],
+    "reflection_questions": [
+      "除了别人要的，我还想要什么？"
+    ],
+    "related": [
+      "K031",
+      "K022",
+      "K057",
+      "K002"
+    ]
+  },
+  {
+    "id": "K101",
+    "name": "米提斯（Metis）",
+    "category": "意义与目的",
+    "summary": "智慧不止'知道'，更包括'知道何时、用何、为何'的实践巧思。",
+    "diagnosis_tags": [
+      "信息撑到饱和",
+      "Metis",
+      "实践智慧"
+    ],
+    "trigger": [
+      "抽象高不能落地",
+      "想找捷径"
+    ],
+    "symptoms": [
+      "知识不能转动作"
+    ],
+    "root_causes": [
+      "把智慧当知识"
+    ],
+    "interventions": [
+      {
+        "label": "知识 vs 巧思区分",
+        "do": "此刻卡的是'知'还是'巧思'",
+        "when": "now",
+        "min": 1,
+        "mark": "区分完成"
+      },
+      {
+        "label": "练'情境-反应-反射'",
+        "do": "看3个情境+你的反射模式",
+        "when": "today",
+        "min": 15,
+        "mark": "3情境写下"
+      },
+      {
+        "label": "用案例校准",
+        "do": "学案例,不是抽象理论",
+        "when": "this_week",
+        "min": 60,
+        "mark": "看3案例"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻缺的是知识还是巧思？"
+    ],
+    "related": [
+      "K086",
+      "K031",
+      "K001"
+    ]
+  },
+  {
+    "id": "K110",
+    "name": "死亡（Death）",
+    "category": "意义与目的",
+    "summary": "把死亡放在视野中央，反而让活着变清晰；它是意义的最强催化剂。",
+    "diagnosis_tags": [
+      "死亡焦虑",
+      "Memento Mori",
+      "有限性"
+    ],
+    "trigger": [
+      "活得拖",
+      "把重要的事推给未来",
+      "丧失意义感"
+    ],
+    "symptoms": [
+      "日复一日但不真活",
+      "重要对话不敢开",
+      "拖延变常态"
+    ],
+    "root_causes": [
+      "死亡被屏蔽在日常之外"
+    ],
+    "interventions": [
+      {
+        "label": "Memento Mori实物提醒",
+        "do": "放一张死亡/有限字样在桌面",
+        "when": "today",
+        "min": 1,
+        "mark": "放了"
+      },
+      {
+        "label": "写'如果30天'清单",
+        "do": "5分钟,真要做的3件",
+        "when": "today",
+        "min": 5,
+        "mark": "30天清单写好"
+      },
+      {
+        "label": "做今天'最后悔没做'的1件事",
+        "do": "没做就今晚做",
+        "when": "today",
+        "min": 10,
+        "mark": "1事做了"
+      }
+    ],
+    "reflection_questions": [
+      "如果今天是我生命的最后一天，我最后悔没做什么？"
+    ],
+    "related": [
+      "K011",
+      "K002",
+      "K031",
+      "K101",
+      "K053"
+    ]
+  }
+]

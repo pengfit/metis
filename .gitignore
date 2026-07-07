@@ -1,0 +1,71 @@
+# ───────────────────────────────────────────────────
+# Metis 项目 — Git 忽略规则
+# ───────────────────────────────────────────────────
+
+# Python 编译产物 / 缓存
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 密钥 — 保留 .env.example 给模板
+.env
+.env.*
+!.env.example
+
+# 运行时 / 临时产物
+tmp/
+*.log
+*.pid
+*.seed
+
+# 操作系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OpenClaw 状态（机器特定, 不入仓）
+openclaw-workspace-state.json
+
+# ───────────────────────────────────────────────────
+# 用户级 / 个人内容（不入项目仓）
+#   memory/        智能体每日笔记
+#   data/          诊断 / 反思 journal
+#   SOUL.md        智能体灵魂设定
+#   IDENTITY.md    智能体身份
+#   AGENTS.md      智能体工作区约定
+#   HEARTBEAT.md   心跳检查
+#   TOOLS.md       本地工具备注
+#   USER.md        用户档案
+#   想要提交时: git add -f <file>
+# ───────────────────────────────────────────────────
+memory/
+data/
+SOUL.md
+IDENTITY.md
+AGENTS.md
+HEARTBEAT.md
+TOOLS.md
+USER.md

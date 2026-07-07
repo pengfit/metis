@@ -1,0 +1,6159 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-07-06T01:41:55.135838+00:00",
+  "source_kb_path": "Knowledge Base/",
+  "schema_ref": "graph-schema.md",
+  "stats": {
+    "nodes": 111,
+    "edges": 270,
+    "categories": 8,
+    "edge_types": [
+      "related",
+      "treats"
+    ],
+    "edge_type_counts": {
+      "related": 269,
+      "treats": 1
+    },
+    "dangling_refs": [],
+    "avg_degree": 4.865,
+    "top_connected": [
+      {
+        "id": "K020",
+        "label": "Event→Thought→Emotion",
+        "category": "认知",
+        "degree": 13
+      },
+      {
+        "id": "K062",
+        "label": "身份认同",
+        "category": "身份",
+        "degree": 12
+      },
+      {
+        "id": "K094",
+        "label": "沃德利地图（Wardley Maps）",
+        "category": "系统与策略",
+        "degree": 9
+      },
+      {
+        "id": "K014",
+        "label": "信念",
+        "category": "身份",
+        "degree": 8
+      },
+      {
+        "id": "K001",
+        "label": "问题创造现实",
+        "category": "意义与目的",
+        "degree": 8
+      },
+      {
+        "id": "K046A",
+        "label": "概率",
+        "category": "认知",
+        "degree": 8
+      },
+      {
+        "id": "K052",
+        "label": "不确定性（Knightian）",
+        "category": "系统与策略",
+        "degree": 8
+      },
+      {
+        "id": "K069",
+        "label": "贝叶斯",
+        "category": "认知",
+        "degree": 8
+      },
+      {
+        "id": "K031",
+        "label": "Calling",
+        "category": "意义与目的",
+        "degree": 7
+      },
+      {
+        "id": "K073",
+        "label": "脆弱和反脆弱",
+        "category": "情绪",
+        "degree": 7
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "K011",
+      "label": "To be human",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "完整的人性包含脆弱、矛盾、有限，而不只是'更高更快'。",
+        "diagnosis_tags": [
+          "人性",
+          "完整性",
+          "脆弱",
+          "存在主义"
+        ],
+        "trigger": [
+          "追求完美自我",
+          "否定自己的阴影面",
+          "把'成为人'窄化为'成为强者'"
+        ],
+        "symptoms": [
+          "对缺陷不容",
+          "用力过猛的生活"
+        ],
+        "root_causes": [
+          "英雄主义叙事垄断",
+          "阴影投射未整合"
+        ],
+        "interventions": [
+          "整合阴影",
+          "承认有限性",
+          "读存在主义"
+        ],
+        "reflection_questions": [
+          "我今天允许自己完整了吗？"
+        ],
+        "related": [
+          "K014",
+          "K028",
+          "K062",
+          "K101",
+          "K110"
+        ]
+      }
+    },
+    {
+      "id": "K014",
+      "label": "信念",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "信念是行为的地基；改变行为先改信念，信念变了世界就跟着变。",
+        "diagnosis_tags": [
+          "信念",
+          "限制性信念",
+          "认知重构",
+          "框架"
+        ],
+        "trigger": [
+          "想突破瓶颈",
+          "反复失败同一模式",
+          "知道该做却做不到"
+        ],
+        "symptoms": [
+          "重复同一类失败",
+          "理论正确但身体抗拒"
+        ],
+        "root_causes": [
+          "底层假设未更新",
+          "把前提当事实"
+        ],
+        "interventions": [
+          "识别信念",
+          "问'这是真的吗'",
+          "叙事改写"
+        ],
+        "reflection_questions": [
+          "我此刻最大的限制性信念是什么？它在保护我还是限制我？"
+        ],
+        "related": [
+          "K001",
+          "K015",
+          "K020",
+          "K048"
+        ]
+      }
+    },
+    {
+      "id": "K015",
+      "label": "扮演（as if）",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "假装，直到成真：身份的杠杆在行为而非心态。",
+        "diagnosis_tags": [
+          "行为先于认同",
+          "身份表演",
+          "暴露"
+        ],
+        "trigger": [
+          "想有却还没到",
+          "不敢做'不是自己的人'"
+        ],
+        "symptoms": [
+          "等'准备好了'才动",
+          "永远在自我审查"
+        ],
+        "root_causes": [
+          "身份认同滞后于行动"
+        ],
+        "interventions": [
+          "先做再想",
+          "暴露疗法",
+          "一周角色扮演实验"
+        ],
+        "reflection_questions": [
+          "如果我已经是我想成为的那个人，我今天会做什么？"
+        ],
+        "related": [
+          "K014",
+          "K053",
+          "K062"
+        ]
+      }
+    },
+    {
+      "id": "K028",
+      "label": "自我和谐",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "内外一致，不拧巴；不一致的小事会消耗大量能量。",
+        "diagnosis_tags": [
+          "内在冲突",
+          "认知失调",
+          "整合"
+        ],
+        "trigger": [
+          "长期疲惫",
+          "莫名不爽",
+          "做事内耗"
+        ],
+        "symptoms": [
+          "选择困难",
+          "常改主意",
+          "决策疲劳"
+        ],
+        "root_causes": [
+          "价值冲突未对齐",
+          "多自我未整合"
+        ],
+        "interventions": [
+          "价值排序",
+          "听身体信号",
+          "减法"
+        ],
+        "reflection_questions": [
+          "今天哪一刻我在和自己打架？"
+        ],
+        "related": [
+          "K053",
+          "K054",
+          "K062"
+        ]
+      }
+    },
+    {
+      "id": "K029",
+      "label": "24种性格 (Top 5)",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "性格不止一套标签；用 Top 5 取代 One Type 更立体。",
+        "diagnosis_tags": [
+          "人格分类",
+          "自我认知工具",
+          "MBTI",
+          "Big Five",
+          "Enneagram"
+        ],
+        "trigger": [
+          "想理解自己",
+          "和他人冲突",
+          "选团队角色"
+        ],
+        "symptoms": [
+          "单标签失真",
+          "把自己装进框里"
+        ],
+        "root_causes": [
+          "分类简化过度",
+          "把类型当本质"
+        ],
+        "interventions": [
+          "多体系交叉看",
+          "列出 Top 5 维度"
+        ],
+        "reflection_questions": [
+          "我的 Top 5 个性维度是哪些？"
+        ],
+        "related": [
+          "K028",
+          "K053",
+          "K062"
+        ]
+      }
+    },
+    {
+      "id": "K030",
+      "label": "Find who you are",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "自我不是找到的，是经由问题-工作-修正而浮现的。",
+        "diagnosis_tags": [
+          "自我发现",
+          "成长过程",
+          "工作取向"
+        ],
+        "trigger": [
+          "身份迷茫",
+          "想换生活",
+          "中段不前"
+        ],
+        "symptoms": [
+          "不知道自己想要什么",
+          "做决定像猜"
+        ],
+        "root_causes": [
+          "未让问题穿过自己"
+        ],
+        "interventions": [
+          "问大问题",
+          "做困难的事",
+          "让反馈说话"
+        ],
+        "reflection_questions": [
+          "我正在解决的'问题'正在塑造哪个我？"
+        ],
+        "related": [
+          "K001",
+          "K031",
+          "K062"
+        ]
+      }
+    },
+    {
+      "id": "K045",
+      "label": "我生了不是这样的",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "出生剧本不是判决；'本来的我'是可重写的变量。",
+        "diagnosis_tags": [
+          "宿命论",
+          "身份固化",
+          "原生家庭叙事"
+        ],
+        "trigger": [
+          "拿原生家庭开脱",
+          "把自己当下限"
+        ],
+        "symptoms": [
+          "反复说'我天生就…'"
+        ],
+        "root_causes": [
+          "把出生当终点而非起点"
+        ],
+        "interventions": [
+          "识别'基因/童年=命运'叙事",
+          "重写故事"
+        ],
+        "reflection_questions": [
+          "我真的'天生就这样'，还是我选择这样？"
+        ],
+        "related": [
+          "K014",
+          "K030",
+          "K048",
+          "K062"
+        ]
+      }
+    },
+    {
+      "id": "K053",
+      "label": "3个我（进程、界面、内核）",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "内核稳定，界面灵活，进程是当下任务；改界面不改内核。",
+        "diagnosis_tags": [
+          "自我结构",
+          "角色 vs 自我"
+        ],
+        "trigger": [
+          "身份混淆",
+          "换场景失重"
+        ],
+        "symptoms": [
+          "把角色当自我",
+          "卸下角色就空"
+        ],
+        "root_causes": [
+          "内核与界面未分层"
+        ],
+        "interventions": [
+          "识别内核（不变）",
+          "区分角色（可换）",
+          "问'此刻我在哪个进程'"
+        ],
+        "reflection_questions": [
+          "我现在的'我'是哪一层？"
+        ],
+        "related": [
+          "K028",
+          "K054",
+          "K062",
+          "K015"
+        ]
+      }
+    },
+    {
+      "id": "K054",
+      "label": "君子不器",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "不要被塑成单一工具；留接口而非定死形状。",
+        "diagnosis_tags": [
+          "角色固化",
+          "路径依赖",
+          "T型人才"
+        ],
+        "trigger": [
+          "过早定型",
+          "只能做某件事"
+        ],
+        "symptoms": [
+          "只会一招",
+          "换赛道无能力迁移"
+        ],
+        "root_causes": [
+          "单一认同过强"
+        ],
+        "interventions": [
+          "T 型能力",
+          "保留好奇心",
+          "拒绝过度身份绑定"
+        ],
+        "reflection_questions": [
+          "如果我现在的标签消失了，我是谁？"
+        ],
+        "related": [
+          "K053",
+          "K062",
+          "K030"
+        ]
+      }
+    },
+    {
+      "id": "K062",
+      "label": "身份认同",
+      "type": "concept",
+      "category": "身份",
+      "props": {
+        "summary": "身份是行为的持续模式；想做新事，先认领新身份。",
+        "diagnosis_tags": [
+          "身份建构",
+          "行为地基",
+          "小步认同"
+        ],
+        "trigger": [
+          "转型期",
+          "行为与自我叙述不一致"
+        ],
+        "symptoms": [
+          "做了不像自己",
+          "坚持不下去"
+        ],
+        "root_causes": [
+          "身份/行为不同步"
+        ],
+        "interventions": [
+          "小步认同",
+          "公开宣告",
+          "复盘记录"
+        ],
+        "reflection_questions": [
+          "我此刻是'谁'？这个'谁'我想继续当吗？"
+        ],
+        "related": [
+          "K014",
+          "K015",
+          "K053",
+          "K028"
+        ]
+      }
+    },
+    {
+      "id": "K020",
+      "label": "Event→Thought→Emotion",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "情绪不是事件直接给的，是认知扭曲塑造的（ABC 模型）。",
+        "diagnosis_tags": [
+          "情绪 ABC",
+          "认知扭曲",
+          "CBT",
+          "自动化思维"
+        ],
+        "trigger": [
+          "无端情绪涌出",
+          "过度反应",
+          "反复被小事激惹"
+        ],
+        "symptoms": [
+          "小题大做",
+          "灾难化",
+          "读心术",
+          "情绪化决策"
+        ],
+        "root_causes": [
+          "把事件和解读混淆",
+          "自动化思维未被观察"
+        ],
+        "interventions": [
+          "识别自动思维",
+          "问'证据是什么'",
+          "正念暂停"
+        ],
+        "reflection_questions": [
+          "我现在的情绪背后，我在'想'什么？"
+        ],
+        "related": [
+          "K017",
+          "K067",
+          "K073",
+          "K078"
+        ]
+      }
+    },
+    {
+      "id": "K046A",
+      "label": "概率",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "世界是分布，不是单点；用概率思考代替确定论。",
+        "diagnosis_tags": [
+          "不确定性",
+          "概率思维",
+          "分布vs点估计"
+        ],
+        "trigger": [
+          "做高风险决策",
+          "想'会不会成功'"
+        ],
+        "symptoms": [
+          "all-or-nothing 思维",
+          "赌一把心态"
+        ],
+        "root_causes": [
+          "把分布当点估计"
+        ],
+        "interventions": [
+          "贝叶斯更新",
+          "做预期值",
+          "画分布"
+        ],
+        "reflection_questions": [
+          "这件事的真实成功率分布是什么？我在哪一档？"
+        ],
+        "related": [
+          "K046B",
+          "K052",
+          "K069",
+          "K079"
+        ]
+      }
+    },
+    {
+      "id": "K047",
+      "label": "问自己",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "高质量的问题是高价值的工具；提问是最便宜的杠杆。",
+        "diagnosis_tags": [
+          "元认知",
+          "提问能力",
+          "5 Whys"
+        ],
+        "trigger": [
+          "停滞",
+          "想新角度",
+          "决策瘫痪"
+        ],
+        "symptoms": [
+          "答案不出",
+          "在原地转圈"
+        ],
+        "root_causes": [
+          "问错了问题"
+        ],
+        "interventions": [
+          "问'该问什么问题'",
+          "教练式提问",
+          "5 Whys"
+        ],
+        "reflection_questions": [
+          "我现在问的问题，是这个问题吗？"
+        ],
+        "related": [
+          "K001",
+          "K030",
+          "K079"
+        ]
+      }
+    },
+    {
+      "id": "K048",
+      "label": "叙事（故事）",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "我们活在自己讲的故事里；改写叙事 = 改写现实。",
+        "diagnosis_tags": [
+          "叙事疗法",
+          "建构主义",
+          "故事改写"
+        ],
+        "trigger": [
+          "卡在'我就是这样的'"
+        ],
+        "symptoms": [
+          "自我叙述锁死",
+          "反复同一剧本"
+        ],
+        "root_causes": [
+          "叙事一旦定形就抗拒新事实"
+        ],
+        "interventions": [
+          "找例外",
+          "改写关键事件",
+          "招募听众"
+        ],
+        "reflection_questions": [
+          "我讲的'我的故事'是事实，还是编辑后的版本？"
+        ],
+        "related": [
+          "K014",
+          "K020",
+          "K045"
+        ]
+      }
+    },
+    {
+      "id": "K057",
+      "label": "自我觉得论（SDT）",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "自主、胜任、归属三需求被满足时，动机与幸福最稳。",
+        "diagnosis_tags": [
+          "SDT",
+          "内在动机",
+          "三需求"
+        ],
+        "trigger": [
+          "空心病",
+          "外驱感到倦怠",
+          "做事无感"
+        ],
+        "symptoms": [
+          "奖励失效",
+          "做事像机器"
+        ],
+        "root_causes": [
+          "三需求被剥夺"
+        ],
+        "interventions": [
+          "给选择权",
+          "匹配胜任度",
+          "建立深度关系"
+        ],
+        "reflection_questions": [
+          "我的三需求现在哪个最缺？"
+        ],
+        "related": [
+          "K022",
+          "K031",
+          "K042"
+        ]
+      }
+    },
+    {
+      "id": "K058",
+      "label": "自由能（Free Energy）",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "主动降低内外预测误差；行动是减少自由能的最快路径。",
+        "diagnosis_tags": [
+          "主动推理",
+          "情绪起源",
+          "行动优先"
+        ],
+        "trigger": [
+          "面对预期不符",
+          "决策瘫痪"
+        ],
+        "symptoms": [
+          "卡住不动",
+          "内在预测不断被打脸"
+        ],
+        "root_causes": [
+          "想过多/动过少"
+        ],
+        "interventions": [
+          "先行动再校准",
+          "用身体做实验"
+        ],
+        "reflection_questions": [
+          "我现在该做的最小动作是什么？"
+        ],
+        "related": [
+          "K052",
+          "K079"
+        ]
+      }
+    },
+    {
+      "id": "K067",
+      "label": "偏置（Bias）",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "偏置是系统的、可预测的错误方向；先承认才能校对。",
+        "diagnosis_tags": [
+          "认知偏置",
+          "决策陷阱",
+          "元认知"
+        ],
+        "trigger": [
+          "重要决策",
+          "与人冲突",
+          "想'我是不是想多了'"
+        ],
+        "symptoms": [
+          "反复踩同一坑",
+          "认为自己客观"
+        ],
+        "root_causes": [
+          "演化-启发式代价"
+        ],
+        "interventions": [
+          "列清单去偏见",
+          "外部视角",
+          "预验尸 (pre-mortem)"
+        ],
+        "reflection_questions": [
+          "这件事我踩过的偏置清单里哪个最像？"
+        ],
+        "related": [
+          "K020",
+          "K076",
+          "K078"
+        ]
+      }
+    },
+    {
+      "id": "K068",
+      "label": "分布",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "看均值会忽略尾部；看分布才能看见可能。",
+        "diagnosis_tags": [
+          "统计素养",
+          "重尾",
+          "中位 vs 平均"
+        ],
+        "trigger": [
+          "凭印象决策",
+          "忽视极值"
+        ],
+        "symptoms": [
+          "突然被打脸",
+          "平均数陷阱"
+        ],
+        "root_causes": [
+          "统计直觉未训练"
+        ],
+        "interventions": [
+          "画分布",
+          "问'最坏最好'",
+          "对比中位"
+        ],
+        "reflection_questions": [
+          "我是按点估计还是按分布思考？"
+        ],
+        "related": [
+          "K046A",
+          "K049",
+          "K069",
+          "K077"
+        ]
+      }
+    },
+    {
+      "id": "K069",
+      "label": "贝叶斯",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "信念随证据更新；好判断不是更准，是更快纠错。",
+        "diagnosis_tags": [
+          "信念更新",
+          "概率推理",
+          "先验/后验"
+        ],
+        "trigger": [
+          "证据出现",
+          "看法反复",
+          "想避免固执"
+        ],
+        "symptoms": [
+          "坚持初判不变",
+          "事后合理化"
+        ],
+        "root_causes": [
+          "确认偏置强"
+        ],
+        "interventions": [
+          "先给先验",
+          "滚动更新",
+          "承认置信度"
+        ],
+        "reflection_questions": [
+          "如果新证据出现，我会改主意吗？我给先验了吗？"
+        ],
+        "related": [
+          "K046A",
+          "K067",
+          "K079",
+          "K080"
+        ]
+      }
+    },
+    {
+      "id": "K070",
+      "label": "信息价值",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "信息不是免费的，值钱的是它改变决策的程度。",
+        "diagnosis_tags": [
+          "信息经济学",
+          "决策驱动",
+          "调研止步"
+        ],
+        "trigger": [
+          "信息饥渴",
+          "调研上瘾",
+          "为'知道'而知道"
+        ],
+        "symptoms": [
+          "知道再多也不动"
+        ],
+        "root_causes": [
+          "为'知道'而知道"
+        ],
+        "interventions": [
+          "问'这信息会改变什么动作'"
+        ],
+        "reflection_questions": [
+          "如果我现在没有任何动作，还需要更多信息吗？"
+        ],
+        "related": [
+          "K050",
+          "K046A",
+          "K080"
+        ]
+      }
+    },
+    {
+      "id": "K076",
+      "label": "偏差（Error）",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "偏差是测量里的系统偏离；与偏置（认知陷阱）同字不同义。",
+        "diagnosis_tags": [
+          "统计误差",
+          "测量学",
+          "校准"
+        ],
+        "trigger": [
+          "复盘",
+          "数据出错",
+          "工具不可靠"
+        ],
+        "symptoms": [
+          "持续同向偏离"
+        ],
+        "root_causes": [
+          "工具/方法问题"
+        ],
+        "interventions": [
+          "校准",
+          "对照基线"
+        ],
+        "reflection_questions": [
+          "我的判断系统性偏向哪边？"
+        ],
+        "related": [
+          "K067",
+          "K068",
+          "K069"
+        ]
+      }
+    },
+    {
+      "id": "K077",
+      "label": "回归均值",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "极端表现会被拉回均值；不要把偶然当能力。",
+        "diagnosis_tags": [
+          "统计回归",
+          "反英雄主义",
+          "样本量"
+        ],
+        "trigger": [
+          "突然爆发",
+          "突然崩盘",
+          "小样本兑现"
+        ],
+        "symptoms": [
+          "把好运当中实力",
+          "把霉运当失败"
+        ],
+        "root_causes": [
+          "小样本误判"
+        ],
+        "interventions": [
+          "累计看、长期看",
+          "区分过程与结果"
+        ],
+        "reflection_questions": [
+          "这件事主要是运气还是技能？"
+        ],
+        "related": [
+          "K068",
+          "K078",
+          "K071"
+        ]
+      }
+    },
+    {
+      "id": "K078",
+      "label": "前景理论",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "人对损失更敏感；参考点决定一切价值判断。",
+        "diagnosis_tags": [
+          "损失厌恶",
+          "参考点依赖",
+          "S 型曲线"
+        ],
+        "trigger": [
+          "谈判",
+          "定价",
+          "心理契约破裂"
+        ],
+        "symptoms": [
+          "得之我命、失之我痛"
+        ],
+        "root_causes": [
+          "参考点设错"
+        ],
+        "interventions": [
+          "换参考点",
+          "拆损失为可承受单元"
+        ],
+        "reflection_questions": [
+          "我现在的参考点是什么？换它会改变什么？"
+        ],
+        "related": [
+          "K020",
+          "K067",
+          "K077",
+          "K032"
+        ]
+      }
+    },
+    {
+      "id": "K079",
+      "label": "OODA 环",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "观察-判断-决策-行动的循环要快；快循环者赢。",
+        "diagnosis_tags": [
+          "决策循环",
+          "执行节奏",
+          "John Boyd"
+        ],
+        "trigger": [
+          "竞争环境",
+          "信息不全却要动"
+        ],
+        "symptoms": [
+          "想清楚再动",
+          "被人超越"
+        ],
+        "root_causes": [
+          "环太慢"
+        ],
+        "interventions": [
+          "缩短循环",
+          "用小代价试错"
+        ],
+        "reflection_questions": [
+          "我现在的 OODA 卡在哪一环？"
+        ],
+        "related": [
+          "K046A",
+          "K069",
+          "K080",
+          "K052"
+        ]
+      }
+    },
+    {
+      "id": "K080",
+      "label": "预测",
+      "type": "concept",
+      "category": "认知",
+      "props": {
+        "summary": "预测的目的不是'对'，是更早发现错。",
+        "diagnosis_tags": [
+          "Forecasting",
+          "superforecasting",
+          "Brier Score"
+        ],
+        "trigger": [
+          "重大预测",
+          "避免偏置"
+        ],
+        "symptoms": [
+          "自信爆棚",
+          "事后合理化"
+        ],
+        "root_causes": [
+          "没设校准点"
+        ],
+        "interventions": [
+          "写下预测 + 时点",
+          "Brier 分数复盘"
+        ],
+        "reflection_questions": [
+          "我今天最重要的一个预测是什么？置信度？"
+        ],
+        "related": [
+          "K069",
+          "K046A",
+          "K079"
+        ]
+      }
+    },
+    {
+      "id": "K059",
+      "label": "高认知负荷",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "工作记忆带宽有限；过载时学习、判断、决策全面降级。",
+        "diagnosis_tags": [
+          "认知负载",
+          "决策疲劳",
+          "工作记忆"
+        ],
+        "trigger": [
+          "信息爆炸",
+          "多线并进",
+          "被打断频繁"
+        ],
+        "symptoms": [
+          "判断下降",
+          "情绪化决策",
+          "易怒易忘"
+        ],
+        "root_causes": [
+          "外挂不足",
+          "环境噪音大"
+        ],
+        "interventions": [
+          "外部化清单",
+          "单线程",
+          "减少切换"
+        ],
+        "reflection_questions": [
+          "我现在的工作记忆被什么占满？"
+        ],
+        "related": [
+          "K026",
+          "K068",
+          "K081"
+        ]
+      }
+    },
+    {
+      "id": "K081",
+      "label": "认知负载（理论）",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "短期记忆有限；学习设计要让多余负荷让位于相关负荷。",
+        "diagnosis_tags": [
+          "教学/学习设计",
+          "工作记忆",
+          "内在/外在/相关负荷"
+        ],
+        "trigger": [
+          "讲解无反应",
+          "学不进去"
+        ],
+        "symptoms": [
+          "听懂但用不出"
+        ],
+        "root_causes": [
+          "工作记忆被无关占用"
+        ],
+        "interventions": [
+          "分段",
+          "示例先",
+          "减少切换"
+        ],
+        "reflection_questions": [
+          "我这一刻工作记忆塞了几个不相关的？"
+        ],
+        "related": [
+          "K059",
+          "K082",
+          "K088"
+        ]
+      }
+    },
+    {
+      "id": "K082",
+      "label": "ICAP 学习层级",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "被动-主动-建构-互动四层；越建构越深。",
+        "diagnosis_tags": [
+          "学习层级",
+          "认知投入",
+          "建构主义"
+        ],
+        "trigger": [
+          "学了不会用",
+          "学完忘光"
+        ],
+        "symptoms": [
+          "看视频打卡式'学习'"
+        ],
+        "root_causes": [
+          "学习方式停在被动层"
+        ],
+        "interventions": [
+          "主动输出",
+          "教别人",
+          "动手做项目"
+        ],
+        "reflection_questions": [
+          "我今天的学习落在 ICAP 哪一层？"
+        ],
+        "related": [
+          "K083",
+          "K085",
+          "K086",
+          "K087"
+        ]
+      }
+    },
+    {
+      "id": "K083",
+      "label": "刻意练习",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "练习不是重复；是跳出舒适区 + 反馈 + 修正。",
+        "diagnosis_tags": [
+          "Deliberate Practice",
+          "进阶",
+          "平台期"
+        ],
+        "trigger": [
+          "卡在平台期",
+          "努力无进展"
+        ],
+        "symptoms": [
+          "练了 100 小时原地"
+        ],
+        "root_causes": [
+          "舒适区重复"
+        ],
+        "interventions": [
+          "找教练",
+          "立即反馈",
+          "专攻弱项"
+        ],
+        "reflection_questions": [
+          "我今天的练习是舒适区还是有挑战？"
+        ],
+        "related": [
+          "K082",
+          "K086",
+          "K087",
+          "K088"
+        ]
+      }
+    },
+    {
+      "id": "K084",
+      "label": "表征 / 图式 / 心智 / 解释",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "心智不是事实的拷贝，是'表征+图式'的解释机器。",
+        "diagnosis_tags": [
+          "认知表征",
+          "图式理论",
+          "心智模型"
+        ],
+        "trigger": [
+          "理解别人不同看法",
+          "教人学不会"
+        ],
+        "symptoms": [
+          "鸡同鸭讲",
+          "表达自以为清楚"
+        ],
+        "root_causes": [
+          "没意识到心智有图式过滤"
+        ],
+        "interventions": [
+          "画图",
+          "找对方表征",
+          "类比"
+        ],
+        "reflection_questions": [
+          "我现在的解释框架漏掉了什么？"
+        ],
+        "related": [
+          "K020",
+          "K048",
+          "K086"
+        ]
+      }
+    },
+    {
+      "id": "K085",
+      "label": "综合知识",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "知道得多不叫懂；多领域能串通才是综合。",
+        "diagnosis_tags": [
+          "跨学科",
+          "综合能力",
+          "迁移"
+        ],
+        "trigger": [
+          "专家反被知识锁死",
+          "创新瓶颈"
+        ],
+        "symptoms": [
+          "懂深但不通",
+          "会卡在领域内"
+        ],
+        "root_causes": [
+          "未建领域间桥梁"
+        ],
+        "interventions": [
+          "强迫跨域类比",
+          "学第二专长"
+        ],
+        "reflection_questions": [
+          "我能在三个领域里讲同一件事吗？"
+        ],
+        "related": [
+          "K086",
+          "K082",
+          "K001"
+        ]
+      }
+    },
+    {
+      "id": "K086",
+      "label": "默会知识",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "能做的说不出的知识；高手的核心优势。",
+        "diagnosis_tags": [
+          "隐性知识",
+          "Tacit knowledge",
+          "技能本体"
+        ],
+        "trigger": [
+          "教不会别人",
+          "新手缺经验感"
+        ],
+        "symptoms": [
+          "知道却表达不出"
+        ],
+        "root_causes": [
+          "实践未明示化"
+        ],
+        "interventions": [
+          "结对",
+          "记录回放",
+          "情境化案例"
+        ],
+        "reflection_questions": [
+          "我最值钱的默会知识是什么？怎么显性化？"
+        ],
+        "related": [
+          "K083",
+          "K085",
+          "K082",
+          "K087"
+        ]
+      }
+    },
+    {
+      "id": "K087",
+      "label": "反馈（Feedback）",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "没有反馈就没有学习；反馈越快越具体，能力曲线越陡。",
+        "diagnosis_tags": [
+          "反馈循环",
+          "刻意练习",
+          "纠错",
+          "教练"
+        ],
+        "trigger": [
+          "学了没进展",
+          "不知道自己哪里错",
+          "重复同一坑"
+        ],
+        "symptoms": [
+          "凭感觉练",
+          "努力但低效",
+          "自我感觉良好却停滞"
+        ],
+        "root_causes": [
+          "缺外部标尺",
+          "反馈延迟",
+          "没人敢说真话"
+        ],
+        "interventions": [
+          "立即反馈（计时器、教练、AI）",
+          "录音/录屏自检",
+          "找'会说真话'的同伴",
+          "建立量化指标"
+        ],
+        "reflection_questions": [
+          "我这周最快的反馈回路是什么？没有反馈是因为没设还是没要？"
+        ],
+        "related": [
+          "K083",
+          "K082",
+          "K086",
+          "K088"
+        ]
+      }
+    },
+    {
+      "id": "K088",
+      "label": "可取的困难",
+      "type": "concept",
+      "category": "学习",
+      "props": {
+        "summary": "有些困难提升能力，有些耗竭能力；选前者。",
+        "diagnosis_tags": [
+          "Desirable Difficulties",
+          "学习阻力",
+          "间隔/交错"
+        ],
+        "trigger": [
+          "学习总绕开难",
+          "看似舒服但学不到"
+        ],
+        "symptoms": [
+          "重复已会的"
+        ],
+        "root_causes": [
+          "把'容易'当目标"
+        ],
+        "interventions": [
+          "间隔练习",
+          "交错练习",
+          "检索练习"
+        ],
+        "reflection_questions": [
+          "我现在的'难'是'可取的'还是'耗竭的'？"
+        ],
+        "related": [
+          "K083",
+          "K081",
+          "K082",
+          "K087"
+        ]
+      }
+    },
+    {
+      "id": "K006",
+      "label": "理想 + 现实 + Action",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "理想画方向，现实给约束；二者之间只活 Action。",
+        "diagnosis_tags": [
+          "三角定位",
+          "执行",
+          "现实主义"
+        ],
+        "trigger": [
+          "有梦但瘫",
+          "抱怨现实"
+        ],
+        "symptoms": [
+          "空谈",
+          "总在等条件齐"
+        ],
+        "root_causes": [
+          "把理想当感受不当目标"
+        ],
+        "interventions": [
+          "理想变可执行命题",
+          "现实变约束清单",
+          "每天移动 1%"
+        ],
+        "reflection_questions": [
+          "今天我的 Action 是什么？"
+        ],
+        "related": [
+          "K031",
+          "K021",
+          "K026"
+        ]
+      }
+    },
+    {
+      "id": "K016",
+      "label": "环境",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "环境是隐形的执行系统；改环境比改意志便宜 10 倍。",
+        "diagnosis_tags": [
+          "环境设计",
+          "助推",
+          "nudge"
+        ],
+        "trigger": [
+          "屡次失败同一行为",
+          "意志力耗尽"
+        ],
+        "symptoms": [
+          "天天抵抗诱惑"
+        ],
+        "root_causes": [
+          "环境阻力大，意志力不够"
+        ],
+        "interventions": [
+          "把诱惑移出视线",
+          "加默认动作",
+          "换物理位置"
+        ],
+        "reflection_questions": [
+          "我现在的环境是为'我想成为的人'设计的吗？"
+        ],
+        "related": [
+          "K020",
+          "K021",
+          "K026"
+        ]
+      }
+    },
+    {
+      "id": "K021",
+      "label": "Focus",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "Focus 是对'不做什么'的勇气。",
+        "diagnosis_tags": [
+          "专注",
+          "优先级",
+          "砍事"
+        ],
+        "trigger": [
+          "多线并发",
+          "什么都要做"
+        ],
+        "symptoms": [
+          "忙碌却没产出"
+        ],
+        "root_causes": [
+          "拒绝成本太高"
+        ],
+        "interventions": [
+          "一句话说清目标",
+          "砍一半清单",
+          "时间块"
+        ],
+        "reflection_questions": [
+          "我今天不做哪三件事？"
+        ],
+        "related": [
+          "K006",
+          "K033",
+          "K034"
+        ]
+      }
+    },
+    {
+      "id": "K023",
+      "label": "Change：A/B/C 渐进/突变",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "A 微调、B 改造、C 重启；知道在哪一档才不空转。",
+        "diagnosis_tags": [
+          "变革三档",
+          "匹配度",
+          "档位感"
+        ],
+        "trigger": [
+          "想改但不知从何改",
+          "改了没用"
+        ],
+        "symptoms": [
+          "过度努力却微小进展"
+        ],
+        "root_causes": [
+          "档位错了：用 C 模式做 A 事"
+        ],
+        "interventions": [
+          "先诊断在 A/B/C 哪一档"
+        ],
+        "reflection_questions": [
+          "这件事的'档位'是哪一档？我用对工具了吗？"
+        ],
+        "related": [
+          "K016",
+          "K006",
+          "K060"
+        ]
+      }
+    },
+    {
+      "id": "K024",
+      "label": "例行公事（Routines）",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "把重要但不紧急的事装进例行；意志力最贵的资源要外包。",
+        "diagnosis_tags": [
+          "Routines",
+          "节奏",
+          "触发-动作"
+        ],
+        "trigger": [
+          "想做总没做",
+          "靠心情启动"
+        ],
+        "symptoms": [
+          "总是'今天先这样'"
+        ],
+        "root_causes": [
+          "决定权外包给状态"
+        ],
+        "interventions": [
+          "时间锚点",
+          "触发-动作配对",
+          "两分钟规则"
+        ],
+        "reflection_questions": [
+          "我的核心例行是什么？哪天断了？"
+        ],
+        "related": [
+          "K016",
+          "K021",
+          "K026"
+        ]
+      }
+    },
+    {
+      "id": "K025",
+      "label": "take time off",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "战略性撤退是生产力工具，不是奖励。",
+        "diagnosis_tags": [
+          "休息",
+          "恢复",
+          "反脆弱"
+        ],
+        "trigger": [
+          "越忙越焦虑",
+          "灵感匮乏",
+          "效率骤降"
+        ],
+        "symptoms": [
+          "效率边际归零"
+        ],
+        "root_causes": [
+          "把休息当偷懒"
+        ],
+        "interventions": [
+          "强制休",
+          "周末断联",
+          "散步"
+        ],
+        "reflection_questions": [
+          "我今天允许自己停了吗？"
+        ],
+        "related": [
+          "K024",
+          "K042",
+          "K032",
+          "K073"
+        ]
+      }
+    },
+    {
+      "id": "K026",
+      "label": "写下来（A.B.C）",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "心智外移到纸上；'写'是认知的廉价外骨骼。",
+        "diagnosis_tags": [
+          "外化思考",
+          "笔记",
+          "ABC 笔记法"
+        ],
+        "trigger": [
+          "脑子塞爆",
+          "反复想同一件事"
+        ],
+        "symptoms": [
+          "停车想事",
+          "入睡前脑子转"
+        ],
+        "root_causes": [
+          "靠脑记一切"
+        ],
+        "interventions": [
+          "晨间页",
+          "一图一页",
+          "清单"
+        ],
+        "reflection_questions": [
+          "我现在最该外写的一件事是什么？"
+        ],
+        "related": [
+          "K020",
+          "K024",
+          "K059"
+        ]
+      }
+    },
+    {
+      "id": "K034",
+      "label": "Say No",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "说不的成本总被低估；说不的能力 = 自由。",
+        "diagnosis_tags": [
+          "拒绝",
+          "边界",
+          "默认拒绝"
+        ],
+        "trigger": [
+          "被无限占用",
+          "答应后悔",
+          "时间被排满"
+        ],
+        "symptoms": [
+          "时间被别人排"
+        ],
+        "root_causes": [
+          "把'是'当默认"
+        ],
+        "interventions": [
+          "默认拒绝",
+          "缓冲句",
+          "可视化日历"
+        ],
+        "reflection_questions": [
+          "我今天哪一句话该说不？"
+        ],
+        "related": [
+          "K021",
+          "K033",
+          "K044"
+        ]
+      }
+    },
+    {
+      "id": "K035",
+      "label": "拖延",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "拖延不是懒，是情绪管理失败（怕失败/求完美/怕无聊）。",
+        "diagnosis_tags": [
+          "拖延",
+          "执行困难",
+          "完美主义",
+          "情绪回避"
+        ],
+        "trigger": [
+          "任务有情绪重量",
+          "时限未到"
+        ],
+        "symptoms": [
+          "收藏很多课程不练",
+          "迟迟不行动",
+          "等状态"
+        ],
+        "root_causes": [
+          "情绪回避",
+          "完美主义前置"
+        ],
+        "interventions": [
+          "5秒法则",
+          "降启动成本",
+          "WOOP",
+          "情绪命名"
+        ],
+        "reflection_questions": [
+          "今天真正阻止我的到底是什么？"
+        ],
+        "related": [
+          "K036",
+          "K060",
+          "K062",
+          "K018"
+        ]
+      }
+    },
+    {
+      "id": "K036",
+      "label": "完美主义",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "完美主义是拖延的体面别名；先丑再好。",
+        "diagnosis_tags": [
+          "完美主义",
+          "标准过高",
+          "怕评"
+        ],
+        "trigger": [
+          "想做出手",
+          "怕被评价",
+          "怕不完美"
+        ],
+        "symptoms": [
+          "开不了头",
+          "做一半推翻",
+          "迟迟不交"
+        ],
+        "root_causes": [
+          "把自我价值绑在结果"
+        ],
+        "interventions": [
+          "画圆练习",
+          "设丑截止",
+          "限量时间",
+          "先交 70 分版本"
+        ],
+        "reflection_questions": [
+          "如果只能交一份 70 分，我今天交吗？"
+        ],
+        "related": [
+          "K035",
+          "K038",
+          "K018"
+        ]
+      }
+    },
+    {
+      "id": "K038",
+      "label": "奖励过程（have → having）",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "不要等有结果再行动；要把过程的'奖励结构'重设计。",
+        "diagnosis_tags": [
+          "过程导向",
+          "内在动机",
+          "自我决定"
+        ],
+        "trigger": [
+          "有目标但启动慢",
+          "无外部奖励"
+        ],
+        "symptoms": [
+          "靠意志力硬推"
+        ],
+        "root_causes": [
+          "奖励绑定错对象"
+        ],
+        "interventions": [
+          "设计仪式感",
+          "里程碑奖励",
+          "内在动机结构"
+        ],
+        "reflection_questions": [
+          "我的过程奖励是什么？我设计了吗？"
+        ],
+        "related": [
+          "K057",
+          "K035",
+          "K006"
+        ]
+      }
+    },
+    {
+      "id": "K060",
+      "label": "WOOP（Wish–Outcome–Obstacle–Plan）",
+      "type": "concept",
+      "category": "行动",
+      "props": {
+        "summary": "用'具体障碍'逼出'if-then'；心理对照的力量。",
+        "diagnosis_tags": [
+          "心理对照",
+          "if-then",
+          "执行意图"
+        ],
+        "trigger": [
+          "想做但怕卡",
+          "卡了一直卡"
+        ],
+        "symptoms": [
+          "目标大但路径空"
+        ],
+        "root_causes": [
+          "没有具体障碍清单"
+        ],
+        "interventions": [
+          "WOOP 四步走",
+          "If-Then 计划"
+        ],
+        "reflection_questions": [
+          "我卡过的真实障碍是？我会怎么 if-then？"
+        ],
+        "related": [
+          "K035",
+          "K023",
+          "K034"
+        ]
+      }
+    },
+    {
+      "id": "K003",
+      "label": "自尊",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "自尊不是高高在上，是稳定地知道'我值得被善待'。",
+        "diagnosis_tags": [
+          "自尊",
+          "自我价值",
+          "过度防守"
+        ],
+        "trigger": [
+          "被评",
+          "被拒绝",
+          "对比他人"
+        ],
+        "symptoms": [
+          "过度防守",
+          "情绪化反应",
+          "玻璃心"
+        ],
+        "root_causes": [
+          "自尊挂在外物/他人身上"
+        ],
+        "interventions": [
+          "自尊练习（认可自己）",
+          "区分事实与评价"
+        ],
+        "reflection_questions": [
+          "今天我对'我'说了句什么？"
+        ],
+        "related": [
+          "K040",
+          "K062",
+          "K073"
+        ]
+      }
+    },
+    {
+      "id": "K004",
+      "label": "消极",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "消极不只是情绪，是思维的默认通道；可以训练切换。",
+        "diagnosis_tags": [
+          "消极偏向",
+          "negativity bias"
+        ],
+        "trigger": [
+          "接收坏消息",
+          "被批评",
+          "挫败"
+        ],
+        "symptoms": [
+          "盯住坏忽略好"
+        ],
+        "root_causes": [
+          "演化留存的威胁敏感"
+        ],
+        "interventions": [
+          "正念记好事",
+          "主动建构积极"
+        ],
+        "reflection_questions": [
+          "今天我夸大了哪部分的'坏'？"
+        ],
+        "related": [
+          "K010",
+          "K022",
+          "K040"
+        ]
+      }
+    },
+    {
+      "id": "K008",
+      "label": "笑",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "笑能反向重塑情绪回路；不是掩饰，是生理工具。",
+        "diagnosis_tags": [
+          "生理反馈",
+          "情绪调节",
+          "幽默"
+        ],
+        "trigger": [
+          "僵住",
+          "太严肃",
+          "气氛紧"
+        ],
+        "symptoms": [
+          "严肃脸毁所有事"
+        ],
+        "root_causes": [
+          "把幽默当逃避"
+        ],
+        "interventions": [
+          "戏剧式大笑练习",
+          "找乐子伙伴"
+        ],
+        "reflection_questions": [
+          "我今天笑了几次？"
+        ],
+        "related": [
+          "K010",
+          "K022",
+          "K004"
+        ]
+      }
+    },
+    {
+      "id": "K010",
+      "label": "幸福水平回归",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "幸福有基线；大好事/坏事会回归；不该指望外物持久拔高。",
+        "diagnosis_tags": [
+          "Hedonic adaptation",
+          "幸福基线"
+        ],
+        "trigger": [
+          "中彩票",
+          "分手",
+          "常态错觉"
+        ],
+        "symptoms": [
+          "兴奋期很短",
+          "达成仍空"
+        ],
+        "root_causes": [
+          "适应性机制"
+        ],
+        "interventions": [
+          "过程取向",
+          "主动奖赏衰减计划"
+        ],
+        "reflection_questions": [
+          "我今天在'升级基线'还是在'追峰值'？"
+        ],
+        "related": [
+          "K004",
+          "K038",
+          "K022"
+        ]
+      }
+    },
+    {
+      "id": "K017",
+      "label": "P or N 视角",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "同一事件，可用成长视角（P）或威胁视角（N）解读。",
+        "diagnosis_tags": [
+          "框架",
+          "视角转换",
+          "reframing"
+        ],
+        "trigger": [
+          "挫败",
+          "批评",
+          "恐惧"
+        ],
+        "symptoms": [
+          "被动挨打",
+          "动力丧失"
+        ],
+        "root_causes": [
+          "默认威胁框架"
+        ],
+        "interventions": [
+          "主动换框架",
+          "写'如果这件事能帮我'"
+        ],
+        "reflection_questions": [
+          "这件事的 P 解读是什么？"
+        ],
+        "related": [
+          "K020",
+          "K048",
+          "K013"
+        ]
+      }
+    },
+    {
+      "id": "K018",
+      "label": "失败 More",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "失败不是反例，是数据；量比质更重要。",
+        "diagnosis_tags": [
+          "失败容忍",
+          "failing forward",
+          "失败预算"
+        ],
+        "trigger": [
+          "想避免错",
+          "过度自我保护"
+        ],
+        "symptoms": [
+          "胆小",
+          "窄范围",
+          "求稳不求成"
+        ],
+        "root_causes": [
+          "把失败当身份否定"
+        ],
+        "interventions": [
+          "失败日记",
+          "小败不断",
+          "失败预算"
+        ],
+        "reflection_questions": [
+          "我今天'失败'了什么？学到了什么？"
+        ],
+        "related": [
+          "K013",
+          "K036",
+          "K073"
+        ]
+      }
+    },
+    {
+      "id": "K019",
+      "label": "想象",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "想象是低成本的预演；也是焦虑的放大镜。",
+        "diagnosis_tags": [
+          "mental simulation",
+          "想象练习",
+          "反刍"
+        ],
+        "trigger": [
+          "面对不确定",
+          "想练习",
+          "害怕"
+        ],
+        "symptoms": [
+          "过演练致焦虑",
+          "从来不演练致翻车"
+        ],
+        "root_causes": [
+          "想象无反馈回路"
+        ],
+        "interventions": [
+          "具体场景想象",
+          "情绪界限设置"
+        ],
+        "reflection_questions": [
+          "我此刻的想象在帮我还是在压我？"
+        ],
+        "related": [
+          "K020",
+          "K088",
+          "K032"
+        ]
+      }
+    },
+    {
+      "id": "K022",
+      "label": "感激（Gratitude）",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "感激不是客气，是主动切到'足够'视角的方法。",
+        "diagnosis_tags": [
+          "Gratitude",
+          "积极心理学"
+        ],
+        "trigger": [
+          "匮乏感",
+          "总不够"
+        ],
+        "symptoms": [
+          "永远缺一件"
+        ],
+        "root_causes": [
+          "默认稀缺叙事"
+        ],
+        "interventions": [
+          "三件好事日记",
+          "主动致谢"
+        ],
+        "reflection_questions": [
+          "今天有什么是值得我感激的？"
+        ],
+        "related": [
+          "K004",
+          "K010",
+          "K039"
+        ]
+      }
+    },
+    {
+      "id": "K032",
+      "label": "压力（break）",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "压力不是负担，是'被需要'的信号；用对就增益。",
+        "diagnosis_tags": [
+          "压力二元论",
+          "challenge vs threat"
+        ],
+        "trigger": [
+          "关键时刻",
+          "被骂",
+          "高压场景"
+        ],
+        "symptoms": [
+          "手足冰凉",
+          "僵住",
+          "易崩"
+        ],
+        "root_causes": [
+          "把压力当敌人"
+        ],
+        "interventions": [
+          "重新评估压力源",
+          "刻意的剧烈活动释放",
+          "重标记"
+        ],
+        "reflection_questions": [
+          "我现在把压力视作挑战还是威胁？"
+        ],
+        "related": [
+          "K073",
+          "K010",
+          "K020"
+        ]
+      }
+    },
+    {
+      "id": "K040",
+      "label": "3P：许可 / 积极 / 视角",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "Permission / Positive / Perspective：给情绪三种出口。",
+        "diagnosis_tags": [
+          "积极情绪三件套",
+          "主动性",
+          "情绪调节"
+        ],
+        "trigger": [
+          "情绪过载",
+          "挫败",
+          "自我压迫"
+        ],
+        "symptoms": [
+          "情绪堆积",
+          "僵住"
+        ],
+        "root_causes": [
+          "不允许自己暂停"
+        ],
+        "interventions": [
+          "P 给自己许可",
+          "P 找积极",
+          "P 转视角"
+        ],
+        "reflection_questions": [
+          "我现在可以先 P 自己吗？"
+        ],
+        "related": [
+          "K017",
+          "K004",
+          "K025"
+        ]
+      }
+    },
+    {
+      "id": "K041",
+      "label": "灵药（Magical Thinking）",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "没有万能解决方案；过度渴望'灵药'反而延迟行动。",
+        "diagnosis_tags": [
+          "魔法思维",
+          "magical thinking",
+          "捷径"
+        ],
+        "trigger": [
+          "寻找捷径",
+          "等'准备好'",
+          "买课囤课"
+        ],
+        "symptoms": [
+          "买课不练",
+          "囤积知识"
+        ],
+        "root_causes": [
+          "不愿走复杂度"
+        ],
+        "interventions": [
+          "接受小步具体",
+          "拆掉灵药叙事"
+        ],
+        "reflection_questions": [
+          "我在等一颗灵药吗？"
+        ],
+        "related": [
+          "K035",
+          "K006"
+        ]
+      }
+    },
+    {
+      "id": "K042",
+      "label": "内向 / 外向（恢复）",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "能量有主要来源；不充电就会失控。",
+        "diagnosis_tags": [
+          "能量管理",
+          "恢复",
+          "社交耗竭"
+        ],
+        "trigger": [
+          "社交耗竭",
+          "独处过多",
+          "易怒恍惚"
+        ],
+        "symptoms": [
+          "易怒",
+          "恍惚",
+          "低产"
+        ],
+        "root_causes": [
+          "忽视恢复"
+        ],
+        "interventions": [
+          "匹配恢复方式",
+          "预备充电仪式"
+        ],
+        "reflection_questions": [
+          "今天我充过电了吗？匹配我的方式吗？"
+        ],
+        "related": [
+          "K025",
+          "K057",
+          "K039"
+        ]
+      }
+    },
+    {
+      "id": "K061",
+      "label": "负面情绪",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "负面情绪是数据，不是要消灭的敌人；信号读完即可放行。",
+        "diagnosis_tags": [
+          "情绪信号",
+          "接纳",
+          "RAIN"
+        ],
+        "trigger": [
+          "压抑",
+          "反复后悔",
+          "郁结"
+        ],
+        "symptoms": [
+          "郁结",
+          "积怨",
+          "莫名不爽"
+        ],
+        "root_causes": [
+          "把情绪当 bug"
+        ],
+        "interventions": [
+          "命名情绪",
+          "问信号指向什么",
+          "RAIN"
+        ],
+        "reflection_questions": [
+          "这个情绪在告诉我什么？"
+        ],
+        "related": [
+          "K020",
+          "K017",
+          "K040",
+          "K005"
+        ]
+      }
+    },
+    {
+      "id": "K073",
+      "label": "脆弱和反脆弱",
+      "type": "concept",
+      "category": "情绪",
+      "props": {
+        "summary": "脆弱 = 波动大；反脆弱 = 波动越大越受益。",
+        "diagnosis_tags": [
+          "Antifragile",
+          "skin in the game",
+          "凸性"
+        ],
+        "trigger": [
+          "过度求稳",
+          "过度风控",
+          "波动加剧"
+        ],
+        "symptoms": [
+          "小波动也崩",
+          "或另一边过度冒险"
+        ],
+        "root_causes": [
+          "误把'不波动'当安全"
+        ],
+        "interventions": [
+          "找非对称风险",
+          "增加小波动暴露"
+        ],
+        "reflection_questions": [
+          "这件事的'波动'会让我变强还是变弱？"
+        ],
+        "related": [
+          "K032",
+          "K052",
+          "K074",
+          "K025"
+        ]
+      }
+    },
+    {
+      "id": "K043",
+      "label": "创造优点",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "优点是行为+反馈累积出来的；先假装并坚持到真实。",
+        "diagnosis_tags": [
+          "自我建构",
+          "美德伦理",
+          "优点工程"
+        ],
+        "trigger": [
+          "想成为 X 人",
+          "等自己'够格'"
+        ],
+        "symptoms": [
+          "自我叙事僵化",
+          "等待标签匹配"
+        ],
+        "root_causes": [
+          "身份先于行为"
+        ],
+        "interventions": [
+          "每日德行实践",
+          "复盘微小行为"
+        ],
+        "reflection_questions": [
+          "我想拥有的优点的每日实践是什么？"
+        ],
+        "related": [
+          "K015",
+          "K062",
+          "K038"
+        ]
+      }
+    },
+    {
+      "id": "K044",
+      "label": "主动性 / 建立联系",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "网络是被构建的，不是'有'的；联结是双向投资。",
+        "diagnosis_tags": [
+          "Networking",
+          "主动",
+          "双向价值"
+        ],
+        "trigger": [
+          "需要时找不到人",
+          "求助难开口"
+        ],
+        "symptoms": [
+          "朋友圈小",
+          "信息差"
+        ],
+        "root_causes": [
+          "把联系当功利"
+        ],
+        "interventions": [
+          "每周 1 个新对话",
+          "双向推荐",
+          "价值优先于索取"
+        ],
+        "reflection_questions": [
+          "我这周给谁主动了？"
+        ],
+        "related": [
+          "K034",
+          "K064",
+          "K109"
+        ]
+      }
+    },
+    {
+      "id": "K064",
+      "label": "场域",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "选场域比选努力更优先；好场域让平庸变优秀。",
+        "diagnosis_tags": [
+          "Field selection",
+          "环境",
+          "场"
+        ],
+        "trigger": [
+          "被困住",
+          "成长停滞",
+          "努力无效"
+        ],
+        "symptoms": [
+          "努力无效"
+        ],
+        "root_causes": [
+          "场域不对再努力也平"
+        ],
+        "interventions": [
+          "换 team/社区/段位",
+          "把自己放在更高密度的场"
+        ],
+        "reflection_questions": [
+          "我现在的场域值多少？要不要换？"
+        ],
+        "related": [
+          "K016",
+          "K094",
+          "K063",
+          "K075"
+        ]
+      }
+    },
+    {
+      "id": "K066",
+      "label": "共鸣",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "共鸣不是同意，是'我感受到你的感受'。",
+        "diagnosis_tags": [
+          "Empathy",
+          "倾听",
+          "镜像"
+        ],
+        "trigger": [
+          "冲突",
+          "感觉不被理解"
+        ],
+        "symptoms": [
+          "对话僵",
+          "信任坍"
+        ],
+        "root_causes": [
+          "听内容不听情感"
+        ],
+        "interventions": [
+          "命名对方情绪",
+          "镜像复述"
+        ],
+        "reflection_questions": [
+          "对方此刻'需要被听见'的是什么？"
+        ],
+        "related": [
+          "K020",
+          "K034",
+          "K099"
+        ]
+      }
+    },
+    {
+      "id": "K075",
+      "label": "状态杠杆",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "你的状态会被周围人放大或缩小；选能放大你的环境。",
+        "diagnosis_tags": [
+          "Status leverage",
+          "能量场",
+          "放大器"
+        ],
+        "trigger": [
+          "消耗社交",
+          "高能低能起伏"
+        ],
+        "symptoms": [
+          "回去就泄气"
+        ],
+        "root_causes": [
+          "与错位的人高频接触"
+        ],
+        "interventions": [
+          "减少无权对话",
+          "放大器名单",
+          "主动靠近增益圈"
+        ],
+        "reflection_questions": [
+          "我身边谁是放大器谁是收缩器？"
+        ],
+        "related": [
+          "K044",
+          "K064",
+          "K098"
+        ]
+      }
+    },
+    {
+      "id": "K097",
+      "label": "托付",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "托付是能动地把事/物交给神/人/制度完成；不是放任。",
+        "diagnosis_tags": [
+          "托付",
+          "信托",
+          "授权"
+        ],
+        "trigger": [
+          "不愿交出控制",
+          "凡事亲为",
+          "微管理"
+        ],
+        "symptoms": [
+          "事必躬亲",
+          "微管理"
+        ],
+        "root_causes": [
+          "信任不足"
+        ],
+        "interventions": [
+          "明确交付标准",
+          "设止损",
+          "分级授权"
+        ],
+        "reflection_questions": [
+          "这件事该托付给谁/什么机制？"
+        ],
+        "related": [
+          "K044",
+          "K108",
+          "K107"
+        ]
+      }
+    },
+    {
+      "id": "K098",
+      "label": "地位",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "地位是稀缺品；过度争地位会耗竭，长期建设 > 短期输赢。",
+        "diagnosis_tags": [
+          "Status games",
+          "地位",
+          "位序"
+        ],
+        "trigger": [
+          "竞争场景",
+          "评奖",
+          "群体对比"
+        ],
+        "symptoms": [
+          "易怒",
+          "注意力被位序占据"
+        ],
+        "root_causes": [
+          "把地位当自尊源"
+        ],
+        "interventions": [
+          "超越位序的目标",
+          "减少零和参与"
+        ],
+        "reflection_questions": [
+          "我这件在玩地位游戏吗？值得吗？"
+        ],
+        "related": [
+          "K075",
+          "K099",
+          "K103",
+          "K003"
+        ]
+      }
+    },
+    {
+      "id": "K099",
+      "label": "礼",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "礼是关系的语法；不学礼，再亲近也崩。",
+        "diagnosis_tags": [
+          "礼",
+          "Social grammar",
+          "距离感"
+        ],
+        "trigger": [
+          "越界",
+          "亲近反而伤",
+          "礼数缺位"
+        ],
+        "symptoms": [
+          "亲近不恭",
+          "冲突频发"
+        ],
+        "root_causes": [
+          "礼数缺位",
+          "把熟悉当随便"
+        ],
+        "interventions": [
+          "学礼",
+          "练距离感",
+          "日常脚本化"
+        ],
+        "reflection_questions": [
+          "我今天在哪里失礼了？"
+        ],
+        "related": [
+          "K098",
+          "K104",
+          "K066"
+        ]
+      }
+    },
+    {
+      "id": "K104",
+      "label": "替罪羊",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "群体焦虑时常找替罪羊；看清机制就能跳出。",
+        "diagnosis_tags": [
+          "Scapegoat",
+          "群体心理",
+          "甩锅"
+        ],
+        "trigger": [
+          "空气紧张",
+          "甩锅出现"
+        ],
+        "symptoms": [
+          "找单点归因",
+          "群体归罪"
+        ],
+        "root_causes": [
+          "系统解释不被容许"
+        ],
+        "interventions": [
+          "看系统性原因",
+          "拒绝传谣"
+        ],
+        "reflection_questions": [
+          "这事被压在'一个人'身上的合理吗？"
+        ],
+        "related": [
+          "K099",
+          "K098",
+          "K105",
+          "K103"
+        ]
+      }
+    },
+    {
+      "id": "K105",
+      "label": "摩洛克（Molech）",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "在焦虑中向其献祭的伪神；识别'替罪结构'。",
+        "diagnosis_tags": [
+          "Molech",
+          "献祭式叙事",
+          "系统合理化"
+        ],
+        "trigger": [
+          "牺牲某人/某事来维持秩序"
+        ],
+        "symptoms": [
+          "看似合理的代价",
+          "集体沉默"
+        ],
+        "root_causes": [
+          "系统性问题伪装成道德必要性"
+        ],
+        "interventions": [
+          "质疑代价结构",
+          "寻找非献祭方案"
+        ],
+        "reflection_questions": [
+          "我们今天'献'出了什么？为谁而献？"
+        ],
+        "related": [
+          "K104",
+          "K103",
+          "K099"
+        ]
+      }
+    },
+    {
+      "id": "K106",
+      "label": "第三物（Third Object）",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "两人争论能化解的，往往是引入'第三物'；避免二元对立。",
+        "diagnosis_tags": [
+          "Third object",
+          "Mediation",
+          "共同关心"
+        ],
+        "trigger": [
+          "双方僵持不下"
+        ],
+        "symptoms": [
+          "零和争吵"
+        ],
+        "root_causes": [
+          "只看二元"
+        ],
+        "interventions": [
+          "找'共同关心对象'",
+          "把议题外化"
+        ],
+        "reflection_questions": [
+          "我们共同在意的'第三物'是什么？"
+        ],
+        "related": [
+          "K099",
+          "K066",
+          "K104"
+        ]
+      }
+    },
+    {
+      "id": "K107",
+      "label": "剩余判断权",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "授权时不要给'规则'，给'原则 + 剩余判断空间'。",
+        "diagnosis_tags": [
+          "Residual discretion",
+          "授权",
+          "原则 vs 规则"
+        ],
+        "trigger": [
+          "下级不会动脑",
+          "请示链堵死"
+        ],
+        "symptoms": [
+          "事事请示"
+        ],
+        "root_causes": [
+          "规则教得太死"
+        ],
+        "interventions": [
+          "给原则 + 边界",
+          "鼓励就地判断"
+        ],
+        "reflection_questions": [
+          "我今天给的是规则还是原则？"
+        ],
+        "related": [
+          "K097",
+          "K108"
+        ]
+      }
+    },
+    {
+      "id": "K108",
+      "label": "组织资本",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "组织资本是隐形资产：流程、文化、关系网；不维护会衰竭。",
+        "diagnosis_tags": [
+          "Organizational capital",
+          "无形资本",
+          "协作成本"
+        ],
+        "trigger": [
+          "扩张失能",
+          "协作成本飙升"
+        ],
+        "symptoms": [
+          "开会有形无果"
+        ],
+        "root_causes": [
+          "只盯有形 KPI"
+        ],
+        "interventions": [
+          "投资流程",
+          "复盘文化"
+        ],
+        "reflection_questions": [
+          "我们今天建了什么组织资本？"
+        ],
+        "related": [
+          "K100",
+          "K097",
+          "K103",
+          "K107"
+        ]
+      }
+    },
+    {
+      "id": "K109",
+      "label": "人身依附与角色责任",
+      "type": "concept",
+      "category": "关系与社会",
+      "props": {
+        "summary": "组织常把角色责任扭曲为人身依附；制度强而人不附。",
+        "diagnosis_tags": [
+          "Personal dependency vs Role",
+          "治理",
+          "去人格化"
+        ],
+        "trigger": [
+          "离职就走活",
+          "老板换风格就乱"
+        ],
+        "symptoms": [
+          "离开无法独立运转"
+        ],
+        "root_causes": [
+          "以人代制度"
+        ],
+        "interventions": [
+          "制度化角色",
+          "去人格化流程"
+        ],
+        "reflection_questions": [
+          "这件事是角色责任还是人身依附？"
+        ],
+        "related": [
+          "K107",
+          "K108",
+          "K100"
+        ]
+      }
+    },
+    {
+      "id": "K007",
+      "label": "平均 / 顶尖（选目标对象）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "参照物决定天花板；和顶尖比你会更尖，和平均比你会平庸。",
+        "diagnosis_tags": [
+          "Reference group",
+          "对标"
+        ],
+        "trigger": [
+          "满足感缺失",
+          "无紧迫感"
+        ],
+        "symptoms": [
+          "自满",
+          "看不到差距"
+        ],
+        "root_causes": [
+          "错误对标"
+        ],
+        "interventions": [
+          "选 3 个真正的'顶尖'，每周对照"
+        ],
+        "reflection_questions": [
+          "我现在的对标是平均还是顶尖？"
+        ],
+        "related": [
+          "K094",
+          "K063",
+          "K064"
+        ]
+      }
+    },
+    {
+      "id": "K009",
+      "label": "指数（Compound）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "复利是世界的隐藏主轴；按线性看的人总会错过。",
+        "diagnosis_tags": [
+          "Compound",
+          "指数",
+          "非线性"
+        ],
+        "trigger": [
+          "早期不出活",
+          "看不到坚持"
+        ],
+        "symptoms": [
+          "过早放弃"
+        ],
+        "root_causes": [
+          "误用线性预期"
+        ],
+        "interventions": [
+          "看 log 曲线",
+          "相信 3 年"
+        ],
+        "reflection_questions": [
+          "这件事今天是'还没到拐点'还是'没戏'？"
+        ],
+        "related": [
+          "K056",
+          "K074",
+          "K077",
+          "K065"
+        ]
+      }
+    },
+    {
+      "id": "K027",
+      "label": "目标（选择与排序）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "目标不是同时做三件，是放弃其中两件。",
+        "diagnosis_tags": [
+          "Priority",
+          "目标管理",
+          "放弃"
+        ],
+        "trigger": [
+          "并行目标多",
+          "完不成"
+        ],
+        "symptoms": [
+          "全开始全没完"
+        ],
+        "root_causes": [
+          "不敢放弃"
+        ],
+        "interventions": [
+          "强制单目标季度",
+          "砍掉次重要"
+        ],
+        "reflection_questions": [
+          "我此刻唯一在打的目标是？"
+        ],
+        "related": [
+          "K021",
+          "K033",
+          "K034"
+        ]
+      }
+    },
+    {
+      "id": "K033",
+      "label": "少而精（too much good）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "好东西太多 = 没好东西；选择性削减。",
+        "diagnosis_tags": [
+          "Curation",
+          "信息过载",
+          "上限"
+        ],
+        "trigger": [
+          "机会堆",
+          "样样想做"
+        ],
+        "symptoms": [
+          "什么都 80 分"
+        ],
+        "root_causes": [
+          "没有拒绝标准"
+        ],
+        "interventions": [
+          "设硬上限",
+          "只挑 3 件"
+        ],
+        "reflection_questions": [
+          "什么是我现在应该放弃的'好机会'？"
+        ],
+        "related": [
+          "K027",
+          "K034",
+          "K021"
+        ]
+      }
+    },
+    {
+      "id": "K037",
+      "label": "80/20 法则",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "20% 因决定 80% 结果；找那 20%，把时间全部压上去。",
+        "diagnosis_tags": [
+          "Pareto",
+          "杠杆"
+        ],
+        "trigger": [
+          "效果不佳",
+          "资源分散"
+        ],
+        "symptoms": [
+          "勤奋但低产"
+        ],
+        "root_causes": [
+          "分不清主因次因"
+        ],
+        "interventions": [
+          "二维评估",
+          "砍 80% 任务"
+        ],
+        "reflection_questions": [
+          "我此刻的 20% 主因是什么？"
+        ],
+        "related": [
+          "K091",
+          "K093",
+          "K021"
+        ]
+      }
+    },
+    {
+      "id": "K046B",
+      "label": "场景（系统中）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "同一个动作在不同场景下意义全变；先识别场景再行动。",
+        "diagnosis_tags": [
+          "Context",
+          "情境",
+          "场景"
+        ],
+        "trigger": [
+          "搬经验失效"
+        ],
+        "symptoms": [
+          "水土不服"
+        ],
+        "root_causes": [
+          "剥离场景谈方法"
+        ],
+        "interventions": [
+          "描绘场景要素",
+          "对场景而非对动作"
+        ],
+        "reflection_questions": [
+          "我现在面临的场景是哪个？要素有哪些？"
+        ],
+        "related": [
+          "K046A",
+          "K094",
+          "K064"
+        ]
+      }
+    },
+    {
+      "id": "K049",
+      "label": "重尾（Fat Tail）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "极少数事件占绝大多数结果；要为尾巴下注。",
+        "diagnosis_tags": [
+          "Fat tail",
+          "极端值",
+          "幂律"
+        ],
+        "trigger": [
+          "看似低概率的选项",
+          "黑天鹅"
+        ],
+        "symptoms": [
+          "低估极端",
+          "保险过度"
+        ],
+        "root_causes": [
+          "高斯直觉"
+        ],
+        "interventions": [
+          "为尾部留敞口",
+          "识别结构性右尾"
+        ],
+        "reflection_questions": [
+          "这个领域是 thin tail 还是 fat tail？"
+        ],
+        "related": [
+          "K068",
+          "K074",
+          "K052",
+          "K096"
+        ]
+      }
+    },
+    {
+      "id": "K050",
+      "label": "能动性（Agency）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "能动性 = 你能动的杠杆点 + 你真的去动；知道+做 = 主权。",
+        "diagnosis_tags": [
+          "Agency",
+          "行动半径",
+          "主权"
+        ],
+        "trigger": [
+          "无力感",
+          "躺平心态"
+        ],
+        "symptoms": [
+          "抱怨多于动手"
+        ],
+        "root_causes": [
+          "把'不可控'当'不可做'"
+        ],
+        "interventions": [
+          "列可控清单",
+          "做最小动作",
+          "分圈层"
+        ],
+        "reflection_questions": [
+          "我此刻的'能动动作'是哪一步？"
+        ],
+        "related": [
+          "K044",
+          "K006",
+          "K055",
+          "K002"
+        ]
+      }
+    },
+    {
+      "id": "K051",
+      "label": "限制（能量）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "能量是最真实的硬约束；不要用时间计量安排。",
+        "diagnosis_tags": [
+          "Energy",
+          "限制",
+          "能量管理"
+        ],
+        "trigger": [
+          "累但事未完"
+        ],
+        "symptoms": [
+          "效率崩"
+        ],
+        "root_causes": [
+          "不识能量边界"
+        ],
+        "interventions": [
+          "按能量分任务",
+          "保护高峰",
+          "周期保护"
+        ],
+        "reflection_questions": [
+          "我此刻的能量决定我该做什么？"
+        ],
+        "related": [
+          "K025",
+          "K042",
+          "K010"
+        ]
+      }
+    },
+    {
+      "id": "K052",
+      "label": "不确定性（Knightian）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "不确定性不是敌人，是地图之外的总面积；管理它而不是消灭它。",
+        "diagnosis_tags": [
+          "不确定性",
+          "Knightian",
+          "未知的未知"
+        ],
+        "trigger": [
+          "没有标准答案",
+          "敢动不敢动"
+        ],
+        "symptoms": [
+          "决策瘫痪",
+          "等清楚"
+        ],
+        "root_causes": [
+          "误把'确定性'当安全"
+        ],
+        "interventions": [
+          "分风险/不确定",
+          "赌 20% 投入试错"
+        ],
+        "reflection_questions": [
+          "这件事是风险还是不确定性？"
+        ],
+        "related": [
+          "K046A",
+          "K069",
+          "K079",
+          "K049"
+        ]
+      }
+    },
+    {
+      "id": "K055",
+      "label": "供给侧心态",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "不要追需求，要造供给；让别人'找不到替代'。",
+        "diagnosis_tags": [
+          "Supply-side",
+          "创造",
+          "差异化"
+        ],
+        "trigger": [
+          "卷同质",
+          "价格战"
+        ],
+        "symptoms": [
+          "议价低",
+          "易替代"
+        ],
+        "root_causes": [
+          "需求-供给错位"
+        ],
+        "interventions": [
+          "持续造差异化",
+          "把注意力放自己输出而非需求"
+        ],
+        "reflection_questions": [
+          "我在做别人想要的，还是创造我独有的？"
+        ],
+        "related": [
+          "K050",
+          "K063",
+          "K094",
+          "K072"
+        ]
+      }
+    },
+    {
+      "id": "K056",
+      "label": "复利（Compound Interest）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "时间是复利的朋友，断点是它的敌人；不要频繁中断。",
+        "diagnosis_tags": [
+          "Compound interest",
+          "复利",
+          "长半衰期"
+        ],
+        "trigger": [
+          "做长半衰期的事"
+        ],
+        "symptoms": [
+          "整天'忙'没累积"
+        ],
+        "root_causes": [
+          "频繁切换/重置"
+        ],
+        "interventions": [
+          "长半衰期清单",
+          "续存而非重启"
+        ],
+        "reflection_questions": [
+          "我今天做的事是有累积的吗？"
+        ],
+        "related": [
+          "K009",
+          "K024",
+          "K083"
+        ]
+      }
+    },
+    {
+      "id": "K063",
+      "label": "赛道选择",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "努力 ≠ 价值；选对赛道，努力 ×10，×100。",
+        "diagnosis_tags": [
+          "Track",
+          "机会成本",
+          "结构性"
+        ],
+        "trigger": [
+          "奋斗却落后"
+        ],
+        "symptoms": [
+          "越努力越不值"
+        ],
+        "root_causes": [
+          "赛道卷到饱和"
+        ],
+        "interventions": [
+          "排序赛道发展度",
+          "选结构性上行赛道"
+        ],
+        "reflection_questions": [
+          "我此刻的赛道，3 年后会升还是降？"
+        ],
+        "related": [
+          "K055",
+          "K094",
+          "K064",
+          "K007"
+        ]
+      }
+    },
+    {
+      "id": "K065",
+      "label": "探索与利用",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "利用已知的稳赢 vs 探索未知的高奖；分配比例 = 阶段决定。",
+        "diagnosis_tags": [
+          "Explore-exploit",
+          "权衡",
+          "阶段"
+        ],
+        "trigger": [
+          "要不要试新"
+        ],
+        "symptoms": [
+          "死在温水中"
+        ],
+        "root_causes": [
+          "单一模式"
+        ],
+        "interventions": [
+          "先小比例探索",
+          "看到拐点切换"
+        ],
+        "reflection_questions": [
+          "我现在多探一些还是多用一些？"
+        ],
+        "related": [
+          "K094",
+          "K056",
+          "K083"
+        ]
+      }
+    },
+    {
+      "id": "K071",
+      "label": "凯利公式（Kelly Criterion）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "按优势/赔率定下注比例；ALL IN 几乎必败。",
+        "diagnosis_tags": [
+          "Kelly",
+          "下注规模",
+          "仓位管理"
+        ],
+        "trigger": [
+          "要不要押重"
+        ],
+        "symptoms": [
+          "赌大失败",
+          "重仓崩盘"
+        ],
+        "root_causes": [
+          "无仓位管理"
+        ],
+        "interventions": [
+          "f* = (bp - q)/b",
+          "压低 Kelly 系数（用 1/4 或 1/2）"
+        ],
+        "reflection_questions": [
+          "我应该放多少仓位在这？"
+        ],
+        "related": [
+          "K052",
+          "K068",
+          "K074"
+        ]
+      }
+    },
+    {
+      "id": "K072",
+      "label": "非便利性（Inconvenience）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "最便宜的路最挤；反向找有门槛的路 = 阿尔法。",
+        "diagnosis_tags": [
+          "Inconvenience",
+          "进入壁垒",
+          "反拥挤"
+        ],
+        "trigger": [
+          "红海"
+        ],
+        "symptoms": [
+          "毛利薄"
+        ],
+        "root_causes": [
+          "只看显性成本"
+        ],
+        "interventions": [
+          "主动加复杂度",
+          "以不便换回报"
+        ],
+        "reflection_questions": [
+          "这件事的'不便利性'在收窄还是在增大？"
+        ],
+        "related": [
+          "K055",
+          "K090",
+          "K063"
+        ]
+      }
+    },
+    {
+      "id": "K074",
+      "label": "期权（Options）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "保留廉价的不对称机会；放弃确定性换取可能。",
+        "diagnosis_tags": [
+          "Options",
+          "凸性",
+          "非对称"
+        ],
+        "trigger": [
+          "机会边界",
+          "是否下注"
+        ],
+        "symptoms": [
+          "all-or-nothing 决策"
+        ],
+        "root_causes": [
+          "忘记保留可能"
+        ],
+        "interventions": [
+          "保持多条小期权",
+          "对'1% 输得起、50% 赢大'偏置"
+        ],
+        "reflection_questions": [
+          "我今天还有几支'廉价期权'？"
+        ],
+        "related": [
+          "K049",
+          "K073",
+          "K071"
+        ]
+      }
+    },
+    {
+      "id": "K089",
+      "label": "租（Rent）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "租金 = 你比平均多留的部分；区分真租与租寻。",
+        "diagnosis_tags": [
+          "Rent-seeking",
+          "租",
+          "位置"
+        ],
+        "trigger": [
+          "利润差异"
+        ],
+        "symptoms": [
+          "靠位置吃饭"
+        ],
+        "root_causes": [
+          "壁垒非自造"
+        ],
+        "interventions": [
+          "找'半租半创造'位置",
+          "辨别真壁垒"
+        ],
+        "reflection_questions": [
+          "我今天吃的'租'是哪种？"
+        ],
+        "related": [
+          "K090",
+          "K094",
+          "K063"
+        ]
+      }
+    },
+    {
+      "id": "K090",
+      "label": "阿尔法（Alpha）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "超出基准的部分来自独特判断；不是勤奋，是高赔率。",
+        "diagnosis_tags": [
+          "Alpha",
+          "稀缺判断",
+          "超额收益"
+        ],
+        "trigger": [
+          "想真正的复利"
+        ],
+        "symptoms": [
+          "把 beta 当 alpha"
+        ],
+        "root_causes": [
+          "错觉独特"
+        ],
+        "interventions": [
+          "先相信自己是 beta",
+          "小注高赔率"
+        ],
+        "reflection_questions": [
+          "我此刻的回报是 alpha 还是 beta？"
+        ],
+        "related": [
+          "K071",
+          "K089",
+          "K049"
+        ]
+      }
+    },
+    {
+      "id": "K091",
+      "label": "杠杆（Leverage）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "杠杆 = 投入产出比；高杠杆 = 用更少得更多。",
+        "diagnosis_tags": [
+          "Leverage",
+          "杠杆",
+          "四种杠杆"
+        ],
+        "trigger": [
+          "找突破点"
+        ],
+        "symptoms": [
+          "线性努力"
+        ],
+        "root_causes": [
+          "只动单位数"
+        ],
+        "interventions": [
+          "代码/媒体/资本/人力 四种杠杆匹配"
+        ],
+        "reflection_questions": [
+          "我的杠杆有几倍？怎么提？"
+        ],
+        "related": [
+          "K037",
+          "K074",
+          "K093"
+        ]
+      }
+    },
+    {
+      "id": "K092",
+      "label": "窗口（Window）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "机会不会永远开着；对窗口要快定快动。",
+        "diagnosis_tags": [
+          "Window of opportunity",
+          "窗口期"
+        ],
+        "trigger": [
+          "窗口期出现"
+        ],
+        "symptoms": [
+          "犹豫错过"
+        ],
+        "root_causes": [
+          "完美主义拖延",
+          "未做预案"
+        ],
+        "interventions": [
+          "设决策截止",
+          "预备方案"
+        ],
+        "reflection_questions": [
+          "这个机会窗口还能开多久？"
+        ],
+        "related": [
+          "K094",
+          "K052",
+          "K035"
+        ]
+      }
+    },
+    {
+      "id": "K093",
+      "label": "效果（Outcome）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "投入→效果→目标的链条要直；中间越多越损耗。",
+        "diagnosis_tags": [
+          "Output vs Outcome",
+          "效果",
+          "有效产出"
+        ],
+        "trigger": [
+          "忙但无产"
+        ],
+        "symptoms": [
+          "自欺式忙碌"
+        ],
+        "root_causes": [
+          "把活动当效果"
+        ],
+        "interventions": [
+          "从目标反推动作",
+          "砍中间环节"
+        ],
+        "reflection_questions": [
+          "我这动作直接通向'效果'吗？"
+        ],
+        "related": [
+          "K037",
+          "K091",
+          "K027"
+        ]
+      }
+    },
+    {
+      "id": "K094",
+      "label": "沃德利地图（Wardley Maps）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "看清演化阶段：Genesis → Custom → Product → Commodity；位置决定策略。",
+        "diagnosis_tags": [
+          "Wardley Maps",
+          "演化阶段",
+          "战略地图"
+        ],
+        "trigger": [
+          "决策'做什么'"
+        ],
+        "symptoms": [
+          "错位打法"
+        ],
+        "root_causes": [
+          "不知身在哪个阶段"
+        ],
+        "interventions": [
+          "画自己的地图",
+          "定位动作",
+          "匹配阶段策略"
+        ],
+        "reflection_questions": [
+          "我这个赛道此刻在哪个阶段？我该做哪种动作？"
+        ],
+        "related": [
+          "K007",
+          "K063",
+          "K065"
+        ]
+      }
+    },
+    {
+      "id": "K095",
+      "label": "成本病（Baumol）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "人力密集行业效率提升慢，工资追通胀而生产力不增 = 病。",
+        "diagnosis_tags": [
+          "Baumol",
+          "成本病",
+          "劳动密集"
+        ],
+        "trigger": [
+          "教育/医疗/服务涨价"
+        ],
+        "symptoms": [
+          "效率差",
+          "成本涨"
+        ],
+        "root_causes": [
+          "行业刚性"
+        ],
+        "interventions": [
+          "理解结构性涨价",
+          "选可缩放行业"
+        ],
+        "reflection_questions": [
+          "我的工作在可缩放行业里吗？"
+        ],
+        "related": [
+          "K091",
+          "K096",
+          "K094"
+        ]
+      }
+    },
+    {
+      "id": "K096",
+      "label": "杰文斯悖论（Jevons）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "效率提升 → 总消耗上升；改善单点不等于系统变好。",
+        "diagnosis_tags": [
+          "Jevons paradox",
+          "反弹效应"
+        ],
+        "trigger": [
+          "以为优化就完"
+        ],
+        "symptoms": [
+          "省了又涨"
+        ],
+        "root_causes": [
+          "未看总体"
+        ],
+        "interventions": [
+          "系统视角评估",
+          "抑制总需求"
+        ],
+        "reflection_questions": [
+          "我优化的'省'会让总量涨吗？"
+        ],
+        "related": [
+          "K095",
+          "K046B",
+          "K037"
+        ]
+      }
+    },
+    {
+      "id": "K100",
+      "label": "软预算（Soft Budget）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "不硬约束成本 = 资源被滥用；软预算下没有真效率。",
+        "diagnosis_tags": [
+          "Soft budget",
+          "约束"
+        ],
+        "trigger": [
+          "项目超支常态化"
+        ],
+        "symptoms": [
+          "做事不计代价"
+        ],
+        "root_causes": [
+          "后果不落地"
+        ],
+        "interventions": [
+          "硬约束",
+          "成本记账"
+        ],
+        "reflection_questions": [
+          "谁在为'超支'付账？"
+        ],
+        "related": [
+          "K102",
+          "K108",
+          "K095"
+        ]
+      }
+    },
+    {
+      "id": "K102",
+      "label": "激励相容（Incentive Compatibility）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "让人自利 = 让你也得；好制度让'利己'对齐'利他'。",
+        "diagnosis_tags": [
+          "Incentive compatibility",
+          "制度设计"
+        ],
+        "trigger": [
+          "团队/人际冲突"
+        ],
+        "symptoms": [
+          "各打小算盘"
+        ],
+        "root_causes": [
+          "激励错位"
+        ],
+        "interventions": [
+          "重设激励结构",
+          "对齐利益"
+        ],
+        "reflection_questions": [
+          "这个机制让人自利等于利我吗？"
+        ],
+        "related": [
+          "K100",
+          "K103",
+          "K108"
+        ]
+      }
+    },
+    {
+      "id": "K103",
+      "label": "柠檬市场（Lemons）",
+      "type": "concept",
+      "category": "系统与策略",
+      "props": {
+        "summary": "劣币驱良币；信息不对称时市场失灵。",
+        "diagnosis_tags": [
+          "Lemons",
+          "信息不对称",
+          "信号"
+        ],
+        "trigger": [
+          "劣质盛行"
+        ],
+        "symptoms": [
+          "好产品被排挤"
+        ],
+        "root_causes": [
+          "信号机制失效"
+        ],
+        "interventions": [
+          "建可信信号",
+          "减信息差",
+          "第三方认证"
+        ],
+        "reflection_questions": [
+          "我现在的'信号'够可信吗？"
+        ],
+        "related": [
+          "K102",
+          "K098",
+          "K089"
+        ]
+      }
+    },
+    {
+      "id": "K001",
+      "label": "问题创造现实",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "提问方式决定你能看见的世界；问题的形塑力大于答案。",
+        "diagnosis_tags": [
+          "提问",
+          "框架",
+          "元认知"
+        ],
+        "trigger": [
+          "僵局",
+          "想换角度"
+        ],
+        "symptoms": [
+          "换问法后答案浮现"
+        ],
+        "root_causes": [
+          "把问题当给定"
+        ],
+        "interventions": [
+          "改写问题",
+          "问'为什么是这个问题'"
+        ],
+        "reflection_questions": [
+          "我此刻的'问题'是真的，还是被塑形的？"
+        ],
+        "related": [
+          "K014",
+          "K031",
+          "K048",
+          "K039"
+        ]
+      }
+    },
+    {
+      "id": "K002",
+      "label": "No One Is Coming",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "没人会来救你；自我负责是所有主体的起点。",
+        "diagnosis_tags": [
+          "Agency",
+          "自我负责",
+          "主体性"
+        ],
+        "trigger": [
+          "等救世主",
+          "等领导出手"
+        ],
+        "symptoms": [
+          "甩锅",
+          "被动"
+        ],
+        "root_causes": [
+          "把希望挂在他者"
+        ],
+        "interventions": [
+          "列'我的责任清单'",
+          "问'我能做什么'"
+        ],
+        "reflection_questions": [
+          "如果没人来，我会怎样？"
+        ],
+        "related": [
+          "K050",
+          "K014",
+          "K039",
+          "K013",
+          "K005"
+        ]
+      }
+    },
+    {
+      "id": "K005",
+      "label": "接纳（Acceptance）",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "接纳不是认输，是停止用能量抵抗已发生的事，把省下来的能量用于能做的。",
+        "diagnosis_tags": [
+          "接纳",
+          "现实主义",
+          "情绪容忍",
+          "ACT"
+        ],
+        "trigger": [
+          "抗拒已发生",
+          "为无法改变的事耗神",
+          "反复反刍"
+        ],
+        "symptoms": [
+          "长期愤懑",
+          "对现状消耗过多情绪",
+          "无法起身行动"
+        ],
+        "root_causes": [
+          "把'应该'当成现实",
+          "用精力打已输的仗"
+        ],
+        "interventions": [
+          "ACT 接纳承诺疗法",
+          "区分能控与不能控",
+          "命名抗拒",
+          "向现实点头再向前"
+        ],
+        "reflection_questions": [
+          "我在抵抗什么？它已经发生了吗？这份能量还能用在哪？"
+        ],
+        "related": [
+          "K002",
+          "K012",
+          "K017",
+          "K061",
+          "K013"
+        ]
+      }
+    },
+    {
+      "id": "K012",
+      "label": "追求幸福",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "幸福不靠追求，靠'过程设计'；瞄着幸福会偏离。",
+        "diagnosis_tags": [
+          "Happiness",
+          "幸福",
+          "过程取向"
+        ],
+        "trigger": [
+          "不满足感",
+          "目标达成又空"
+        ],
+        "symptoms": [
+          "攀比心",
+          "追峰值"
+        ],
+        "root_causes": [
+          "把幸福当目标当进程"
+        ],
+        "interventions": [
+          "设计日常的微小好事",
+          "过程取向"
+        ],
+        "reflection_questions": [
+          "今天我'在'幸福还是'追'幸福？"
+        ],
+        "related": [
+          "K010",
+          "K022",
+          "K039",
+          "K005"
+        ]
+      }
+    },
+    {
+      "id": "K013",
+      "label": "Be the change you want to see in the world",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "想要的世界由你先活成；先活后等不是因果，是唯一路径。",
+        "diagnosis_tags": [
+          "示范效应",
+          "活出",
+          "榜样"
+        ],
+        "trigger": [
+          "抱怨不行动"
+        ],
+        "symptoms": [
+          "等他人先变"
+        ],
+        "root_causes": [
+          "把自己从方程里踢掉"
+        ],
+        "interventions": [
+          "自问'我先示范什么'",
+          "每日微行动"
+        ],
+        "reflection_questions": [
+          "我想要世界变成什么样？我先做哪一步？"
+        ],
+        "related": [
+          "K018",
+          "K002",
+          "K050",
+          "K017",
+          "K005"
+        ]
+      }
+    },
+    {
+      "id": "K031",
+      "label": "Calling",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "Calling 不是职业而是回响；做对的事会回响到对的人。",
+        "diagnosis_tags": [
+          "Calling",
+          "使命",
+          "回响"
+        ],
+        "trigger": [
+          "感到无意义",
+          "事业迷茫"
+        ],
+        "symptoms": [
+          "一切都对，但都不痛"
+        ],
+        "root_causes": [
+          "未听到自己的回响"
+        ],
+        "interventions": [
+          "问'我最想解决什么问题'",
+          "做'让我成我'的事"
+        ],
+        "reflection_questions": [
+          "我在做什么时最像'我自己'？"
+        ],
+        "related": [
+          "K001",
+          "K006",
+          "K039",
+          "K101"
+        ]
+      }
+    },
+    {
+      "id": "K039",
+      "label": "自我意识（what else do you want）",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "问自己'还要什么'，让隐藏需求浮出；不主动问会被无意识填满。",
+        "diagnosis_tags": [
+          "自我意识",
+          "需求识别",
+          "自我对话"
+        ],
+        "trigger": [
+          "疲于应付",
+          "总为他活"
+        ],
+        "symptoms": [
+          "反复答'够了'"
+        ],
+        "root_causes": [
+          "压抑自我需求"
+        ],
+        "interventions": [
+          "问三次'还要什么'",
+          "留自我空间"
+        ],
+        "reflection_questions": [
+          "除了别人要的，我还想要什么？"
+        ],
+        "related": [
+          "K031",
+          "K022",
+          "K057",
+          "K002"
+        ]
+      }
+    },
+    {
+      "id": "K101",
+      "label": "米提斯（Metis）",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "智慧不止'知道'，更包括'知道何时、用何、为何'的实践巧思。",
+        "diagnosis_tags": [
+          "Metis",
+          "实践智慧",
+          "mētis"
+        ],
+        "trigger": [
+          "抽象高不能落地",
+          "想找捷径"
+        ],
+        "symptoms": [
+          "知识不能转动作"
+        ],
+        "root_causes": [
+          "把智慧当知识"
+        ],
+        "interventions": [
+          "训练情境-反应-反射",
+          "用案例校准"
+        ],
+        "reflection_questions": [
+          "我此刻缺的是知识还是巧思？"
+        ],
+        "related": [
+          "K086",
+          "K031",
+          "K001"
+        ]
+      }
+    },
+    {
+      "id": "K110",
+      "label": "死亡（Death）",
+      "type": "concept",
+      "category": "意义与目的",
+      "props": {
+        "summary": "把死亡放在视野中央，反而让活着变清晰；它是意义的最强催化剂。",
+        "diagnosis_tags": [
+          "死亡觉察",
+          "有限性",
+          "Memento Mori",
+          "紧迫感"
+        ],
+        "trigger": [
+          "活得拖",
+          "把重要的事推给未来",
+          "丧失意义感"
+        ],
+        "symptoms": [
+          "日复一日但不真活",
+          "重要对话不敢开",
+          "拖延变常态"
+        ],
+        "root_causes": [
+          "死亡被屏蔽在日常之外"
+        ],
+        "interventions": [
+          "Memento Mori 实物提醒",
+          "写'如果还有 30 天'清单",
+          "定期做重要对话",
+          "练'死前不后悔'筛选"
+        ],
+        "reflection_questions": [
+          "如果今天是我生命的最后一天，我最后悔没做什么？"
+        ],
+        "related": [
+          "K011",
+          "K002",
+          "K031",
+          "K101",
+          "K053"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "K011",
+      "target": "K014",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K011"
+    },
+    {
+      "source": "K011",
+      "target": "K028",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K011"
+    },
+    {
+      "source": "K011",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K011"
+    },
+    {
+      "source": "K011",
+      "target": "K101",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K011"
+    },
+    {
+      "source": "K011",
+      "target": "K110",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K011"
+    },
+    {
+      "source": "K014",
+      "target": "K001",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K014"
+    },
+    {
+      "source": "K014",
+      "target": "K015",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K014"
+    },
+    {
+      "source": "K014",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K014"
+    },
+    {
+      "source": "K014",
+      "target": "K048",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K014"
+    },
+    {
+      "source": "K015",
+      "target": "K053",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K015"
+    },
+    {
+      "source": "K015",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K015"
+    },
+    {
+      "source": "K028",
+      "target": "K053",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K028"
+    },
+    {
+      "source": "K028",
+      "target": "K054",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K028"
+    },
+    {
+      "source": "K028",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K028"
+    },
+    {
+      "source": "K029",
+      "target": "K028",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K029"
+    },
+    {
+      "source": "K029",
+      "target": "K053",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K029"
+    },
+    {
+      "source": "K029",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K029"
+    },
+    {
+      "source": "K030",
+      "target": "K001",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K030"
+    },
+    {
+      "source": "K030",
+      "target": "K031",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K030"
+    },
+    {
+      "source": "K030",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K030"
+    },
+    {
+      "source": "K045",
+      "target": "K014",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K045"
+    },
+    {
+      "source": "K045",
+      "target": "K030",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K045"
+    },
+    {
+      "source": "K045",
+      "target": "K048",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K045"
+    },
+    {
+      "source": "K045",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K045"
+    },
+    {
+      "source": "K053",
+      "target": "K054",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K053"
+    },
+    {
+      "source": "K053",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K053"
+    },
+    {
+      "source": "K054",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K054"
+    },
+    {
+      "source": "K054",
+      "target": "K030",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K054"
+    },
+    {
+      "source": "K062",
+      "target": "K014",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K062"
+    },
+    {
+      "source": "K020",
+      "target": "K017",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K020"
+    },
+    {
+      "source": "K020",
+      "target": "K067",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K020"
+    },
+    {
+      "source": "K020",
+      "target": "K073",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K020"
+    },
+    {
+      "source": "K020",
+      "target": "K078",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K020"
+    },
+    {
+      "source": "K046A",
+      "target": "K046B",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K046A"
+    },
+    {
+      "source": "K046A",
+      "target": "K052",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K046A"
+    },
+    {
+      "source": "K046A",
+      "target": "K069",
+      "type": "treats",
+      "weight": 1.0,
+      "context": "K046A"
+    },
+    {
+      "source": "K046A",
+      "target": "K079",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K046A"
+    },
+    {
+      "source": "K047",
+      "target": "K001",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K047"
+    },
+    {
+      "source": "K047",
+      "target": "K030",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K047"
+    },
+    {
+      "source": "K047",
+      "target": "K079",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K047"
+    },
+    {
+      "source": "K048",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K048"
+    },
+    {
+      "source": "K057",
+      "target": "K022",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K057"
+    },
+    {
+      "source": "K057",
+      "target": "K031",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K057"
+    },
+    {
+      "source": "K057",
+      "target": "K042",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K057"
+    },
+    {
+      "source": "K058",
+      "target": "K052",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K058"
+    },
+    {
+      "source": "K058",
+      "target": "K079",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K058"
+    },
+    {
+      "source": "K067",
+      "target": "K076",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K067"
+    },
+    {
+      "source": "K067",
+      "target": "K078",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K067"
+    },
+    {
+      "source": "K068",
+      "target": "K046A",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K068"
+    },
+    {
+      "source": "K068",
+      "target": "K049",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K068"
+    },
+    {
+      "source": "K068",
+      "target": "K069",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K068"
+    },
+    {
+      "source": "K068",
+      "target": "K077",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K068"
+    },
+    {
+      "source": "K069",
+      "target": "K046A",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K069"
+    },
+    {
+      "source": "K069",
+      "target": "K067",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K069"
+    },
+    {
+      "source": "K069",
+      "target": "K079",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K069"
+    },
+    {
+      "source": "K069",
+      "target": "K080",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K069"
+    },
+    {
+      "source": "K070",
+      "target": "K050",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K070"
+    },
+    {
+      "source": "K070",
+      "target": "K046A",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K070"
+    },
+    {
+      "source": "K070",
+      "target": "K080",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K070"
+    },
+    {
+      "source": "K076",
+      "target": "K068",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K076"
+    },
+    {
+      "source": "K076",
+      "target": "K069",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K076"
+    },
+    {
+      "source": "K077",
+      "target": "K078",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K077"
+    },
+    {
+      "source": "K077",
+      "target": "K071",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K077"
+    },
+    {
+      "source": "K078",
+      "target": "K032",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K078"
+    },
+    {
+      "source": "K079",
+      "target": "K080",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K079"
+    },
+    {
+      "source": "K079",
+      "target": "K052",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K079"
+    },
+    {
+      "source": "K080",
+      "target": "K046A",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K080"
+    },
+    {
+      "source": "K059",
+      "target": "K026",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K059"
+    },
+    {
+      "source": "K059",
+      "target": "K068",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K059"
+    },
+    {
+      "source": "K059",
+      "target": "K081",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K059"
+    },
+    {
+      "source": "K081",
+      "target": "K082",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K081"
+    },
+    {
+      "source": "K081",
+      "target": "K088",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K081"
+    },
+    {
+      "source": "K082",
+      "target": "K083",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K082"
+    },
+    {
+      "source": "K082",
+      "target": "K085",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K082"
+    },
+    {
+      "source": "K082",
+      "target": "K086",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K082"
+    },
+    {
+      "source": "K082",
+      "target": "K087",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K082"
+    },
+    {
+      "source": "K083",
+      "target": "K086",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K083"
+    },
+    {
+      "source": "K083",
+      "target": "K087",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K083"
+    },
+    {
+      "source": "K083",
+      "target": "K088",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K083"
+    },
+    {
+      "source": "K084",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K084"
+    },
+    {
+      "source": "K084",
+      "target": "K048",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K084"
+    },
+    {
+      "source": "K084",
+      "target": "K086",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K084"
+    },
+    {
+      "source": "K085",
+      "target": "K086",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K085"
+    },
+    {
+      "source": "K085",
+      "target": "K001",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K085"
+    },
+    {
+      "source": "K086",
+      "target": "K087",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K086"
+    },
+    {
+      "source": "K087",
+      "target": "K088",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K087"
+    },
+    {
+      "source": "K088",
+      "target": "K082",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K088"
+    },
+    {
+      "source": "K006",
+      "target": "K031",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K006"
+    },
+    {
+      "source": "K006",
+      "target": "K021",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K006"
+    },
+    {
+      "source": "K006",
+      "target": "K026",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K006"
+    },
+    {
+      "source": "K016",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K016"
+    },
+    {
+      "source": "K016",
+      "target": "K021",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K016"
+    },
+    {
+      "source": "K016",
+      "target": "K026",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K016"
+    },
+    {
+      "source": "K021",
+      "target": "K033",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K021"
+    },
+    {
+      "source": "K021",
+      "target": "K034",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K021"
+    },
+    {
+      "source": "K023",
+      "target": "K016",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K023"
+    },
+    {
+      "source": "K023",
+      "target": "K006",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K023"
+    },
+    {
+      "source": "K023",
+      "target": "K060",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K023"
+    },
+    {
+      "source": "K024",
+      "target": "K016",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K024"
+    },
+    {
+      "source": "K024",
+      "target": "K021",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K024"
+    },
+    {
+      "source": "K024",
+      "target": "K026",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K024"
+    },
+    {
+      "source": "K025",
+      "target": "K024",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K025"
+    },
+    {
+      "source": "K025",
+      "target": "K042",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K025"
+    },
+    {
+      "source": "K025",
+      "target": "K032",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K025"
+    },
+    {
+      "source": "K025",
+      "target": "K073",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K025"
+    },
+    {
+      "source": "K026",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K026"
+    },
+    {
+      "source": "K034",
+      "target": "K033",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K034"
+    },
+    {
+      "source": "K034",
+      "target": "K044",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K034"
+    },
+    {
+      "source": "K035",
+      "target": "K036",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K035"
+    },
+    {
+      "source": "K035",
+      "target": "K060",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K035"
+    },
+    {
+      "source": "K035",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K035"
+    },
+    {
+      "source": "K035",
+      "target": "K018",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K035"
+    },
+    {
+      "source": "K036",
+      "target": "K038",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K036"
+    },
+    {
+      "source": "K036",
+      "target": "K018",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K036"
+    },
+    {
+      "source": "K038",
+      "target": "K057",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K038"
+    },
+    {
+      "source": "K038",
+      "target": "K035",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K038"
+    },
+    {
+      "source": "K038",
+      "target": "K006",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K038"
+    },
+    {
+      "source": "K060",
+      "target": "K034",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K060"
+    },
+    {
+      "source": "K003",
+      "target": "K040",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K003"
+    },
+    {
+      "source": "K003",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K003"
+    },
+    {
+      "source": "K003",
+      "target": "K073",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K003"
+    },
+    {
+      "source": "K004",
+      "target": "K010",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K004"
+    },
+    {
+      "source": "K004",
+      "target": "K022",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K004"
+    },
+    {
+      "source": "K004",
+      "target": "K040",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K004"
+    },
+    {
+      "source": "K008",
+      "target": "K010",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K008"
+    },
+    {
+      "source": "K008",
+      "target": "K022",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K008"
+    },
+    {
+      "source": "K008",
+      "target": "K004",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K008"
+    },
+    {
+      "source": "K010",
+      "target": "K038",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K010"
+    },
+    {
+      "source": "K010",
+      "target": "K022",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K010"
+    },
+    {
+      "source": "K017",
+      "target": "K048",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K017"
+    },
+    {
+      "source": "K017",
+      "target": "K013",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K017"
+    },
+    {
+      "source": "K018",
+      "target": "K013",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K018"
+    },
+    {
+      "source": "K018",
+      "target": "K073",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K018"
+    },
+    {
+      "source": "K019",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K019"
+    },
+    {
+      "source": "K019",
+      "target": "K088",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K019"
+    },
+    {
+      "source": "K019",
+      "target": "K032",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K019"
+    },
+    {
+      "source": "K022",
+      "target": "K039",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K022"
+    },
+    {
+      "source": "K032",
+      "target": "K073",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K032"
+    },
+    {
+      "source": "K032",
+      "target": "K010",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K032"
+    },
+    {
+      "source": "K032",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K032"
+    },
+    {
+      "source": "K040",
+      "target": "K017",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K040"
+    },
+    {
+      "source": "K040",
+      "target": "K025",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K040"
+    },
+    {
+      "source": "K041",
+      "target": "K035",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K041"
+    },
+    {
+      "source": "K041",
+      "target": "K006",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K041"
+    },
+    {
+      "source": "K042",
+      "target": "K039",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K042"
+    },
+    {
+      "source": "K061",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K061"
+    },
+    {
+      "source": "K061",
+      "target": "K017",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K061"
+    },
+    {
+      "source": "K061",
+      "target": "K040",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K061"
+    },
+    {
+      "source": "K061",
+      "target": "K005",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K061"
+    },
+    {
+      "source": "K073",
+      "target": "K052",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K073"
+    },
+    {
+      "source": "K073",
+      "target": "K074",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K073"
+    },
+    {
+      "source": "K043",
+      "target": "K015",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K043"
+    },
+    {
+      "source": "K043",
+      "target": "K062",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K043"
+    },
+    {
+      "source": "K043",
+      "target": "K038",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K043"
+    },
+    {
+      "source": "K044",
+      "target": "K064",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K044"
+    },
+    {
+      "source": "K044",
+      "target": "K109",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K044"
+    },
+    {
+      "source": "K064",
+      "target": "K016",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K064"
+    },
+    {
+      "source": "K064",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K064"
+    },
+    {
+      "source": "K064",
+      "target": "K063",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K064"
+    },
+    {
+      "source": "K064",
+      "target": "K075",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K064"
+    },
+    {
+      "source": "K066",
+      "target": "K020",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K066"
+    },
+    {
+      "source": "K066",
+      "target": "K034",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K066"
+    },
+    {
+      "source": "K066",
+      "target": "K099",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K066"
+    },
+    {
+      "source": "K075",
+      "target": "K044",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K075"
+    },
+    {
+      "source": "K075",
+      "target": "K098",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K075"
+    },
+    {
+      "source": "K097",
+      "target": "K044",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K097"
+    },
+    {
+      "source": "K097",
+      "target": "K108",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K097"
+    },
+    {
+      "source": "K097",
+      "target": "K107",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K097"
+    },
+    {
+      "source": "K098",
+      "target": "K099",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K098"
+    },
+    {
+      "source": "K098",
+      "target": "K103",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K098"
+    },
+    {
+      "source": "K098",
+      "target": "K003",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K098"
+    },
+    {
+      "source": "K099",
+      "target": "K104",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K099"
+    },
+    {
+      "source": "K104",
+      "target": "K098",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K104"
+    },
+    {
+      "source": "K104",
+      "target": "K105",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K104"
+    },
+    {
+      "source": "K104",
+      "target": "K103",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K104"
+    },
+    {
+      "source": "K105",
+      "target": "K103",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K105"
+    },
+    {
+      "source": "K105",
+      "target": "K099",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K105"
+    },
+    {
+      "source": "K106",
+      "target": "K099",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K106"
+    },
+    {
+      "source": "K106",
+      "target": "K066",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K106"
+    },
+    {
+      "source": "K106",
+      "target": "K104",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K106"
+    },
+    {
+      "source": "K107",
+      "target": "K108",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K107"
+    },
+    {
+      "source": "K108",
+      "target": "K100",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K108"
+    },
+    {
+      "source": "K108",
+      "target": "K103",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K108"
+    },
+    {
+      "source": "K109",
+      "target": "K107",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K109"
+    },
+    {
+      "source": "K109",
+      "target": "K108",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K109"
+    },
+    {
+      "source": "K109",
+      "target": "K100",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K109"
+    },
+    {
+      "source": "K007",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K007"
+    },
+    {
+      "source": "K007",
+      "target": "K063",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K007"
+    },
+    {
+      "source": "K007",
+      "target": "K064",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K007"
+    },
+    {
+      "source": "K009",
+      "target": "K056",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K009"
+    },
+    {
+      "source": "K009",
+      "target": "K074",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K009"
+    },
+    {
+      "source": "K009",
+      "target": "K077",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K009"
+    },
+    {
+      "source": "K009",
+      "target": "K065",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K009"
+    },
+    {
+      "source": "K027",
+      "target": "K021",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K027"
+    },
+    {
+      "source": "K027",
+      "target": "K033",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K027"
+    },
+    {
+      "source": "K027",
+      "target": "K034",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K027"
+    },
+    {
+      "source": "K037",
+      "target": "K091",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K037"
+    },
+    {
+      "source": "K037",
+      "target": "K093",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K037"
+    },
+    {
+      "source": "K037",
+      "target": "K021",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K037"
+    },
+    {
+      "source": "K046B",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K046B"
+    },
+    {
+      "source": "K046B",
+      "target": "K064",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K046B"
+    },
+    {
+      "source": "K049",
+      "target": "K074",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K049"
+    },
+    {
+      "source": "K049",
+      "target": "K052",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K049"
+    },
+    {
+      "source": "K049",
+      "target": "K096",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K049"
+    },
+    {
+      "source": "K050",
+      "target": "K044",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K050"
+    },
+    {
+      "source": "K050",
+      "target": "K006",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K050"
+    },
+    {
+      "source": "K050",
+      "target": "K055",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K050"
+    },
+    {
+      "source": "K050",
+      "target": "K002",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K050"
+    },
+    {
+      "source": "K051",
+      "target": "K025",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K051"
+    },
+    {
+      "source": "K051",
+      "target": "K042",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K051"
+    },
+    {
+      "source": "K051",
+      "target": "K010",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K051"
+    },
+    {
+      "source": "K052",
+      "target": "K069",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K052"
+    },
+    {
+      "source": "K055",
+      "target": "K063",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K055"
+    },
+    {
+      "source": "K055",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K055"
+    },
+    {
+      "source": "K055",
+      "target": "K072",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K055"
+    },
+    {
+      "source": "K056",
+      "target": "K024",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K056"
+    },
+    {
+      "source": "K056",
+      "target": "K083",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K056"
+    },
+    {
+      "source": "K063",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K063"
+    },
+    {
+      "source": "K065",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K065"
+    },
+    {
+      "source": "K065",
+      "target": "K056",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K065"
+    },
+    {
+      "source": "K065",
+      "target": "K083",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K065"
+    },
+    {
+      "source": "K071",
+      "target": "K052",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K071"
+    },
+    {
+      "source": "K071",
+      "target": "K068",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K071"
+    },
+    {
+      "source": "K071",
+      "target": "K074",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K071"
+    },
+    {
+      "source": "K072",
+      "target": "K090",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K072"
+    },
+    {
+      "source": "K072",
+      "target": "K063",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K072"
+    },
+    {
+      "source": "K089",
+      "target": "K090",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K089"
+    },
+    {
+      "source": "K089",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K089"
+    },
+    {
+      "source": "K089",
+      "target": "K063",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K089"
+    },
+    {
+      "source": "K090",
+      "target": "K071",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K090"
+    },
+    {
+      "source": "K090",
+      "target": "K049",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K090"
+    },
+    {
+      "source": "K091",
+      "target": "K074",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K091"
+    },
+    {
+      "source": "K091",
+      "target": "K093",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K091"
+    },
+    {
+      "source": "K092",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K092"
+    },
+    {
+      "source": "K092",
+      "target": "K052",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K092"
+    },
+    {
+      "source": "K092",
+      "target": "K035",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K092"
+    },
+    {
+      "source": "K093",
+      "target": "K027",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K093"
+    },
+    {
+      "source": "K095",
+      "target": "K091",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K095"
+    },
+    {
+      "source": "K095",
+      "target": "K096",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K095"
+    },
+    {
+      "source": "K095",
+      "target": "K094",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K095"
+    },
+    {
+      "source": "K096",
+      "target": "K046B",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K096"
+    },
+    {
+      "source": "K096",
+      "target": "K037",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K096"
+    },
+    {
+      "source": "K100",
+      "target": "K102",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K100"
+    },
+    {
+      "source": "K100",
+      "target": "K095",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K100"
+    },
+    {
+      "source": "K102",
+      "target": "K103",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K102"
+    },
+    {
+      "source": "K102",
+      "target": "K108",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K102"
+    },
+    {
+      "source": "K103",
+      "target": "K089",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K103"
+    },
+    {
+      "source": "K001",
+      "target": "K031",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K001"
+    },
+    {
+      "source": "K001",
+      "target": "K048",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K001"
+    },
+    {
+      "source": "K001",
+      "target": "K039",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K001"
+    },
+    {
+      "source": "K002",
+      "target": "K014",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K002"
+    },
+    {
+      "source": "K002",
+      "target": "K039",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K002"
+    },
+    {
+      "source": "K002",
+      "target": "K013",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K002"
+    },
+    {
+      "source": "K002",
+      "target": "K005",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K002"
+    },
+    {
+      "source": "K005",
+      "target": "K012",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K005"
+    },
+    {
+      "source": "K005",
+      "target": "K017",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K005"
+    },
+    {
+      "source": "K005",
+      "target": "K013",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K005"
+    },
+    {
+      "source": "K012",
+      "target": "K010",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K012"
+    },
+    {
+      "source": "K012",
+      "target": "K022",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K012"
+    },
+    {
+      "source": "K012",
+      "target": "K039",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K012"
+    },
+    {
+      "source": "K013",
+      "target": "K050",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K013"
+    },
+    {
+      "source": "K031",
+      "target": "K039",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K031"
+    },
+    {
+      "source": "K031",
+      "target": "K101",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K031"
+    },
+    {
+      "source": "K039",
+      "target": "K057",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K039"
+    },
+    {
+      "source": "K101",
+      "target": "K086",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K101"
+    },
+    {
+      "source": "K101",
+      "target": "K001",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K101"
+    },
+    {
+      "source": "K110",
+      "target": "K002",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K110"
+    },
+    {
+      "source": "K110",
+      "target": "K031",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K110"
+    },
+    {
+      "source": "K110",
+      "target": "K101",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K110"
+    },
+    {
+      "source": "K110",
+      "target": "K053",
+      "type": "related",
+      "weight": 1.0,
+      "context": "K110"
+    }
+  ]
+}

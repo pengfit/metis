@@ -1,0 +1,638 @@
+[
+  {
+    "id": "K006",
+    "name": "理想 + 现实 + Action",
+    "category": "行动",
+    "summary": "理想画方向，现实给约束；二者之间只活 Action。",
+    "diagnosis_tags": [
+      "拖延",
+      "理想-行动",
+      "三角定位"
+    ],
+    "trigger": [
+      "有梦但瘫",
+      "抱怨现实"
+    ],
+    "symptoms": [
+      "空谈",
+      "总在等条件齐"
+    ],
+    "root_causes": [
+      "把理想当感受不当目标"
+    ],
+    "interventions": [
+      {
+        "label": "理想变可执行命题",
+        "do": "今天1个模糊理想→1个'明天1小时能做'的子任务",
+        "when": "today",
+        "min": 10,
+        "mark": "1个子任务写下"
+      },
+      {
+        "label": "现实变约束清单",
+        "do": "列3条硬约束,符合就不焦虑",
+        "when": "today",
+        "min": 5,
+        "mark": "3条约束写出"
+      },
+      {
+        "label": "每天移动1%",
+        "do": "找到'今天可以做'最小动作,做掉",
+        "when": "today",
+        "min": 1,
+        "mark": "1%推进完成"
+      }
+    ],
+    "reflection_questions": [
+      "今天我的 Action 是什么？"
+    ],
+    "related": [
+      "K031",
+      "K021",
+      "K026"
+    ]
+  },
+  {
+    "id": "K016",
+    "name": "环境",
+    "category": "行动",
+    "summary": "环境是隐形的执行系统；改环境比改意志便宜 10 倍。",
+    "diagnosis_tags": [
+      "拖延",
+      "环境设计",
+      "nudge"
+    ],
+    "trigger": [
+      "屡次失败同一行为",
+      "意志力耗尽"
+    ],
+    "symptoms": [
+      "天天抵抗诱惑"
+    ],
+    "root_causes": [
+      "环境阻力大，意志力不够"
+    ],
+    "interventions": [
+      {
+        "label": "把诱惑移出视线",
+        "do": "手机放抽屉/电脑锁屏30分钟",
+        "when": "now",
+        "min": 1,
+        "mark": "视觉清空"
+      },
+      {
+        "label": "加默认动作",
+        "do": "打开电脑=自动起IDE;起床=自动起咖啡",
+        "when": "today",
+        "min": 15,
+        "mark": "默认触发接好"
+      },
+      {
+        "label": "换1次物理位置",
+        "do": "本周换1次工作地点试环境影响",
+        "when": "this_week",
+        "min": 60,
+        "mark": "地点换了"
+      }
+    ],
+    "reflection_questions": [
+      "我现在的环境是为'我想成为的人'设计的吗？"
+    ],
+    "related": [
+      "K020",
+      "K021",
+      "K026"
+    ]
+  },
+  {
+    "id": "K021",
+    "name": "Focus",
+    "category": "行动",
+    "summary": "Focus 是对'不做什么'的勇气。",
+    "diagnosis_tags": [
+      "信息撑到饱和",
+      "Focus",
+      "砍事"
+    ],
+    "trigger": [
+      "多线并发",
+      "什么都要做"
+    ],
+    "symptoms": [
+      "忙碌却没产出"
+    ],
+    "root_causes": [
+      "拒绝成本太高"
+    ],
+    "interventions": [
+      {
+        "label": "一句话说明天目标",
+        "do": "看能30秒说清,不能,目标太大",
+        "when": "now",
+        "min": 1,
+        "mark": "1句话写好"
+      },
+      {
+        "label": "砍一半清单",
+        "do": "如>5件事,砍到2件",
+        "when": "today",
+        "min": 3,
+        "mark": "砍完"
+      },
+      {
+        "label": "1.5小时深度块",
+        "do": "早能量高峰,关通知",
+        "when": "today",
+        "min": 90,
+        "mark": "完成1.5h深度"
+      }
+    ],
+    "reflection_questions": [
+      "我今天不做哪三件事？"
+    ],
+    "related": [
+      "K006",
+      "K033",
+      "K034"
+    ]
+  },
+  {
+    "id": "K023",
+    "name": "Change：A/B/C 渐进/突变",
+    "category": "行动",
+    "summary": "A 微调、B 改造、C 重启；知道在哪一档才不空转。",
+    "diagnosis_tags": [
+      "转型期",
+      "变革档位",
+      "A/B/C"
+    ],
+    "trigger": [
+      "想改但不知从何改",
+      "改了没用"
+    ],
+    "symptoms": [
+      "过度努力却微小进展"
+    ],
+    "root_causes": [
+      "档位错了：用 C 模式做 A 事"
+    ],
+    "interventions": [
+      {
+        "label": "诊断档位",
+        "do": "这件事是A/B/C?",
+        "when": "now",
+        "min": 3,
+        "mark": "档位标好"
+      },
+      {
+        "label": "匹配工具到档位",
+        "do": "A=习惯,B=环境,C=全部重设计",
+        "when": "today",
+        "min": 5,
+        "mark": "工具对齐"
+      },
+      {
+        "label": "用对应力度去改",
+        "do": "今天做1对应动作",
+        "when": "today",
+        "min": 10,
+        "mark": "1动作完成"
+      }
+    ],
+    "reflection_questions": [
+      "这件事的'档位'是哪一档？我用对工具了吗？"
+    ],
+    "related": [
+      "K016",
+      "K006",
+      "K060"
+    ]
+  },
+  {
+    "id": "K024",
+    "name": "例行公事（Routines）",
+    "category": "行动",
+    "summary": "把重要但不紧急的事装进例行；意志力最贵的资源要外包。",
+    "diagnosis_tags": [
+      "拖延",
+      "例行",
+      "节奏"
+    ],
+    "trigger": [
+      "想做总没做",
+      "靠心情启动"
+    ],
+    "symptoms": [
+      "总是'今天先这样'"
+    ],
+    "root_causes": [
+      "决定权外包给状态"
+    ],
+    "interventions": [
+      {
+        "label": "时间锚:起床+晚10点同一动作",
+        "do": "同一锚点同一动作",
+        "when": "today",
+        "min": 5,
+        "mark": "2锚点设好"
+      },
+      {
+        "label": "触发-动作配对",
+        "do": "刷完牙=写今日Top 3(单步)",
+        "when": "today",
+        "min": 2,
+        "mark": "配对完成1个"
+      },
+      {
+        "label": "2分钟规则",
+        "do": "想做任何事,做满2分钟才能停",
+        "when": "today",
+        "min": 2,
+        "mark": "做了1次"
+      }
+    ],
+    "reflection_questions": [
+      "我的核心例行是什么？哪天断了？"
+    ],
+    "related": [
+      "K016",
+      "K021",
+      "K026"
+    ]
+  },
+  {
+    "id": "K025",
+    "name": "take time off",
+    "category": "行动",
+    "summary": "战略性撤退是生产力工具，不是奖励。",
+    "diagnosis_tags": [
+      "疲惫",
+      "恢复",
+      "反脆弱"
+    ],
+    "trigger": [
+      "越忙越焦虑",
+      "灵感匮乏",
+      "效率骤降"
+    ],
+    "symptoms": [
+      "效率边际归零"
+    ],
+    "root_causes": [
+      "把休息当偷懒"
+    ],
+    "interventions": [
+      {
+        "label": "今晚强制休1晚",
+        "do": "手机放家里,出门30分钟",
+        "when": "now",
+        "min": 30,
+        "mark": "出门了"
+      },
+      {
+        "label": "周末断联4小时",
+        "do": "不刷任何手机屏幕通知",
+        "when": "this_week",
+        "min": 240,
+        "mark": "断联4h"
+      },
+      {
+        "label": "散步不带耳机",
+        "do": "听自己的脑子说话",
+        "when": "today",
+        "min": 20,
+        "mark": "散步20分钟"
+      }
+    ],
+    "reflection_questions": [
+      "我今天允许自己停了吗？"
+    ],
+    "related": [
+      "K024",
+      "K042",
+      "K032",
+      "K073"
+    ]
+  },
+  {
+    "id": "K026",
+    "name": "写下来（A.B.C）",
+    "category": "行动",
+    "summary": "心智外移到纸上；'写'是认知的廉价外骨骼。",
+    "diagnosis_tags": [
+      "信息撑到饱和",
+      "外化思考",
+      "笔记"
+    ],
+    "trigger": [
+      "脑子塞爆",
+      "反复想同一件事"
+    ],
+    "symptoms": [
+      "停车想事",
+      "入睡前脑子转"
+    ],
+    "root_causes": [
+      "靠脑记一切"
+    ],
+    "interventions": [
+      {
+        "label": "晨间页:起床写3页",
+        "do": "想到啥写啥,不编辑不读",
+        "when": "today",
+        "min": 20,
+        "mark": "3页写完"
+      },
+      {
+        "label": "脑中1件事外写",
+        "do": "现在用1行写到纸上/笔记",
+        "when": "now",
+        "min": 2,
+        "mark": "写好"
+      },
+      {
+        "label": "睡前关账",
+        "do": "今天完成的+明天的Top 3,各1行",
+        "when": "today",
+        "min": 3,
+        "mark": "睡前账做完"
+      }
+    ],
+    "reflection_questions": [
+      "我现在最该外写的一件事是什么？"
+    ],
+    "related": [
+      "K020",
+      "K024",
+      "K059"
+    ]
+  },
+  {
+    "id": "K034",
+    "name": "Say No",
+    "category": "行动",
+    "summary": "说不的成本总被低估；说不的能力 = 自由。",
+    "diagnosis_tags": [
+      "边界模糊",
+      "拒绝",
+      "默认拒绝"
+    ],
+    "trigger": [
+      "被无限占用",
+      "答应后悔",
+      "时间被排满"
+    ],
+    "symptoms": [
+      "时间被别人排"
+    ],
+    "root_causes": [
+      "把'是'当默认"
+    ],
+    "interventions": [
+      {
+        "label": "默认拒绝本周所有新邀约",
+        "do": "周末再复审",
+        "when": "now",
+        "min": 1,
+        "mark": "默认拒绝话术备好"
+      },
+      {
+        "label": "练习缓冲句",
+        "do": "'我看看,明天回复你'",
+        "when": "now",
+        "min": 1,
+        "mark": "3句写下"
+      },
+      {
+        "label": "可视化今天已有2件",
+        "do": "不为可能,为已有量",
+        "when": "today",
+        "min": 2,
+        "mark": "可视化做出"
+      }
+    ],
+    "reflection_questions": [
+      "我今天哪一句话该说不？"
+    ],
+    "related": [
+      "K021",
+      "K033",
+      "K044"
+    ]
+  },
+  {
+    "id": "K035",
+    "name": "拖延",
+    "category": "行动",
+    "summary": "拖延不是懒，是情绪管理失败（怕失败/求完美/怕无聊）。",
+    "diagnosis_tags": [
+      "拖延",
+      "情绪回避",
+      "执行困难"
+    ],
+    "trigger": [
+      "任务有情绪重量",
+      "时限未到"
+    ],
+    "symptoms": [
+      "收藏很多课程不练",
+      "迟迟不行动",
+      "等状态"
+    ],
+    "root_causes": [
+      "情绪回避",
+      "完美主义前置"
+    ],
+    "interventions": [
+      {
+        "label": "5秒起跑",
+        "do": "倒数5秒立刻打开文档输入第一句(不限好坏)",
+        "when": "now",
+        "min": 1,
+        "mark": "你输出了第一句(烂也算赢)"
+      },
+      {
+        "label": "WOOP四问",
+        "do": "写下W/O/O/P,4行",
+        "when": "today",
+        "min": 10,
+        "mark": "四行都填了"
+      },
+      {
+        "label": "拆启动动作",
+        "do": "把'起草段'改成'打开文档',单一按钮式启动",
+        "when": "now",
+        "min": 2,
+        "mark": "打开了文档"
+      }
+    ],
+    "reflection_questions": [
+      "今天真正阻止我的到底是什么？"
+    ],
+    "related": [
+      "K036",
+      "K060",
+      "K062",
+      "K018"
+    ]
+  },
+  {
+    "id": "K036",
+    "name": "完美主义",
+    "category": "行动",
+    "summary": "完美主义是拖延的体面别名；先丑再好。",
+    "diagnosis_tags": [
+      "完美主义",
+      "标准过高",
+      "怕评"
+    ],
+    "trigger": [
+      "想做出手",
+      "怕被评价",
+      "怕不完美"
+    ],
+    "symptoms": [
+      "开不了头",
+      "做一半推翻",
+      "迟迟不交"
+    ],
+    "root_causes": [
+      "把自我价值绑在结果"
+    ],
+    "interventions": [
+      {
+        "label": "先交70分版本",
+        "do": "今天交1份'差但完整'的",
+        "when": "today",
+        "min": 60,
+        "mark": "交了1份"
+      },
+      {
+        "label": "画圆练习",
+        "do": "一笔画完圆,不对齐,看'完成'",
+        "when": "today",
+        "min": 1,
+        "mark": "圆画了"
+      },
+      {
+        "label": "设丑截止",
+        "do": "不论好坏,2小时必出",
+        "when": "today",
+        "min": 2,
+        "mark": "丑版本交了"
+      }
+    ],
+    "reflection_questions": [
+      "如果只能交一份 70 分，我今天交吗？"
+    ],
+    "related": [
+      "K035",
+      "K038",
+      "K018"
+    ]
+  },
+  {
+    "id": "K038",
+    "name": "奖励过程（have → having）",
+    "category": "行动",
+    "summary": "不要等有结果再行动；要把过程的'奖励结构'重设计。",
+    "diagnosis_tags": [
+      "疲惫",
+      "过程奖励",
+      "自我决定"
+    ],
+    "trigger": [
+      "有目标但启动慢",
+      "无外部奖励"
+    ],
+    "symptoms": [
+      "靠意志力硬推"
+    ],
+    "root_causes": [
+      "奖励绑定错对象"
+    ],
+    "interventions": [
+      {
+        "label": "设计仪式感",
+        "do": "开始前泡茶,完成时散步",
+        "when": "today",
+        "min": 5,
+        "mark": "起止仪式各设好"
+      },
+      {
+        "label": "里程碑奖励",
+        "do": "每完成阶段给自己小礼物",
+        "when": "this_week",
+        "min": 5,
+        "mark": "1里程碑到"
+      },
+      {
+        "label": "用内在动机结构",
+        "do": "尽可能给选择",
+        "when": "this_week",
+        "min": 5,
+        "mark": "1选择结构给出"
+      }
+    ],
+    "reflection_questions": [
+      "我的过程奖励是什么？我设计了吗？"
+    ],
+    "related": [
+      "K057",
+      "K035",
+      "K006"
+    ]
+  },
+  {
+    "id": "K060",
+    "name": "WOOP（Wish–Outcome–Obstacle–Plan）",
+    "category": "行动",
+    "summary": "用'具体障碍'逼出'if-then'；心理对照的力量。",
+    "diagnosis_tags": [
+      "拖延",
+      "WOOP",
+      "if-then"
+    ],
+    "trigger": [
+      "想做但怕卡",
+      "卡了一直卡"
+    ],
+    "symptoms": [
+      "目标大但路径空"
+    ],
+    "root_causes": [
+      "没有具体障碍清单"
+    ],
+    "interventions": [
+      {
+        "label": "写下W-O-O-P",
+        "do": "今晚1次,4行",
+        "when": "today",
+        "min": 10,
+        "mark": "4行写好"
+      },
+      {
+        "label": "P写'if-Then'",
+        "do": "如出现O就做P,具体到时地",
+        "when": "today",
+        "min": 5,
+        "mark": "if-Then 完成"
+      },
+      {
+        "label": "明天看笔记执行",
+        "do": "不看就是纸上谈兵",
+        "when": "today",
+        "min": 0,
+        "mark": "明天真做"
+      }
+    ],
+    "reflection_questions": [
+      "我卡过的真实障碍是？我会怎么 if-then？"
+    ],
+    "related": [
+      "K035",
+      "K023",
+      "K034"
+    ]
+  }
+]

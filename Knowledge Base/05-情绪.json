@@ -1,0 +1,763 @@
+[
+  {
+    "id": "K003",
+    "name": "自尊",
+    "category": "情绪",
+    "summary": "自尊不是高高在上，是稳定地知道'我值得被善待'。",
+    "diagnosis_tags": [
+      "信念冲突",
+      "自尊",
+      "过度防守"
+    ],
+    "trigger": [
+      "被评",
+      "被拒绝",
+      "对比他人"
+    ],
+    "symptoms": [
+      "过度防守",
+      "情绪化反应",
+      "玻璃心"
+    ],
+    "root_causes": [
+      "自尊挂在外物/他人身上"
+    ],
+    "interventions": [
+      {
+        "label": "今天对'我'说一句",
+        "do": "任何一句肯定的话,1行",
+        "when": "now",
+        "min": 1,
+        "mark": "写了1句"
+      },
+      {
+        "label": "区分事实与评价",
+        "do": "把今天受到的1个评价拆开",
+        "when": "today",
+        "min": 5,
+        "mark": "拆开"
+      },
+      {
+        "label": "自尊练习:具体表达1特质",
+        "do": "不靠外物证明",
+        "when": "this_week",
+        "min": 10,
+        "mark": "特质写明"
+      }
+    ],
+    "reflection_questions": [
+      "今天我对'我'说了句什么？"
+    ],
+    "related": [
+      "K040",
+      "K062",
+      "K073"
+    ]
+  },
+  {
+    "id": "K004",
+    "name": "消极",
+    "category": "情绪",
+    "summary": "消极不只是情绪，是思维的默认通道；可以训练切换。",
+    "diagnosis_tags": [
+      "极端思维",
+      "消极偏向",
+      "negativity"
+    ],
+    "trigger": [
+      "接收坏消息",
+      "被批评",
+      "挫败"
+    ],
+    "symptoms": [
+      "盯住坏忽略好"
+    ],
+    "root_causes": [
+      "演化留存的威胁敏感"
+    ],
+    "interventions": [
+      {
+        "label": "记下1件今天的'好'",
+        "do": "1行纸笔",
+        "when": "now",
+        "min": 1,
+        "mark": "1行写好"
+      },
+      {
+        "label": "主动夸3件发生的事",
+        "do": "对同伴说出来",
+        "when": "today",
+        "min": 3,
+        "mark": "夸完"
+      },
+      {
+        "label": "每天'好事日记'3件",
+        "do": "坚持7天",
+        "when": "this_week",
+        "min": 3,
+        "mark": "7天完成"
+      }
+    ],
+    "reflection_questions": [
+      "今天我夸大了哪部分的'坏'？"
+    ],
+    "related": [
+      "K010",
+      "K022",
+      "K040"
+    ]
+  },
+  {
+    "id": "K008",
+    "name": "笑",
+    "category": "情绪",
+    "summary": "笑能反向重塑情绪回路；不是掩饰，是生理工具。",
+    "diagnosis_tags": [
+      "疲惫",
+      "过度补偿",
+      "笑",
+      "情绪调节"
+    ],
+    "trigger": [
+      "僵住",
+      "太严肃",
+      "气氛紧"
+    ],
+    "symptoms": [
+      "严肃脸毁所有事"
+    ],
+    "root_causes": [
+      "把幽默当逃避"
+    ],
+    "interventions": [
+      {
+        "label": "今天找1个笑点",
+        "do": "看1段喜剧短片/读段子",
+        "when": "today",
+        "min": 5,
+        "mark": "笑了1次"
+      },
+      {
+        "label": "戏剧大笑:没人时笑1分钟",
+        "do": "生理反馈,不限原因",
+        "when": "today",
+        "min": 1,
+        "mark": "1分钟笑"
+      },
+      {
+        "label": "约1次'常让你笑'的伴",
+        "do": "30分钟以上",
+        "when": "this_week",
+        "min": 30,
+        "mark": "约了"
+      }
+    ],
+    "reflection_questions": [
+      "我今天笑了几次？"
+    ],
+    "related": [
+      "K010",
+      "K022",
+      "K004"
+    ]
+  },
+  {
+    "id": "K010",
+    "name": "幸福水平回归",
+    "category": "情绪",
+    "summary": "幸福有基线；大好事/坏事会回归；不该指望外物持久拔高。",
+    "diagnosis_tags": [
+      "低落",
+      "Hedonic",
+      "幸福基线"
+    ],
+    "trigger": [
+      "中彩票",
+      "分手",
+      "常态错觉"
+    ],
+    "symptoms": [
+      "兴奋期很短",
+      "达成仍空"
+    ],
+    "root_causes": [
+      "适应性机制"
+    ],
+    "interventions": [
+      {
+        "label": "过程取向:设计1件每天的小好事",
+        "do": "如晨间散步",
+        "when": "today",
+        "min": 5,
+        "mark": "选了"
+      },
+      {
+        "label": "停止'追峰值'",
+        "do": "峰值会回归基线",
+        "when": "now",
+        "min": 0,
+        "mark": "不追峰值"
+      },
+      {
+        "label": "建'日常满足清单'",
+        "do": "列10件让你觉得'这就够了'",
+        "when": "this_week",
+        "min": 15,
+        "mark": "10件写好"
+      }
+    ],
+    "reflection_questions": [
+      "我今天在'升级基线'还是在'追峰值'？"
+    ],
+    "related": [
+      "K004",
+      "K038",
+      "K022"
+    ]
+  },
+  {
+    "id": "K017",
+    "name": "P or N 视角",
+    "category": "情绪",
+    "summary": "同一事件，可用成长视角（P）或威胁视角（N）解读。",
+    "diagnosis_tags": [
+      "视角固化",
+      "P/N视角",
+      "reframing"
+    ],
+    "trigger": [
+      "挫败",
+      "批评",
+      "恐惧"
+    ],
+    "symptoms": [
+      "被动挨打",
+      "动力丧失"
+    ],
+    "root_causes": [
+      "默认威胁框架"
+    ],
+    "interventions": [
+      {
+        "label": "用P视角重写昨天的1事",
+        "do": "如'失败'→'学到'",
+        "when": "today",
+        "min": 5,
+        "mark": "重写完"
+      },
+      {
+        "label": "每困局问'威胁还是成长?'",
+        "do": "30秒自问",
+        "when": "now",
+        "min": 1,
+        "mark": "问题出口执行"
+      },
+      {
+        "label": "记'视角切换日记'",
+        "do": "今天几次切换,效果如何",
+        "when": "this_week",
+        "min": 3,
+        "mark": "日记写好"
+      }
+    ],
+    "reflection_questions": [
+      "这件事的 P 解读是什么？"
+    ],
+    "related": [
+      "K020",
+      "K048",
+      "K013"
+    ]
+  },
+  {
+    "id": "K018",
+    "name": "失败 More",
+    "category": "情绪",
+    "summary": "失败不是反例，是数据；量比质更重要。",
+    "diagnosis_tags": [
+      "完美主义",
+      "回避",
+      "失败预算",
+      "failing-forward"
+    ],
+    "trigger": [
+      "想避免错",
+      "过度自我保护"
+    ],
+    "symptoms": [
+      "胆小",
+      "窄范围",
+      "求稳不求成"
+    ],
+    "root_causes": [
+      "把失败当身份否定"
+    ],
+    "interventions": [
+      {
+        "label": "今天'失败'1件小的",
+        "do": "10分钟,不重要的事",
+        "when": "today",
+        "min": 10,
+        "mark": "1小失败做出"
+      },
+      {
+        "label": "失败日记:写这次学到的",
+        "do": "5分钟",
+        "when": "today",
+        "min": 5,
+        "mark": "日记1行"
+      },
+      {
+        "label": "本周设'失败预算':5次",
+        "do": "允许失败5次,有剩余说明太稳",
+        "when": "this_week",
+        "min": 3,
+        "mark": "5次预算装好"
+      }
+    ],
+    "reflection_questions": [
+      "我今天'失败'了什么？学到了什么？"
+    ],
+    "related": [
+      "K013",
+      "K036",
+      "K073"
+    ]
+  },
+  {
+    "id": "K019",
+    "name": "想象",
+    "category": "情绪",
+    "summary": "想象是低成本的预演；也是焦虑的放大镜。",
+    "diagnosis_tags": [
+      "焦虑",
+      "反刍",
+      "mental simulation",
+      "想象练习"
+    ],
+    "trigger": [
+      "面对不确定",
+      "想练习",
+      "害怕"
+    ],
+    "symptoms": [
+      "过演练致焦虑",
+      "从来不演练致翻车"
+    ],
+    "root_causes": [
+      "想象无反馈回路"
+    ],
+    "interventions": [
+      {
+        "label": "具体场景想象1次",
+        "do": "下周最难的事,坐想30分钟会怎么过",
+        "when": "this_week",
+        "min": 30,
+        "mark": "具体场景想完"
+      },
+      {
+        "label": "设'想象界限'",
+        "do": "想象完问'下一步现实动作是啥'",
+        "when": "now",
+        "min": 1,
+        "mark": "设好了"
+      },
+      {
+        "label": "用想象选替代反刍",
+        "do": "反刍=空转;想象=演练",
+        "when": "today",
+        "min": 5,
+        "mark": "切换发生"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻的想象在帮我还是在压我？"
+    ],
+    "related": [
+      "K020",
+      "K088",
+      "K032"
+    ]
+  },
+  {
+    "id": "K022",
+    "name": "感激（Gratitude）",
+    "category": "情绪",
+    "summary": "感激不是客气，是主动切到'足够'视角的方法。",
+    "diagnosis_tags": [
+      "低落",
+      "Gratitude",
+      "积极心理学"
+    ],
+    "trigger": [
+      "匮乏感",
+      "总不够"
+    ],
+    "symptoms": [
+      "永远缺一件"
+    ],
+    "root_causes": [
+      "默认稀缺叙事"
+    ],
+    "interventions": [
+      {
+        "label": "今天3件好事",
+        "do": "具体3件,不是'今天还好'",
+        "when": "now",
+        "min": 2,
+        "mark": "3件写下"
+      },
+      {
+        "label": "主动致谢1个人",
+        "do": "不是'谢谢',而是'因为…谢谢你'",
+        "when": "today",
+        "min": 3,
+        "mark": "致谢发出"
+      },
+      {
+        "label": "7天3件好事日记",
+        "do": "每天同时间,见效果",
+        "when": "this_week",
+        "min": 3,
+        "mark": "7天完成"
+      }
+    ],
+    "reflection_questions": [
+      "今天有什么是值得我感激的？"
+    ],
+    "related": [
+      "K004",
+      "K010",
+      "K039"
+    ]
+  },
+  {
+    "id": "K032",
+    "name": "压力（break）",
+    "category": "情绪",
+    "summary": "压力不是负担，是'被需要'的信号；用对就增益。",
+    "diagnosis_tags": [
+      "焦虑",
+      "压力二元",
+      "challenge/threat"
+    ],
+    "trigger": [
+      "关键时刻",
+      "被骂",
+      "高压场景"
+    ],
+    "symptoms": [
+      "手足冰凉",
+      "僵住",
+      "易崩"
+    ],
+    "root_causes": [
+      "把压力当敌人"
+    ],
+    "interventions": [
+      {
+        "label": "重新评估压力源",
+        "do": "写下:这对我挑战vs威胁",
+        "when": "now",
+        "min": 3,
+        "mark": "重新标记"
+      },
+      {
+        "label": "剧烈运动30分钟",
+        "do": "压力累积时,动一动",
+        "when": "today",
+        "min": 30,
+        "mark": "30分钟完成"
+      },
+      {
+        "label": "写'压力的我 vs 平静的我'",
+        "do": "对话结构",
+        "when": "today",
+        "min": 5,
+        "mark": "对话写好"
+      }
+    ],
+    "reflection_questions": [
+      "我现在把压力视作挑战还是威胁？"
+    ],
+    "related": [
+      "K073",
+      "K010",
+      "K020"
+    ]
+  },
+  {
+    "id": "K040",
+    "name": "3P：许可 / 积极 / 视角",
+    "category": "情绪",
+    "summary": "Permission / Positive / Perspective：给情绪三种出口。",
+    "diagnosis_tags": [
+      "低落",
+      "3P",
+      "情绪调节"
+    ],
+    "trigger": [
+      "情绪过载",
+      "挫败",
+      "自我压迫"
+    ],
+    "symptoms": [
+      "情绪堆积",
+      "僵住"
+    ],
+    "root_causes": [
+      "不允许自己暂停"
+    ],
+    "interventions": [
+      {
+        "label": "P给自己许可",
+        "do": "今天我做不了所有事,允许不完美",
+        "when": "now",
+        "min": 0,
+        "mark": "说了许可"
+      },
+      {
+        "label": "P找积极",
+        "do": "今天最糟1事中,1点'也没那么糟'",
+        "when": "today",
+        "min": 3,
+        "mark": "积极点找到"
+      },
+      {
+        "label": "P转视角",
+        "do": "这件事,我的朋友会怎么看",
+        "when": "today",
+        "min": 3,
+        "mark": "视角转完"
+      }
+    ],
+    "reflection_questions": [
+      "我现在可以先 P 自己吗？"
+    ],
+    "related": [
+      "K017",
+      "K004",
+      "K025"
+    ]
+  },
+  {
+    "id": "K041",
+    "name": "灵药（Magical Thinking）",
+    "category": "情绪",
+    "summary": "没有万能解决方案；过度渴望'灵药'反而延迟行动。",
+    "diagnosis_tags": [
+      "信息撑到饱和",
+      "灵药",
+      "魔法思维"
+    ],
+    "trigger": [
+      "寻找捷径",
+      "等'准备好'",
+      "买课囤课"
+    ],
+    "symptoms": [
+      "买课不练",
+      "囤积知识"
+    ],
+    "root_causes": [
+      "不愿走复杂度"
+    ],
+    "interventions": [
+      {
+        "label": "拆掉灵药叙事",
+        "do": "写下'等待灵药'的1个具体等待",
+        "when": "today",
+        "min": 3,
+        "mark": "灵药故事写出"
+      },
+      {
+        "label": "接受小步具体",
+        "do": "今天1小时能做的小步,做掉",
+        "when": "today",
+        "min": 60,
+        "mark": "小步完成"
+      },
+      {
+        "label": "不囤课程",
+        "do": "已买1门,30分钟,1周完成",
+        "when": "this_week",
+        "min": 30,
+        "mark": "1门推进"
+      }
+    ],
+    "reflection_questions": [
+      "我在等一颗灵药吗？"
+    ],
+    "related": [
+      "K035",
+      "K006"
+    ]
+  },
+  {
+    "id": "K042",
+    "name": "内向 / 外向（恢复）",
+    "category": "情绪",
+    "summary": "能量有主要来源；不充电就会失控。",
+    "diagnosis_tags": [
+      "疲惫",
+      "能量管理",
+      "社交耗竭"
+    ],
+    "trigger": [
+      "社交耗竭",
+      "独处过多",
+      "易怒恍惚"
+    ],
+    "symptoms": [
+      "易怒",
+      "恍惚",
+      "低产"
+    ],
+    "root_causes": [
+      "忽视恢复"
+    ],
+    "interventions": [
+      {
+        "label": "今天充电1次",
+        "do": "15分钟独处(内向)/30分钟与人(外向)",
+        "when": "today",
+        "min": 30,
+        "mark": "充完"
+      },
+      {
+        "label": "记下'我恢复最快'的方式",
+        "do": "晨跑?散步?拥抱?",
+        "when": "this_week",
+        "min": 10,
+        "mark": "3种恢复方式写好"
+      },
+      {
+        "label": "日程里硬排恢复时间",
+        "do": "如周五晚是独处保护时段",
+        "when": "this_week",
+        "min": 0,
+        "mark": "日程设好"
+      }
+    ],
+    "reflection_questions": [
+      "今天我充过电了吗？匹配我的方式吗？"
+    ],
+    "related": [
+      "K025",
+      "K057",
+      "K039"
+    ]
+  },
+  {
+    "id": "K061",
+    "name": "负面情绪",
+    "category": "情绪",
+    "summary": "负面情绪是数据，不是要消灭的敌人；信号读完即可放行。",
+    "diagnosis_tags": [
+      "焦虑",
+      "低落",
+      "RAIN",
+      "接纳"
+    ],
+    "trigger": [
+      "压抑",
+      "反复后悔",
+      "郁结"
+    ],
+    "symptoms": [
+      "郁结",
+      "积怨",
+      "莫名不爽"
+    ],
+    "root_causes": [
+      "把情绪当 bug"
+    ],
+    "interventions": [
+      {
+        "label": "命名情绪:今天什么感受",
+        "do": "至少3个具体词",
+        "when": "now",
+        "min": 2,
+        "mark": "3词命名"
+      },
+      {
+        "label": "RAIN:识别/允许/调查/不认同",
+        "do": "5分钟,1次重大情绪",
+        "when": "today",
+        "min": 5,
+        "mark": "RAIN1次完成"
+      },
+      {
+        "label": "回应情绪:它要我做什么",
+        "do": "如不回应会变得更重",
+        "when": "today",
+        "min": 3,
+        "mark": "回应做出"
+      }
+    ],
+    "reflection_questions": [
+      "这个情绪在告诉我什么？"
+    ],
+    "related": [
+      "K020",
+      "K017",
+      "K040",
+      "K005"
+    ]
+  },
+  {
+    "id": "K073",
+    "name": "脆弱和反脆弱",
+    "category": "情绪",
+    "summary": "脆弱 = 波动大；反脆弱 = 波动越大越受益。",
+    "diagnosis_tags": [
+      "易怒",
+      "反脆弱",
+      "凸性"
+    ],
+    "trigger": [
+      "过度求稳",
+      "过度风控",
+      "波动加剧"
+    ],
+    "symptoms": [
+      "小波动也崩",
+      "或另一边过度冒险"
+    ],
+    "root_causes": [
+      "误把'不波动'当安全"
+    ],
+    "interventions": [
+      {
+        "label": "找'小波动暴露'",
+        "do": "今天主动做1件让你1%不舒服",
+        "when": "today",
+        "min": 15,
+        "mark": "波动暴露1次"
+      },
+      {
+        "label": "不等'完全清楚'",
+        "do": "在小信息下做小决策",
+        "when": "now",
+        "min": 0,
+        "mark": "1小决策启动"
+      },
+      {
+        "label": "非对称风险:检视本周1个决定",
+        "do": "写了+收益-损失",
+        "when": "this_week",
+        "min": 5,
+        "mark": "1决定检视"
+      }
+    ],
+    "reflection_questions": [
+      "这件事的'波动'会让我变强还是变弱？"
+    ],
+    "related": [
+      "K032",
+      "K052",
+      "K074",
+      "K025"
+    ]
+  }
+]

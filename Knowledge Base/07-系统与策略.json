@@ -1,0 +1,1453 @@
+[
+  {
+    "id": "K007",
+    "name": "平均 / 顶尖（选目标对象）",
+    "category": "系统与策略",
+    "summary": "参照物决定天花板；和顶尖比你会更尖，和平均比你会平庸。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "对标",
+      "Reference group"
+    ],
+    "trigger": [
+      "满足感缺失",
+      "无紧迫感"
+    ],
+    "symptoms": [
+      "自满",
+      "看不到差距"
+    ],
+    "root_causes": [
+      "错误对标"
+    ],
+    "interventions": [
+      {
+        "label": "选3个真正'顶尖'的人",
+        "do": "不是行业大V,是'你够得着的TOP'",
+        "when": "today",
+        "min": 10,
+        "mark": "3人选出"
+      },
+      {
+        "label": "每周对照1次:我做的是他们会做吗",
+        "do": "3分钟",
+        "when": "this_week",
+        "min": 3,
+        "mark": "对照过"
+      },
+      {
+        "label": "找'TOP1的1个具体行为'本周试",
+        "do": "如'他们晨起做什么'",
+        "when": "this_week",
+        "min": 0,
+        "mark": "试了1个"
+      }
+    ],
+    "reflection_questions": [
+      "我现在的对标是平均还是顶尖？"
+    ],
+    "related": [
+      "K094",
+      "K063",
+      "K064"
+    ]
+  },
+  {
+    "id": "K009",
+    "name": "指数（Compound）",
+    "category": "系统与策略",
+    "summary": "复利是世界的隐藏主轴；按线性看的人总会错过。",
+    "diagnosis_tags": [
+      "复利失灵",
+      "复利",
+      "非线性"
+    ],
+    "trigger": [
+      "早期不出活",
+      "看不到坚持"
+    ],
+    "symptoms": [
+      "过早放弃"
+    ],
+    "root_causes": [
+      "误用线性预期"
+    ],
+    "interventions": [
+      {
+        "label": "用log曲线看这事",
+        "do": "3天→3周→3月→3年,曲在哪",
+        "when": "this_week",
+        "min": 10,
+        "mark": "曲线画出"
+      },
+      {
+        "label": "相信3年",
+        "do": "不是'3周没效果就停'",
+        "when": "now",
+        "min": 0,
+        "mark": "承诺挂上"
+      },
+      {
+        "label": "找1个真正的长半衰期事",
+        "do": "今天做1小时,继续",
+        "when": "today",
+        "min": 60,
+        "mark": "1事开始了"
+      }
+    ],
+    "reflection_questions": [
+      "这件事今天是'还没到拐点'还是'没戏'？"
+    ],
+    "related": [
+      "K056",
+      "K074",
+      "K077",
+      "K065"
+    ]
+  },
+  {
+    "id": "K027",
+    "name": "目标（选择与排序）",
+    "category": "系统与策略",
+    "summary": "目标不是同时做三件，是放弃其中两件。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "目标管理",
+      "选择排序"
+    ],
+    "trigger": [
+      "并行目标多",
+      "完不成"
+    ],
+    "symptoms": [
+      "全开始全没完"
+    ],
+    "root_causes": [
+      "不敢放弃"
+    ],
+    "interventions": [
+      {
+        "label": "强制单目标季度",
+        "do": "今天选1个唯一目标,其他全让位",
+        "when": "today",
+        "min": 10,
+        "mark": "1目标写下"
+      },
+      {
+        "label": "砍次重要",
+        "do": "原来清单最多留2件",
+        "when": "today",
+        "min": 3,
+        "mark": "砍完"
+      },
+      {
+        "label": "设强放弃",
+        "do": "本周不接非主目标相关任务",
+        "when": "this_week",
+        "min": 0,
+        "mark": "放弃规则设好"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻唯一在打的目标是？"
+    ],
+    "related": [
+      "K021",
+      "K033",
+      "K034"
+    ]
+  },
+  {
+    "id": "K033",
+    "name": "少而精（too much good）",
+    "category": "系统与策略",
+    "summary": "好东西太多 = 没好东西；选择性削减。",
+    "diagnosis_tags": [
+      "信息撑到饱和",
+      "Curation",
+      "上限"
+    ],
+    "trigger": [
+      "机会堆",
+      "样样想做"
+    ],
+    "symptoms": [
+      "什么都 80 分"
+    ],
+    "root_causes": [
+      "没有拒绝标准"
+    ],
+    "interventions": [
+      {
+        "label": "设硬上限:本周最多3个新项目",
+        "do": "过3个放排队",
+        "when": "this_week",
+        "min": 3,
+        "mark": "上限设好"
+      },
+      {
+        "label": "挑3件不是'7件'",
+        "do": "二八:真重要就3件",
+        "when": "today",
+        "min": 5,
+        "mark": "3件挑好"
+      },
+      {
+        "label": "停止'好机会'陷阱",
+        "do": "本周拒1个好机会",
+        "when": "this_week",
+        "min": 0,
+        "mark": "1好机会拒了"
+      }
+    ],
+    "reflection_questions": [
+      "什么是我现在应该放弃的'好机会'？"
+    ],
+    "related": [
+      "K027",
+      "K034",
+      "K021"
+    ]
+  },
+  {
+    "id": "K037",
+    "name": "80/20 法则",
+    "category": "系统与策略",
+    "summary": "20% 因决定 80% 结果；找那 20%，把时间全部压上去。",
+    "diagnosis_tags": [
+      "信息撑到饱和",
+      "Pareto",
+      "杠杆"
+    ],
+    "trigger": [
+      "效果不佳",
+      "资源分散"
+    ],
+    "symptoms": [
+      "勤奋但低产"
+    ],
+    "root_causes": [
+      "分不清主因次因"
+    ],
+    "interventions": [
+      {
+        "label": "找20%的主因",
+        "do": "问'哪1个动作解释80%结果?'",
+        "when": "now",
+        "min": 3,
+        "mark": "主因写下"
+      },
+      {
+        "label": "把时间全压上那个",
+        "do": "二八:砍80%任务,把它放到全部",
+        "when": "today",
+        "min": 5,
+        "mark": "重排时间"
+      },
+      {
+        "label": "20%是结果不是勤奋",
+        "do": "重测哪个20%",
+        "when": "this_week",
+        "min": 30,
+        "mark": "1次重测"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻的 20% 主因是什么？"
+    ],
+    "related": [
+      "K091",
+      "K093",
+      "K021"
+    ]
+  },
+  {
+    "id": "K046B",
+    "name": "场景（系统中）",
+    "category": "系统与策略",
+    "summary": "同一个动作在不同场景下意义全变；先识别场景再行动。",
+    "diagnosis_tags": [
+      "转型期",
+      "场景判断",
+      "Context"
+    ],
+    "trigger": [
+      "搬经验失效"
+    ],
+    "symptoms": [
+      "水土不服"
+    ],
+    "root_causes": [
+      "剥离场景谈方法"
+    ],
+    "interventions": [
+      {
+        "label": "描绘场景要素",
+        "do": "人/资源/约束/时机",
+        "when": "today",
+        "min": 5,
+        "mark": "要素列齐"
+      },
+      {
+        "label": "对场景而非对动作",
+        "do": "不同场景,同样动作意义不同",
+        "when": "now",
+        "min": 0,
+        "mark": "意识到"
+      },
+      {
+        "label": "本周1场景新解",
+        "do": "用场景视角判断一次",
+        "when": "this_week",
+        "min": 30,
+        "mark": "1场景重构"
+      }
+    ],
+    "reflection_questions": [
+      "我现在面临的场景是哪个？要素有哪些？"
+    ],
+    "related": [
+      "K046A",
+      "K094",
+      "K064"
+    ]
+  },
+  {
+    "id": "K049",
+    "name": "重尾（Fat Tail）",
+    "category": "系统与策略",
+    "summary": "极少数事件占绝大多数结果；要为尾巴下注。",
+    "diagnosis_tags": [
+      "证据失效",
+      "重尾",
+      "Fat tail"
+    ],
+    "trigger": [
+      "看似低概率的选项",
+      "黑天鹅"
+    ],
+    "symptoms": [
+      "低估极端",
+      "保险过度"
+    ],
+    "root_causes": [
+      "高斯直觉"
+    ],
+    "interventions": [
+      {
+        "label": "这是thin tail还是fat tail",
+        "do": "问'能不能1次黑天鹅改变'",
+        "when": "today",
+        "min": 3,
+        "mark": "分布类型判"
+      },
+      {
+        "label": "为右尾留敞口",
+        "do": "这事保留多少'黑天鹅奖励'空间",
+        "when": "today",
+        "min": 5,
+        "mark": "敞口评估"
+      },
+      {
+        "label": "不押高斯直觉",
+        "do": "1次决定前,问'这真的thin吗'",
+        "when": "this_week",
+        "min": 3,
+        "mark": "问了"
+      }
+    ],
+    "reflection_questions": [
+      "这个领域是 thin tail 还是 fat tail？"
+    ],
+    "related": [
+      "K068",
+      "K074",
+      "K052",
+      "K096"
+    ]
+  },
+  {
+    "id": "K050",
+    "name": "能动性（Agency）",
+    "category": "系统与策略",
+    "summary": "能动性 = 你能动的杠杆点 + 你真的去动；知道+做 = 主权。",
+    "diagnosis_tags": [
+      "被动等待",
+      "Agency",
+      "主权"
+    ],
+    "trigger": [
+      "无力感",
+      "躺平心态"
+    ],
+    "symptoms": [
+      "抱怨多于动手"
+    ],
+    "root_causes": [
+      "把'不可控'当'不可做'"
+    ],
+    "interventions": [
+      {
+        "label": "列'可控+不可控+可影响'",
+        "do": "把抱怨变清单",
+        "when": "now",
+        "min": 5,
+        "mark": "3栏写清"
+      },
+      {
+        "label": "做最小动作",
+        "do": "今天1个'我能控的最小单位'",
+        "when": "now",
+        "min": 1,
+        "mark": "1动作完成"
+      },
+      {
+        "label": "圈层:影响→兴趣→无关",
+        "do": "把能量分到圈",
+        "when": "this_week",
+        "min": 10,
+        "mark": "圈层圈定"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻的'能动动作'是哪一步？"
+    ],
+    "related": [
+      "K044",
+      "K006",
+      "K055",
+      "K002"
+    ]
+  },
+  {
+    "id": "K051",
+    "name": "限制（能量）",
+    "category": "系统与策略",
+    "summary": "能量是最真实的硬约束；不要用时间计量安排。",
+    "diagnosis_tags": [
+      "疲惫",
+      "能量",
+      "限制"
+    ],
+    "trigger": [
+      "累但事未完"
+    ],
+    "symptoms": [
+      "效率崩"
+    ],
+    "root_causes": [
+      "不识能量边界"
+    ],
+    "interventions": [
+      {
+        "label": "按能量分任务",
+        "do": "今天高峰做高难度,低峰做轻",
+        "when": "today",
+        "min": 5,
+        "mark": "排好"
+      },
+      {
+        "label": "保护高峰",
+        "do": "9-12点不安排会议",
+        "when": "this_week",
+        "min": 5,
+        "mark": "高峰装进日程"
+      },
+      {
+        "label": "周期保护:月度3小时充电",
+        "do": "独处/散步/读书",
+        "when": "this_week",
+        "min": 0,
+        "mark": "周期保护设好"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻的能量决定我该做什么？"
+    ],
+    "related": [
+      "K025",
+      "K042",
+      "K010"
+    ]
+  },
+  {
+    "id": "K052",
+    "name": "不确定性（Knightian）",
+    "category": "系统与策略",
+    "summary": "不确定性不是敌人，是地图之外的总面积；管理它而不是消灭它。",
+    "diagnosis_tags": [
+      "焦虑",
+      "不确定性",
+      "Knightian"
+    ],
+    "trigger": [
+      "没有标准答案",
+      "敢动不敢动"
+    ],
+    "symptoms": [
+      "决策瘫痪",
+      "等清楚"
+    ],
+    "root_causes": [
+      "误把'确定性'当安全"
+    ],
+    "interventions": [
+      {
+        "label": "分'风险 vs 真不确定'",
+        "do": "前者可算,后者不可",
+        "when": "today",
+        "min": 3,
+        "mark": "类型判准"
+      },
+      {
+        "label": "赌20%试错",
+        "do": "小动作测1次",
+        "when": "today",
+        "min": 5,
+        "mark": "1次试错完成"
+      },
+      {
+        "label": "接受'不能消除'",
+        "do": "管理不是消除",
+        "when": "now",
+        "min": 0,
+        "mark": "心态转换"
+      }
+    ],
+    "reflection_questions": [
+      "这件事是风险还是不确定性？"
+    ],
+    "related": [
+      "K046A",
+      "K069",
+      "K079",
+      "K049"
+    ]
+  },
+  {
+    "id": "K055",
+    "name": "供给侧心态",
+    "category": "系统与策略",
+    "summary": "不要追需求，要造供给；让别人'找不到替代'。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "供给侧",
+      "差异化"
+    ],
+    "trigger": [
+      "卷同质",
+      "价格战"
+    ],
+    "symptoms": [
+      "议价低",
+      "易替代"
+    ],
+    "root_causes": [
+      "需求-供给错位"
+    ],
+    "interventions": [
+      {
+        "label": "本周做1件'不是为需求,而为创造'",
+        "do": "5%时间给供给侧实验",
+        "when": "this_week",
+        "min": 60,
+        "mark": "1次供给实验"
+      },
+      {
+        "label": "列'我独特的产出'",
+        "do": "别人不做/做不好的",
+        "when": "this_week",
+        "min": 10,
+        "mark": "独特列出"
+      },
+      {
+        "label": "问'如果我从源头来,会做什么'",
+        "do": "不去追,而去创",
+        "when": "this_week",
+        "min": 5,
+        "mark": "问题问完"
+      }
+    ],
+    "reflection_questions": [
+      "我在做别人想要的，还是创造我独有的？"
+    ],
+    "related": [
+      "K050",
+      "K063",
+      "K094",
+      "K072"
+    ]
+  },
+  {
+    "id": "K056",
+    "name": "复利（Compound Interest）",
+    "category": "系统与策略",
+    "summary": "时间是复利的朋友，断点是它的敌人；不要频繁中断。",
+    "diagnosis_tags": [
+      "复利失灵",
+      "复利",
+      "长半衰期"
+    ],
+    "trigger": [
+      "做长半衰期的事"
+    ],
+    "symptoms": [
+      "整天'忙'没累积"
+    ],
+    "root_causes": [
+      "频繁切换/重置"
+    ],
+    "interventions": [
+      {
+        "label": "列长半衰期事1张表",
+        "do": "复利能积累的事",
+        "when": "today",
+        "min": 10,
+        "mark": "清单写下"
+      },
+      {
+        "label": "续存而非重启",
+        "do": "本周不重新开1个项目",
+        "when": "this_week",
+        "min": 0,
+        "mark": "没重启"
+      },
+      {
+        "label": "每天1小时复利事",
+        "do": "最低",
+        "when": "today",
+        "min": 60,
+        "mark": "1h复利完成"
+      }
+    ],
+    "reflection_questions": [
+      "我今天做的事是有累积的吗？"
+    ],
+    "related": [
+      "K009",
+      "K024",
+      "K083"
+    ]
+  },
+  {
+    "id": "K063",
+    "name": "赛道选择",
+    "category": "系统与策略",
+    "summary": "努力 ≠ 价值；选对赛道，努力 ×10，×100。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "赛道",
+      "结构性"
+    ],
+    "trigger": [
+      "奋斗却落后"
+    ],
+    "symptoms": [
+      "越努力越不值"
+    ],
+    "root_causes": [
+      "赛道卷到饱和"
+    ],
+    "interventions": [
+      {
+        "label": "看赛道发展阶段",
+        "do": "Genesis/Custom/Product/Commodity",
+        "when": "today",
+        "min": 5,
+        "mark": "阶段标好"
+      },
+      {
+        "label": "3年后升还是降",
+        "do": "问'我在涨还是被结构性挤压'",
+        "when": "today",
+        "min": 5,
+        "mark": "评估"
+      },
+      {
+        "label": "本周探索1条更优赛道",
+        "do": "不是换行,是开始看",
+        "when": "this_week",
+        "min": 60,
+        "mark": "1次探索"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻的赛道，3 年后会升还是降？"
+    ],
+    "related": [
+      "K055",
+      "K094",
+      "K064",
+      "K007"
+    ]
+  },
+  {
+    "id": "K065",
+    "name": "探索与利用",
+    "category": "系统与策略",
+    "summary": "利用已知的稳赢 vs 探索未知的高奖；分配比例 = 阶段决定。",
+    "diagnosis_tags": [
+      "复利失灵",
+      "探索vs利用",
+      "阶段"
+    ],
+    "trigger": [
+      "要不要试新"
+    ],
+    "symptoms": [
+      "死在温水中"
+    ],
+    "root_causes": [
+      "单一模式"
+    ],
+    "interventions": [
+      {
+        "label": "看阶段",
+        "do": "前期更多探索,稳态多利用",
+        "when": "now",
+        "min": 0,
+        "mark": "阶段自评"
+      },
+      {
+        "label": "小比例探索",
+        "do": "如10%时间给未知",
+        "when": "this_week",
+        "min": 30,
+        "mark": "10%时间给探索"
+      },
+      {
+        "label": "看到拐点就切换",
+        "do": "别浪费太久在错模式",
+        "when": "this_week",
+        "min": 0,
+        "mark": "拐点装好"
+      }
+    ],
+    "reflection_questions": [
+      "我现在多探一些还是多用一些？"
+    ],
+    "related": [
+      "K094",
+      "K056",
+      "K083"
+    ]
+  },
+  {
+    "id": "K071",
+    "name": "凯利公式（Kelly Criterion）",
+    "category": "系统与策略",
+    "summary": "按优势/赔率定下注比例；ALL IN 几乎必败。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "Kelly",
+      "仓位"
+    ],
+    "trigger": [
+      "要不要押重"
+    ],
+    "symptoms": [
+      "赌大失败",
+      "重仓崩盘"
+    ],
+    "root_causes": [
+      "无仓位管理"
+    ],
+    "interventions": [
+      {
+        "label": "算f* = (bp-q)/b",
+        "do": "今晚1次,简单数字",
+        "when": "today",
+        "min": 5,
+        "mark": "公式跑1次"
+      },
+      {
+        "label": "压低Kelly系数",
+        "do": "实际下注 = f*/4 或 f*/2",
+        "when": "today",
+        "min": 3,
+        "mark": "压了"
+      },
+      {
+        "label": "不上头'全押'",
+        "do": "全押=几乎必败",
+        "when": "now",
+        "min": 0,
+        "mark": "心态守好"
+      }
+    ],
+    "reflection_questions": [
+      "我应该放多少仓位在这？"
+    ],
+    "related": [
+      "K052",
+      "K068",
+      "K074"
+    ]
+  },
+  {
+    "id": "K072",
+    "name": "非便利性（Inconvenience）",
+    "category": "系统与策略",
+    "summary": "最便宜的路最挤；反向找有门槛的路 = 阿尔法。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "Inconvenience",
+      "壁垒"
+    ],
+    "trigger": [
+      "红海"
+    ],
+    "symptoms": [
+      "毛利薄"
+    ],
+    "root_causes": [
+      "只看显性成本"
+    ],
+    "interventions": [
+      {
+        "label": "看'不便利性变化'",
+        "do": "这事越难/越便利,我在收窄还是在扩大?",
+        "when": "today",
+        "min": 3,
+        "mark": "方向判"
+      },
+      {
+        "label": "主动加复杂度",
+        "do": "如不接低难工单",
+        "when": "this_week",
+        "min": 0,
+        "mark": "复杂动作1次"
+      },
+      {
+        "label": "看真壁垒:不是门槛,是不便利",
+        "do": "我建的不便利是哪种",
+        "when": "this_week",
+        "min": 5,
+        "mark": "壁垒形态定"
+      }
+    ],
+    "reflection_questions": [
+      "这件事的'不便利性'在收窄还是在增大？"
+    ],
+    "related": [
+      "K055",
+      "K090",
+      "K063"
+    ]
+  },
+  {
+    "id": "K074",
+    "name": "期权（Options）",
+    "category": "系统与策略",
+    "summary": "保留廉价的不对称机会；放弃确定性换取可能。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "期权",
+      "凸性"
+    ],
+    "trigger": [
+      "机会边界",
+      "是否下注"
+    ],
+    "symptoms": [
+      "all-or-nothing 决策"
+    ],
+    "root_causes": [
+      "忘记保留可能"
+    ],
+    "interventions": [
+      {
+        "label": "今天保留1支廉价期权",
+        "do": "低成本,大上行可能",
+        "when": "today",
+        "min": 5,
+        "mark": "1支期权持有"
+      },
+      {
+        "label": "不为'1次对错'押全部",
+        "do": "分散,小注",
+        "when": "now",
+        "min": 0,
+        "mark": "不改押注"
+      },
+      {
+        "label": "做'赢面大,输面小'的判断",
+        "do": "凸性",
+        "when": "today",
+        "min": 3,
+        "mark": "凸性决策1次"
+      }
+    ],
+    "reflection_questions": [
+      "我今天还有几支'廉价期权'？"
+    ],
+    "related": [
+      "K049",
+      "K073",
+      "K071"
+    ]
+  },
+  {
+    "id": "K089",
+    "name": "租（Rent）",
+    "category": "系统与策略",
+    "summary": "租金 = 你比平均多留的部分；区分真租与租寻。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "Rent",
+      "位置"
+    ],
+    "trigger": [
+      "利润差异"
+    ],
+    "symptoms": [
+      "靠位置吃饭"
+    ],
+    "root_causes": [
+      "壁垒非自造"
+    ],
+    "interventions": [
+      {
+        "label": "我吃的'租'是哪类",
+        "do": "真租vs租寻",
+        "when": "today",
+        "min": 3,
+        "mark": "类型评"
+      },
+      {
+        "label": "找'半租半创造'位置",
+        "do": "不是全靠位置",
+        "when": "this_week",
+        "min": 10,
+        "mark": "位置评估"
+      },
+      {
+        "label": "辨别真壁垒",
+        "do": "我的是哪种",
+        "when": "this_week",
+        "min": 5,
+        "mark": "壁垒分了"
+      }
+    ],
+    "reflection_questions": [
+      "我今天吃的'租'是哪种？"
+    ],
+    "related": [
+      "K090",
+      "K094",
+      "K063"
+    ]
+  },
+  {
+    "id": "K090",
+    "name": "阿尔法（Alpha）",
+    "category": "系统与策略",
+    "summary": "超出基准的部分来自独特判断；不是勤奋，是高赔率。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "Alpha",
+      "稀缺判断"
+    ],
+    "trigger": [
+      "想真正的复利"
+    ],
+    "symptoms": [
+      "把 beta 当 alpha"
+    ],
+    "root_causes": [
+      "错觉独特"
+    ],
+    "interventions": [
+      {
+        "label": "我今天的回报是alpha还是beta",
+        "do": "先相信是beta",
+        "when": "now",
+        "min": 1,
+        "mark": "分类完成"
+      },
+      {
+        "label": "小注高赔率1次",
+        "do": "押非主流1次,看是否产生alpha",
+        "when": "this_week",
+        "min": 10,
+        "mark": "1次押"
+      },
+      {
+        "label": "复盘:过去30天哪些是真alpha",
+        "do": "区分'this我独特'与'风来了'",
+        "when": "this_week",
+        "min": 30,
+        "mark": "复盘完"
+      }
+    ],
+    "reflection_questions": [
+      "我此刻的回报是 alpha 还是 beta？"
+    ],
+    "related": [
+      "K071",
+      "K089",
+      "K049"
+    ]
+  },
+  {
+    "id": "K091",
+    "name": "杠杆（Leverage）",
+    "category": "系统与策略",
+    "summary": "杠杆 = 投入产出比；高杠杆 = 用更少得更多。",
+    "diagnosis_tags": [
+      "复利失灵",
+      "杠杆",
+      "四种杠杆"
+    ],
+    "trigger": [
+      "找突破点"
+    ],
+    "symptoms": [
+      "线性努力"
+    ],
+    "root_causes": [
+      "只动单位数"
+    ],
+    "interventions": [
+      {
+        "label": "看4种杠杆我有多少",
+        "do": "代码/媒体/资本/人力",
+        "when": "today",
+        "min": 3,
+        "mark": "评估完"
+      },
+      {
+        "label": "提1种杠杆的杠杆率",
+        "do": "重点加强",
+        "when": "today",
+        "min": 5,
+        "mark": "锁定"
+      },
+      {
+        "label": "问'我做的事,杠杆几倍'",
+        "do": "用更少资源得更多",
+        "when": "today",
+        "min": 1,
+        "mark": "问句内化"
+      }
+    ],
+    "reflection_questions": [
+      "我的杠杆有几倍？怎么提？"
+    ],
+    "related": [
+      "K037",
+      "K074",
+      "K093"
+    ]
+  },
+  {
+    "id": "K092",
+    "name": "窗口（Window）",
+    "category": "系统与策略",
+    "summary": "机会不会永远开着；对窗口要快定快动。",
+    "diagnosis_tags": [
+      "转型期",
+      "窗口期",
+      "Window"
+    ],
+    "trigger": [
+      "窗口期出现"
+    ],
+    "symptoms": [
+      "犹豫错过"
+    ],
+    "root_causes": [
+      "完美主义拖延",
+      "未做预案"
+    ],
+    "interventions": [
+      {
+        "label": "看1个窗口期还在关吗",
+        "do": "问'机会窗口还能开多久?'",
+        "when": "today",
+        "min": 3,
+        "mark": "1窗口评估"
+      },
+      {
+        "label": "设决策截止",
+        "do": "X日前要不做就彻底放下",
+        "when": "this_week",
+        "min": 5,
+        "mark": "截止设好"
+      },
+      {
+        "label": "1个预备方案",
+        "do": "窗口来时不慌,提前备2个动作",
+        "when": "this_week",
+        "min": 10,
+        "mark": "预备方案写出"
+      }
+    ],
+    "reflection_questions": [
+      "这个机会窗口还能开多久？"
+    ],
+    "related": [
+      "K094",
+      "K052",
+      "K035"
+    ]
+  },
+  {
+    "id": "K093",
+    "name": "效果（Outcome）",
+    "category": "系统与策略",
+    "summary": "投入→效果→目标的链条要直；中间越多越损耗。",
+    "diagnosis_tags": [
+      "复利失灵",
+      "Output vs Outcome",
+      "有效产出"
+    ],
+    "trigger": [
+      "忙但无产"
+    ],
+    "symptoms": [
+      "自欺式忙碌"
+    ],
+    "root_causes": [
+      "把活动当效果"
+    ],
+    "interventions": [
+      {
+        "label": "从目标反推动作",
+        "do": "今晚1次,1动作对应1效果",
+        "when": "today",
+        "min": 5,
+        "mark": "链对齐"
+      },
+      {
+        "label": "砍中间环节",
+        "do": "今天1动作,问'直接通向效果吗?'",
+        "when": "today",
+        "min": 3,
+        "mark": "砍完"
+      },
+      {
+        "label": "拒自欺式忙碌",
+        "do": "不直接通向效果,做比不做好",
+        "when": "this_week",
+        "min": 5,
+        "mark": "做了取舍"
+      }
+    ],
+    "reflection_questions": [
+      "我这动作直接通向'效果'吗？"
+    ],
+    "related": [
+      "K037",
+      "K091",
+      "K027"
+    ]
+  },
+  {
+    "id": "K094",
+    "name": "沃德利地图（Wardley Maps）",
+    "category": "系统与策略",
+    "summary": "看清演化阶段：Genesis → Custom → Product → Commodity；位置决定策略。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "Wardley Maps",
+      "演化阶段"
+    ],
+    "trigger": [
+      "决策'做什么'"
+    ],
+    "symptoms": [
+      "错位打法"
+    ],
+    "root_causes": [
+      "不知身在哪个阶段"
+    ],
+    "interventions": [
+      {
+        "label": "画自己当前地图",
+        "do": "竖轴用户价值,横轴演化阶段",
+        "when": "today",
+        "min": 30,
+        "mark": "图画出"
+      },
+      {
+        "label": "定位我在哪个阶段",
+        "do": "Genesis/Custom/Product/Commodity",
+        "when": "today",
+        "min": 5,
+        "mark": "定位完成"
+      },
+      {
+        "label": "匹配阶段策略",
+        "do": "前期比智慧,后期比效率",
+        "when": "this_week",
+        "min": 10,
+        "mark": "策略对齐"
+      }
+    ],
+    "reflection_questions": [
+      "我这个赛道此刻在哪个阶段？我该做哪种动作？"
+    ],
+    "related": [
+      "K007",
+      "K063",
+      "K065"
+    ]
+  },
+  {
+    "id": "K095",
+    "name": "成本病（Baumol）",
+    "category": "系统与策略",
+    "summary": "人力密集行业效率提升慢，工资追通胀而生产力不增 = 病。",
+    "diagnosis_tags": [
+      "赛道疑问",
+      "Baumol",
+      "成本病"
+    ],
+    "trigger": [
+      "教育/医疗/服务涨价"
+    ],
+    "symptoms": [
+      "效率差",
+      "成本涨"
+    ],
+    "root_causes": [
+      "行业刚性"
+    ],
+    "interventions": [
+      {
+        "label": "看我的行业是缩放型还是劳动密集",
+        "do": "决定我的天花板",
+        "when": "today",
+        "min": 3,
+        "mark": "分类完"
+      },
+      {
+        "label": "如劳动密集,设计'缩放组件'",
+        "do": "如课程化/产品化",
+        "when": "this_week",
+        "min": 60,
+        "mark": "1缩放组件设计"
+      },
+      {
+        "label": "选可缩放赛道优先级",
+        "do": "换跑道思考",
+        "when": "this_week",
+        "min": 0,
+        "mark": "换道思考启动"
+      }
+    ],
+    "reflection_questions": [
+      "我的工作在可缩放行业里吗？"
+    ],
+    "related": [
+      "K091",
+      "K096",
+      "K094"
+    ]
+  },
+  {
+    "id": "K096",
+    "name": "杰文斯悖论（Jevons）",
+    "category": "系统与策略",
+    "summary": "效率提升 → 总消耗上升；改善单点不等于系统变好。",
+    "diagnosis_tags": [
+      "信息撑到饱和",
+      "Jevons",
+      "反弹效应"
+    ],
+    "trigger": [
+      "以为优化就完"
+    ],
+    "symptoms": [
+      "省了又涨"
+    ],
+    "root_causes": [
+      "未看总体"
+    ],
+    "interventions": [
+      {
+        "label": "看你的'省'是否让总量涨",
+        "do": "效率优化是否反弹",
+        "when": "today",
+        "min": 3,
+        "mark": "评估1次"
+      },
+      {
+        "label": "系统视角评估",
+        "do": "不只看单点",
+        "when": "today",
+        "min": 10,
+        "mark": "系统视角用过"
+      },
+      {
+        "label": "抑制总需求设计",
+        "do": "如优化后总量不减",
+        "when": "this_week",
+        "min": 30,
+        "mark": "抑制方案有1"
+      }
+    ],
+    "reflection_questions": [
+      "我优化的'省'会让总量涨吗？"
+    ],
+    "related": [
+      "K095",
+      "K046B",
+      "K037"
+    ]
+  },
+  {
+    "id": "K100",
+    "name": "软预算（Soft Budget）",
+    "category": "系统与策略",
+    "summary": "不硬约束成本 = 资源被滥用；软预算下没有真效率。",
+    "diagnosis_tags": [
+      "转型期",
+      "软预算",
+      "制度约束"
+    ],
+    "trigger": [
+      "项目超支常态化"
+    ],
+    "symptoms": [
+      "做事不计代价"
+    ],
+    "root_causes": [
+      "后果不落地"
+    ],
+    "interventions": [
+      {
+        "label": "今天1次硬约束:不超X",
+        "do": "如不开新支出",
+        "when": "today",
+        "min": 0,
+        "mark": "1次超守"
+      },
+      {
+        "label": "成本记账:今天每1元花哪",
+        "do": "5分钟",
+        "when": "today",
+        "min": 5,
+        "mark": "记了"
+      },
+      {
+        "label": "谁在为超支付账",
+        "do": "问清楚",
+        "when": "this_week",
+        "min": 5,
+        "mark": "找出来"
+      }
+    ],
+    "reflection_questions": [
+      "谁在为'超支'付账？"
+    ],
+    "related": [
+      "K102",
+      "K108",
+      "K095"
+    ]
+  },
+  {
+    "id": "K102",
+    "name": "激励相容（Incentive Compatibility）",
+    "category": "系统与策略",
+    "summary": "让人自利 = 让你也得；好制度让'利己'对齐'利他'。",
+    "diagnosis_tags": [
+      "转型期",
+      "激励相容",
+      "制度"
+    ],
+    "trigger": [
+      "团队/人际冲突"
+    ],
+    "symptoms": [
+      "各打小算盘"
+    ],
+    "root_causes": [
+      "激励错位"
+    ],
+    "interventions": [
+      {
+        "label": "我让自利=我利吗",
+        "do": "当前机制问1次",
+        "when": "today",
+        "min": 3,
+        "mark": "机制检查"
+      },
+      {
+        "label": "重设计1个激励",
+        "do": "本周1项",
+        "when": "this_week",
+        "min": 30,
+        "mark": "1激励重设"
+      },
+      {
+        "label": "对齐利益:找利益相关方",
+        "do": "通常不止2个",
+        "when": "this_week",
+        "min": 10,
+        "mark": "相关方找齐"
+      }
+    ],
+    "reflection_questions": [
+      "这个机制让人自利等于利我吗？"
+    ],
+    "related": [
+      "K100",
+      "K103",
+      "K108"
+    ]
+  },
+  {
+    "id": "K103",
+    "name": "柠檬市场（Lemons）",
+    "category": "系统与策略",
+    "summary": "劣币驱良币；信息不对称时市场失灵。",
+    "diagnosis_tags": [
+      "证据失效",
+      "Lemons",
+      "信号"
+    ],
+    "trigger": [
+      "劣质盛行"
+    ],
+    "symptoms": [
+      "好产品被排挤"
+    ],
+    "root_causes": [
+      "信号机制失效"
+    ],
+    "interventions": [
+      {
+        "label": "我的'信号机制'够可靠吗",
+        "do": "如我做产品,客户信不信",
+        "when": "today",
+        "min": 3,
+        "mark": "信号分"
+      },
+      {
+        "label": "建可信信号",
+        "do": "如公开过程而非结论",
+        "when": "this_week",
+        "min": 60,
+        "mark": "1信号建"
+      },
+      {
+        "label": "减信息差",
+        "do": "对客户透明",
+        "when": "this_week",
+        "min": 0,
+        "mark": "信息差减1次"
+      }
+    ],
+    "reflection_questions": [
+      "我现在的'信号'够可信吗？"
+    ],
+    "related": [
+      "K102",
+      "K098",
+      "K089"
+    ]
+  }
+]

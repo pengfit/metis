@@ -1,0 +1,745 @@
+[
+  {
+    "id": "K043",
+    "name": "创造优点",
+    "category": "关系与社会",
+    "summary": "优点是行为+反馈累积出来的；先假装并坚持到真实。",
+    "diagnosis_tags": [
+      "身份迷茫",
+      "美德实践",
+      "自我建构"
+    ],
+    "trigger": [
+      "想成为 X 人",
+      "等自己'够格'"
+    ],
+    "symptoms": [
+      "自我叙事僵化",
+      "等待标签匹配"
+    ],
+    "root_causes": [
+      "身份先于行为"
+    ],
+    "interventions": [
+      {
+        "label": "选1个要练的优点,今天1个动作",
+        "do": "如'勇敢'→今天主动问1次",
+        "when": "today",
+        "min": 1,
+        "mark": "1动作做完"
+      },
+      {
+        "label": "每天写'今日优势1条'",
+        "do": "不是泛说,具体小事",
+        "when": "today",
+        "min": 2,
+        "mark": "1条写好"
+      },
+      {
+        "label": "30天实验:刻意练1个优点",
+        "do": "看结果",
+        "when": "this_week",
+        "min": 0,
+        "mark": "实验启动"
+      }
+    ],
+    "reflection_questions": [
+      "我想拥有的优点的每日实践是什么？"
+    ],
+    "related": [
+      "K015",
+      "K062",
+      "K038"
+    ]
+  },
+  {
+    "id": "K044",
+    "name": "主动性 / 建立联系",
+    "category": "关系与社会",
+    "summary": "网络是被构建的，不是'有'的；联结是双向投资。",
+    "diagnosis_tags": [
+      "被动等待",
+      "Networking",
+      "双向价值"
+    ],
+    "trigger": [
+      "需要时找不到人",
+      "求助难开口"
+    ],
+    "symptoms": [
+      "朋友圈小",
+      "信息差"
+    ],
+    "root_causes": [
+      "把联系当功利"
+    ],
+    "interventions": [
+      {
+        "label": "本周联系1个久未联系的人",
+        "do": "不功利,只'最近怎么'",
+        "when": "this_week",
+        "min": 10,
+        "mark": "联系发出"
+      },
+      {
+        "label": "双向推荐:1个资源→1个人",
+        "do": "建立'我是连接器'身份",
+        "when": "this_week",
+        "min": 10,
+        "mark": "推荐做出"
+      },
+      {
+        "label": "每周1个新对话",
+        "do": "主动,线上/线下都行",
+        "when": "this_week",
+        "min": 0,
+        "mark": "新对话达成"
+      }
+    ],
+    "reflection_questions": [
+      "我这周给谁主动了？"
+    ],
+    "related": [
+      "K034",
+      "K064",
+      "K109"
+    ]
+  },
+  {
+    "id": "K064",
+    "name": "场域",
+    "category": "关系与社会",
+    "summary": "选场域比选努力更优先；好场域让平庸变优秀。",
+    "diagnosis_tags": [
+      "转型期",
+      "场域选择",
+      "环境"
+    ],
+    "trigger": [
+      "被困住",
+      "成长停滞",
+      "努力无效"
+    ],
+    "symptoms": [
+      "努力无效"
+    ],
+    "root_causes": [
+      "场域不对再努力也平"
+    ],
+    "interventions": [
+      {
+        "label": "看你目前场域分(0-10)",
+        "do": "能量被放大还是缩小",
+        "when": "now",
+        "min": 2,
+        "mark": "分数打了"
+      },
+      {
+        "label": "找'更高密度'的1个场",
+        "do": "社群/团队/聚会都行",
+        "when": "this_week",
+        "min": 0,
+        "mark": "1个新场接触"
+      },
+      {
+        "label": "主动告别1个'耗你'的场",
+        "do": "降低出现频次",
+        "when": "this_week",
+        "min": 0,
+        "mark": "调整决定做出"
+      }
+    ],
+    "reflection_questions": [
+      "我现在的场域值多少？要不要换？"
+    ],
+    "related": [
+      "K016",
+      "K094",
+      "K063",
+      "K075"
+    ]
+  },
+  {
+    "id": "K066",
+    "name": "共鸣",
+    "category": "关系与社会",
+    "summary": "共鸣不是同意，是'我感受到你的感受'。",
+    "diagnosis_tags": [
+      "关系摩擦",
+      "共鸣",
+      "镜像倾听"
+    ],
+    "trigger": [
+      "冲突",
+      "感觉不被理解"
+    ],
+    "symptoms": [
+      "对话僵",
+      "信任坍"
+    ],
+    "root_causes": [
+      "听内容不听情感"
+    ],
+    "interventions": [
+      {
+        "label": "今天1次命名对方情绪",
+        "do": "如'你现在听起来像有点失落?'",
+        "when": "today",
+        "min": 1,
+        "mark": "命名了"
+      },
+      {
+        "label": "镜像复述1次:把TA的话用自己的话讲回去",
+        "do": "确认你听到的就是TA说的",
+        "when": "today",
+        "min": 2,
+        "mark": "复述完成"
+      },
+      {
+        "label": "主动问'对方需要被听见的是什么'",
+        "do": "30秒内",
+        "when": "now",
+        "min": 1,
+        "mark": "问了"
+      }
+    ],
+    "reflection_questions": [
+      "对方此刻'需要被听见'的是什么？"
+    ],
+    "related": [
+      "K020",
+      "K034",
+      "K099"
+    ]
+  },
+  {
+    "id": "K075",
+    "name": "状态杠杆",
+    "category": "关系与社会",
+    "summary": "你的状态会被周围人放大或缩小；选能放大你的环境。",
+    "diagnosis_tags": [
+      "疲惫",
+      "状态杠杆",
+      "放大器"
+    ],
+    "trigger": [
+      "消耗社交",
+      "高能低能起伏"
+    ],
+    "symptoms": [
+      "回去就泄气"
+    ],
+    "root_causes": [
+      "与错位的人高频接触"
+    ],
+    "interventions": [
+      {
+        "label": "列放大器名单与收缩器名单",
+        "do": "各3人",
+        "when": "today",
+        "min": 5,
+        "mark": "两份名单写下"
+      },
+      {
+        "label": "本周加1次放大器相处",
+        "do": "具体到时间地点",
+        "when": "this_week",
+        "min": 60,
+        "mark": "1次接触完成"
+      },
+      {
+        "label": "减少1次收缩器见面",
+        "do": "不难?直接说不",
+        "when": "this_week",
+        "min": 0,
+        "mark": "减少决定做出"
+      }
+    ],
+    "reflection_questions": [
+      "我身边谁是放大器谁是收缩器？"
+    ],
+    "related": [
+      "K044",
+      "K064",
+      "K098"
+    ]
+  },
+  {
+    "id": "K097",
+    "name": "托付",
+    "category": "关系与社会",
+    "summary": "托付是能动地把事/物交给神/人/制度完成；不是放任。",
+    "diagnosis_tags": [
+      "边界模糊",
+      "托付",
+      "授权"
+    ],
+    "trigger": [
+      "不愿交出控制",
+      "凡事亲为",
+      "微管理"
+    ],
+    "symptoms": [
+      "事必躬亲",
+      "微管理"
+    ],
+    "root_causes": [
+      "信任不足"
+    ],
+    "interventions": [
+      {
+        "label": "选1件事,下周交付出去",
+        "do": "定义交付标准",
+        "when": "this_week",
+        "min": 10,
+        "mark": "1件事+标准定"
+      },
+      {
+        "label": "设止损:30分钟不接管,问责对方",
+        "do": "不放任微管",
+        "when": "this_week",
+        "min": 0,
+        "mark": "止损设好"
+      },
+      {
+        "label": "分级授权:完全/部分/汇报",
+        "do": "不只'全管或全放'",
+        "when": "this_week",
+        "min": 10,
+        "mark": "3级定义"
+      }
+    ],
+    "reflection_questions": [
+      "这件事该托付给谁/什么机制？"
+    ],
+    "related": [
+      "K044",
+      "K108",
+      "K107"
+    ]
+  },
+  {
+    "id": "K098",
+    "name": "地位",
+    "category": "关系与社会",
+    "summary": "地位是稀缺品；过度争地位会耗竭，长期建设 > 短期输赢。",
+    "diagnosis_tags": [
+      "关系摩擦",
+      "地位博弈",
+      "位序"
+    ],
+    "trigger": [
+      "竞争场景",
+      "评奖",
+      "群体对比"
+    ],
+    "symptoms": [
+      "易怒",
+      "注意力被位序占据"
+    ],
+    "root_causes": [
+      "把地位当自尊源"
+    ],
+    "interventions": [
+      {
+        "label": "检视本周1个决策,是不是'地位游戏'",
+        "do": "如为赢而做,为谁赢?",
+        "when": "this_week",
+        "min": 10,
+        "mark": "检视完"
+      },
+      {
+        "label": "设超越位序的目标",
+        "do": "如'做最擅长的事'而非'做最被夸的事'",
+        "when": "this_week",
+        "min": 5,
+        "mark": "目标写明"
+      },
+      {
+        "label": "减少1次零和参与",
+        "do": "挑1次主动退出",
+        "when": "this_week",
+        "min": 0,
+        "mark": "1次退出"
+      }
+    ],
+    "reflection_questions": [
+      "我这件在玩地位游戏吗？值得吗？"
+    ],
+    "related": [
+      "K075",
+      "K099",
+      "K103",
+      "K003"
+    ]
+  },
+  {
+    "id": "K099",
+    "name": "礼",
+    "category": "关系与社会",
+    "summary": "礼是关系的语法；不学礼，再亲近也崩。",
+    "diagnosis_tags": [
+      "关系摩擦",
+      "礼",
+      "距离感"
+    ],
+    "trigger": [
+      "越界",
+      "亲近反而伤",
+      "礼数缺位"
+    ],
+    "symptoms": [
+      "亲近不恭",
+      "冲突频发"
+    ],
+    "root_causes": [
+      "礼数缺位",
+      "把熟悉当随便"
+    ],
+    "interventions": [
+      {
+        "label": "本周识别1个失礼的场景",
+        "do": "反思+记下",
+        "when": "this_week",
+        "min": 5,
+        "mark": "记好"
+      },
+      {
+        "label": "练'距离感'",
+        "do": "亲人也保持礼",
+        "when": "this_week",
+        "min": 0,
+        "mark": "有1次体现"
+      },
+      {
+        "label": "学1个具体礼节",
+        "do": "如饭桌/邮件/对话起止",
+        "when": "this_week",
+        "min": 10,
+        "mark": "学到具体礼"
+      }
+    ],
+    "reflection_questions": [
+      "我今天在哪里失礼了？"
+    ],
+    "related": [
+      "K098",
+      "K104",
+      "K066"
+    ]
+  },
+  {
+    "id": "K104",
+    "name": "替罪羊",
+    "category": "关系与社会",
+    "summary": "群体焦虑时常找替罪羊；看清机制就能跳出。",
+    "diagnosis_tags": [
+      "关系摩擦",
+      "视角固化",
+      "替罪羊",
+      "群体心理"
+    ],
+    "trigger": [
+      "空气紧张",
+      "甩锅出现"
+    ],
+    "symptoms": [
+      "找单点归因",
+      "群体归罪"
+    ],
+    "root_causes": [
+      "系统解释不被容许"
+    ],
+    "interventions": [
+      {
+        "label": "本周注意'单点归因'的话",
+        "do": "当有人(或自己)说'就是X的错'",
+        "when": "this_week",
+        "min": 0,
+        "mark": "注意到3次"
+      },
+      {
+        "label": "找系统性原因3个",
+        "do": "除了X还有谁/什么",
+        "when": "this_week",
+        "min": 30,
+        "mark": "系统原因列清"
+      },
+      {
+        "label": "拒绝传谣",
+        "do": "本周1次拒绝转发负面归因",
+        "when": "this_week",
+        "min": 0,
+        "mark": "拒绝了1次"
+      }
+    ],
+    "reflection_questions": [
+      "这事被压在'一个人'身上的合理吗？"
+    ],
+    "related": [
+      "K099",
+      "K098",
+      "K105",
+      "K103"
+    ]
+  },
+  {
+    "id": "K105",
+    "name": "摩洛克（Molech）",
+    "category": "关系与社会",
+    "summary": "在焦虑中向其献祭的伪神；识别'替罪结构'。",
+    "diagnosis_tags": [
+      "关系摩擦",
+      "Molech",
+      "献祭叙事"
+    ],
+    "trigger": [
+      "牺牲某人/某事来维持秩序"
+    ],
+    "symptoms": [
+      "看似合理的代价",
+      "集体沉默"
+    ],
+    "root_causes": [
+      "系统性问题伪装成道德必要性"
+    ],
+    "interventions": [
+      {
+        "label": "看见'为秩序献祭人'",
+        "do": "在工作/家庭/团队中识别",
+        "when": "today",
+        "min": 5,
+        "mark": "识别1个"
+      },
+      {
+        "label": "质疑代价结构",
+        "do": "为什么必须牺牲X?别的可能是什么",
+        "when": "today",
+        "min": 10,
+        "mark": "质疑做出"
+      },
+      {
+        "label": "找1个非献祭方案",
+        "do": "本周内,试做1次",
+        "when": "this_week",
+        "min": 60,
+        "mark": "非献祭方案试出"
+      }
+    ],
+    "reflection_questions": [
+      "我们今天'献'出了什么？为谁而献？"
+    ],
+    "related": [
+      "K104",
+      "K103",
+      "K099"
+    ]
+  },
+  {
+    "id": "K106",
+    "name": "第三物（Third Object）",
+    "category": "关系与社会",
+    "summary": "两人争论能化解的，往往是引入'第三物'；避免二元对立。",
+    "diagnosis_tags": [
+      "关系摩擦",
+      "第三物",
+      "调解"
+    ],
+    "trigger": [
+      "双方僵持不下"
+    ],
+    "symptoms": [
+      "零和争吵"
+    ],
+    "root_causes": [
+      "只看二元"
+    ],
+    "interventions": [
+      {
+        "label": "找'我俩共同关心的第3物'",
+        "do": "吵架时问'我们共同想要…是什么?'",
+        "when": "now",
+        "min": 3,
+        "mark": "第3物找到"
+      },
+      {
+        "label": "把议题外化",
+        "do": "不是'你 vs 我',是'这个议题vs我们'",
+        "when": "today",
+        "min": 5,
+        "mark": "外化一次"
+      },
+      {
+        "label": "本周1次对话,围绕第3物",
+        "do": "避免'人身'",
+        "when": "this_week",
+        "min": 30,
+        "mark": "1次对话完成"
+      }
+    ],
+    "reflection_questions": [
+      "我们共同在意的'第三物'是什么？"
+    ],
+    "related": [
+      "K099",
+      "K066",
+      "K104"
+    ]
+  },
+  {
+    "id": "K107",
+    "name": "剩余判断权",
+    "category": "关系与社会",
+    "summary": "授权时不要给'规则'，给'原则 + 剩余判断空间'。",
+    "diagnosis_tags": [
+      "边界模糊",
+      "授权",
+      "原则vs规则"
+    ],
+    "trigger": [
+      "下级不会动脑",
+      "请示链堵死"
+    ],
+    "symptoms": [
+      "事事请示"
+    ],
+    "root_causes": [
+      "规则教得太死"
+    ],
+    "interventions": [
+      {
+        "label": "授权给'原则+边界',非规则",
+        "do": "本周1个授权试",
+        "when": "this_week",
+        "min": 5,
+        "mark": "授权做出"
+      },
+      {
+        "label": "鼓励就地判断",
+        "do": "当下属做决策告诉你,先说'你判断,你执行'",
+        "when": "today",
+        "min": 2,
+        "mark": "说1次"
+      },
+      {
+        "label": "复盘:它变成了'请示→做'吗",
+        "do": "对方是否还在等你",
+        "when": "this_week",
+        "min": 10,
+        "mark": "复盘1次"
+      }
+    ],
+    "reflection_questions": [
+      "我今天给的是规则还是原则？"
+    ],
+    "related": [
+      "K097",
+      "K108"
+    ]
+  },
+  {
+    "id": "K108",
+    "name": "组织资本",
+    "category": "关系与社会",
+    "summary": "组织资本是隐形资产：流程、文化、关系网；不维护会衰竭。",
+    "diagnosis_tags": [
+      "转型期",
+      "组织资本",
+      "无形资本"
+    ],
+    "trigger": [
+      "扩张失能",
+      "协作成本飙升"
+    ],
+    "symptoms": [
+      "开会有形无果"
+    ],
+    "root_causes": [
+      "只盯有形 KPI"
+    ],
+    "interventions": [
+      {
+        "label": "今天1个动作建流程而非硬实力",
+        "do": "如'做完后写1句话复盘'",
+        "when": "today",
+        "min": 3,
+        "mark": "1动作完成"
+      },
+      {
+        "label": "复盘文化:每周1个'为什么这样做'",
+        "do": "成习惯",
+        "when": "this_week",
+        "min": 30,
+        "mark": "1次复盘"
+      },
+      {
+        "label": "投资流程,不是人",
+        "do": "好流程让人变好,差流程让人变糟",
+        "when": "this_week",
+        "min": 0,
+        "mark": "1流程优化"
+      }
+    ],
+    "reflection_questions": [
+      "我们今天建了什么组织资本？"
+    ],
+    "related": [
+      "K100",
+      "K097",
+      "K103",
+      "K107"
+    ]
+  },
+  {
+    "id": "K109",
+    "name": "人身依附与角色责任",
+    "category": "关系与社会",
+    "summary": "组织常把角色责任扭曲为人身依附；制度强而人不附。",
+    "diagnosis_tags": [
+      "转型期",
+      "人身依附",
+      "去人格化"
+    ],
+    "trigger": [
+      "离职就走活",
+      "老板换风格就乱"
+    ],
+    "symptoms": [
+      "离开无法独立运转"
+    ],
+    "root_causes": [
+      "以人代制度"
+    ],
+    "interventions": [
+      {
+        "label": "本周'换人也能跑'吗?",
+        "do": "1个关键角色去人格化",
+        "when": "this_week",
+        "min": 30,
+        "mark": "角色去人格化"
+      },
+      {
+        "label": "制度化角色:不在于人,在于位",
+        "do": "写'角色职责'文档",
+        "when": "this_week",
+        "min": 30,
+        "mark": "1份文档"
+      },
+      {
+        "label": "去掉1个'必须TA才作数'的依赖",
+        "do": "建制度顶替",
+        "when": "this_week",
+        "min": 60,
+        "mark": "1依赖打破"
+      }
+    ],
+    "reflection_questions": [
+      "这件事是角色责任还是人身依附？"
+    ],
+    "related": [
+      "K107",
+      "K108",
+      "K100"
+    ]
+  }
+]
